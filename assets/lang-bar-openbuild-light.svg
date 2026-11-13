@@ -8,8 +8,8 @@
   <rect x="614.42" y="46" width="19.30" height="14" fill="#7CE8B8"/>
   <rect x="635.72" y="46" width="17.08" height="14" fill="#E0C4FC"/>
   <rect x="654.81" y="46" width="9.96" height="14" fill="#FBFEC4"/>
-  <rect x="666.77" y="46" width="7.34" height="14" fill="#8A8A8A"/>
-  <rect x="676.11" y="46" width="17.76" height="14" fill="#4A4A4A"/></g>
+  <rect x="666.77" y="46" width="7.27" height="14" fill="#8A8A8A"/>
+  <rect x="676.04" y="46" width="17.76" height="14" fill="#4A4A4A"/></g>
   <defs><clipPath id="barclip"><rect x="24" y="46" width="672" height="14" rx="7"/></clipPath></defs>
   <circle cx="29" cy="82" r="5" fill="#01DB83"/>
   <text x="42" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#1A1A1A">Python</text>

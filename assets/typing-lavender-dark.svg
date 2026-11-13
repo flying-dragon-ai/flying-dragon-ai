@@ -24,7 +24,7 @@
     <animate attributeName="width" values="0;0;416;416;0;0" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>
   </rect></clipPath>
   <g clip-path="url(#type2)">
-    <text x="24" y="36" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" fill="#E0C4FC">309 contributions · 70 active days</text>
+    <text x="24" y="36" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" fill="#E0C4FC">310 contributions · 70 active days</text>
   </g>
   <rect x="24" y="18" width="2" height="20" fill="#CB9BFA">
     <animate attributeName="x" values="24;24;440;440;24;24" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>

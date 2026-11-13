@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T03:03:01.962Z",
+  "generatedAt": "2026-11-13T03:25:16.795Z",
   "user": {
     "login": "flying-dragon-ai",
     "name": "flying~dragon",
@@ -19,7 +19,7 @@
   },
   "voice": {
     "tagline": "agent infrastructure · 3D web · windows internals",
-    "headline": "15 个公开仓库，三条产品线，近 12 个月 309 次贡献。",
+    "headline": "15 个公开仓库，三条产品线，近 12 个月 310 次贡献。",
     "conclusion": "主攻 agent 基础设施（8 个仓库），兼做 3D Web（3 个）与 Windows 内部工具（1 个）。主力栈 Python 35.8%，近 12 个月 70 个活跃日、峰值单日 24 次提交。",
     "now": "当前主线：pi 生态的扩展与 subagent 编排。",
     "quotes": [
@@ -44,8 +44,8 @@
       ],
       [
         "近 12 个月贡献",
-        "309",
-        "144 commits · 16 PR · 12 issues"
+        "310",
+        "145 commits · 16 PR · 12 issues"
       ],
       [
         "活跃日",
@@ -84,7 +84,7 @@
         "id": "O4",
         "title": "保持稳定交付节奏",
         "kr": "近 12 个月贡献与活跃日维持在可用水平，不靠集中冲刺",
-        "data": "309 贡献 · 70 活跃日",
+        "data": "310 贡献 · 70 活跃日",
         "status": "进行中"
       }
     ],
@@ -116,7 +116,7 @@
       },
       {
         "name": "JavaScript",
-        "bytes": 1883239,
+        "bytes": 1883780,
         "pct": 19.56
       },
       {
@@ -126,7 +126,7 @@
       },
       {
         "name": "HTML",
-        "bytes": 1378144,
+        "bytes": 1378171,
         "pct": 14.31
       },
       {
@@ -147,7 +147,7 @@
       {
         "name": "Rust",
         "bytes": 133360,
-        "pct": 1.39
+        "pct": 1.38
       },
       {
         "name": "PowerShell",
@@ -552,8 +552,8 @@
     ]
   },
   "contributions": {
-    "total": 309,
-    "commits": 144,
+    "total": 310,
+    "commits": 145,
     "pullRequests": 16,
     "issues": 12,
     "activeDays": 70,
@@ -2038,7 +2038,7 @@
       ],
       [
         "2026-11-13",
-        18
+        19
       ]
     ],
     "monthly": {
@@ -2054,7 +2054,7 @@
       "2026-08": 6,
       "2026-09": 9,
       "2026-10": 77,
-      "2026-11": 43
+      "2026-11": 44
     }
   },
   "clusters": [
