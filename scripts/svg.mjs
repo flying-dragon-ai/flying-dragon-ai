@@ -94,9 +94,10 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
 
   const glassTop = dark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.86)';
   const glassBottom = dark ? 'rgba(28,28,30,0.62)' : 'rgba(242,242,247,0.58)';
-  const rim = dark ? 'rgba(255,255,255,0.22)' : 'rgba(255,255,255,0.95)';
-  const blobA = dark ? 'rgba(10,132,255,0.68)' : 'rgba(0,122,255,0.50)';
-  const blobB = dark ? 'rgba(191,90,242,0.58)' : 'rgba(175,82,222,0.42)';
+  const rim = dark ? 'rgba(255,255,255,0.20)' : 'rgba(255,255,255,0.90)';
+  const edge = dark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.09)';
+  const blobA = dark ? 'rgba(10,132,255,0.62)' : 'rgba(0,122,255,0.42)';
+  const blobB = dark ? 'rgba(191,90,242,0.52)' : 'rgba(175,82,222,0.34)';
 
   const bx1 = (w * 0.18).toFixed(1);
   const by1 = (h * 0.12).toFixed(1);
@@ -138,7 +139,8 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
       <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="${radius}" fill="none" stroke="${rim}" stroke-width="1" filter="url(#card)"/>
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="${radius}" fill="none" stroke="${edge}" stroke-width="1" filter="url(#card)"/>
+  <rect x="1.5" y="1.5" width="${w - 3}" height="${h - 3}" rx="${radius - 1}" fill="none" stroke="${rim}" stroke-width="1"/>
 ${body}`,
   );
 }

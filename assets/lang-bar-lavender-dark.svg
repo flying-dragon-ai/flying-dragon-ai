@@ -17,10 +17,10 @@
   </defs>
   <g clip-path="url(#glassclip)">
     <g filter="url(#refract)">
-      <circle cx="129.6" cy="11.3" r="45.1" fill="rgba(10,132,255,0.68)">
+      <circle cx="129.6" cy="11.3" r="45.1" fill="rgba(10,132,255,0.62)">
         <animate attributeName="cx" values="129.6;244.8;129.6" dur="14s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="619.2" cy="86.5" r="39.5" fill="rgba(191,90,242,0.58)">
+      <circle cx="619.2" cy="86.5" r="39.5" fill="rgba(191,90,242,0.52)">
         <animate attributeName="cy" values="86.5;58.3;86.5" dur="18s" repeatCount="indefinite"/>
       </circle>
     </g>
@@ -29,7 +29,8 @@
       <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <rect x="0.5" y="0.5" width="719" height="93" rx="26" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" filter="url(#card)"/>
+  <rect x="0.5" y="0.5" width="719" height="93" rx="26" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" filter="url(#card)"/>
+  <rect x="1.5" y="1.5" width="717" height="91" rx="25" fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="1"/>
   <rect x="28.00" y="34" width="234.38" height="8" rx="4" fill="#BF5AF2"/>
   <rect x="265.38" y="34" width="126.88" height="8" rx="4" fill="#0A84FF"/>
   <rect x="395.26" y="34" width="118.11" height="8" rx="4" fill="#64D2FF"/>
