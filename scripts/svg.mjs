@@ -113,7 +113,7 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
     <filter id="refract" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
     <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${glassTop}"/>
-      <stop offset="0.55" stop-color="${glassTop}" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="${glassTop}" stop-opacity="0.30"/>
       <stop offset="1" stop-color="${glassBottom}"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
