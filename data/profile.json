@@ -1,0 +1,3215 @@
+{
+  "generatedAt": "2026-11-13T02:49:23.884Z",
+  "source": {
+    "tool": "gh",
+    "login": "flying-dragon-ai"
+  },
+  "user": {
+    "login": "flying-dragon-ai",
+    "name": "flying~dragon",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/58673960?v=4",
+    "bio": "",
+    "company": "",
+    "blog": "",
+    "location": "",
+    "twitter": "",
+    "followers": 6,
+    "following": 23,
+    "publicRepos": 67,
+    "publicGists": 0,
+    "hireable": true,
+    "createdAt": "2019-12-09T02:08:04Z",
+    "htmlUrl": "https://github.com/flying-dragon-ai"
+  },
+  "stats": {
+    "ownRepos": 15,
+    "forks": 52,
+    "totalStars": 6,
+    "totalForks": 0,
+    "languages": [
+      {
+        "name": "Python",
+        "bytes": 3442330,
+        "pct": 35.75
+      },
+      {
+        "name": "JavaScript",
+        "bytes": 1883239,
+        "pct": 19.56
+      },
+      {
+        "name": "TypeScript",
+        "bytes": 1756312,
+        "pct": 18.24
+      },
+      {
+        "name": "HTML",
+        "bytes": 1378144,
+        "pct": 14.31
+      },
+      {
+        "name": "C#",
+        "bytes": 305557,
+        "pct": 3.17
+      },
+      {
+        "name": "Swift",
+        "bytes": 273639,
+        "pct": 2.84
+      },
+      {
+        "name": "Vue",
+        "bytes": 171766,
+        "pct": 1.78
+      },
+      {
+        "name": "Rust",
+        "bytes": 133360,
+        "pct": 1.39
+      },
+      {
+        "name": "PowerShell",
+        "bytes": 111911,
+        "pct": 1.16
+      },
+      {
+        "name": "CSS",
+        "bytes": 102421,
+        "pct": 1.06
+      },
+      {
+        "name": "Shell",
+        "bytes": 32612,
+        "pct": 0.34
+      },
+      {
+        "name": "PLpgSQL",
+        "bytes": 11037,
+        "pct": 0.11
+      },
+      {
+        "name": "Solidity",
+        "bytes": 8909,
+        "pct": 0.09
+      },
+      {
+        "name": "SCSS",
+        "bytes": 7656,
+        "pct": 0.08
+      },
+      {
+        "name": "Batchfile",
+        "bytes": 5532,
+        "pct": 0.06
+      },
+      {
+        "name": "Inno Setup",
+        "bytes": 1852,
+        "pct": 0.02
+      },
+      {
+        "name": "C",
+        "bytes": 1272,
+        "pct": 0.01
+      },
+      {
+        "name": "Dockerfile",
+        "bytes": 959,
+        "pct": 0.01
+      }
+    ],
+    "topics": [
+      {
+        "name": "typescript",
+        "count": 6
+      },
+      {
+        "name": "multi-agent",
+        "count": 3
+      },
+      {
+        "name": "koa",
+        "count": 2
+      },
+      {
+        "name": "postgresql",
+        "count": 2
+      },
+      {
+        "name": "uni-app",
+        "count": 2
+      },
+      {
+        "name": "vue3",
+        "count": 2
+      },
+      {
+        "name": "wechat-miniprogram",
+        "count": 2
+      },
+      {
+        "name": "vite",
+        "count": 2
+      },
+      {
+        "name": "skill",
+        "count": 2
+      },
+      {
+        "name": "pi",
+        "count": 2
+      },
+      {
+        "name": "pi-package",
+        "count": 2
+      },
+      {
+        "name": "react",
+        "count": 2
+      },
+      {
+        "name": "ai-agents",
+        "count": 2
+      },
+      {
+        "name": "python",
+        "count": 2
+      },
+      {
+        "name": "pinia",
+        "count": 1
+      },
+      {
+        "name": "travel",
+        "count": 1
+      },
+      {
+        "name": "3d",
+        "count": 1
+      },
+      {
+        "name": "game",
+        "count": 1
+      },
+      {
+        "name": "offline",
+        "count": 1
+      },
+      {
+        "name": "threejs",
+        "count": 1
+      },
+      {
+        "name": "vue",
+        "count": 1
+      },
+      {
+        "name": "webgl",
+        "count": 1
+      },
+      {
+        "name": "audit",
+        "count": 1
+      },
+      {
+        "name": "autoresearch",
+        "count": 1
+      },
+      {
+        "name": "cache",
+        "count": 1
+      },
+      {
+        "name": "devops",
+        "count": 1
+      },
+      {
+        "name": "disk-cleanup",
+        "count": 1
+      },
+      {
+        "name": "powershell",
+        "count": 1
+      },
+      {
+        "name": "read-only",
+        "count": 1
+      },
+      {
+        "name": "sysadmin",
+        "count": 1
+      },
+      {
+        "name": "windows",
+        "count": 1
+      },
+      {
+        "name": "smart-search",
+        "count": 1
+      },
+      {
+        "name": "web-search",
+        "count": 1
+      },
+      {
+        "name": "agent-factory",
+        "count": 1
+      },
+      {
+        "name": "codebase-analysis",
+        "count": 1
+      },
+      {
+        "name": "coding-agent",
+        "count": 1
+      },
+      {
+        "name": "subagents",
+        "count": 1
+      },
+      {
+        "name": "a2a",
+        "count": 1
+      },
+      {
+        "name": "demo",
+        "count": 1
+      },
+      {
+        "name": "fastapi",
+        "count": 1
+      },
+      {
+        "name": "llm",
+        "count": 1
+      },
+      {
+        "name": "rag",
+        "count": 1
+      },
+      {
+        "name": "redis",
+        "count": 1
+      },
+      {
+        "name": "sqlalchemy",
+        "count": 1
+      },
+      {
+        "name": "framer-motion",
+        "count": 1
+      },
+      {
+        "name": "h5",
+        "count": 1
+      },
+      {
+        "name": "interactive-story",
+        "count": 1
+      },
+      {
+        "name": "mothers-day",
+        "count": 1
+      },
+      {
+        "name": "narrative",
+        "count": 1
+      },
+      {
+        "name": "tailwindcss",
+        "count": 1
+      },
+      {
+        "name": "webapp",
+        "count": 1
+      },
+      {
+        "name": "art-marketplace",
+        "count": 1
+      },
+      {
+        "name": "monorepo",
+        "count": 1
+      },
+      {
+        "name": "pnpm",
+        "count": 1
+      },
+      {
+        "name": "zod",
+        "count": 1
+      },
+      {
+        "name": "claude-code",
+        "count": 1
+      },
+      {
+        "name": "codex",
+        "count": 1
+      },
+      {
+        "name": "interactive-html",
+        "count": 1
+      },
+      {
+        "name": "knowledge-management",
+        "count": 1
+      },
+      {
+        "name": "learning",
+        "count": 1
+      },
+      {
+        "name": "npx",
+        "count": 1
+      },
+      {
+        "name": "agent",
+        "count": 1
+      },
+      {
+        "name": "ai-video",
+        "count": 1
+      },
+      {
+        "name": "aigc",
+        "count": 1
+      },
+      {
+        "name": "automation",
+        "count": 1
+      },
+      {
+        "name": "batch-processing",
+        "count": 1
+      },
+      {
+        "name": "bytedance",
+        "count": 1
+      },
+      {
+        "name": "cli",
+        "count": 1
+      },
+      {
+        "name": "ffmpeg",
+        "count": 1
+      },
+      {
+        "name": "image-to-video",
+        "count": 1
+      },
+      {
+        "name": "seedance",
+        "count": 1
+      },
+      {
+        "name": "text-to-video",
+        "count": 1
+      },
+      {
+        "name": "video-generation",
+        "count": 1
+      },
+      {
+        "name": "volcengine",
+        "count": 1
+      },
+      {
+        "name": "agentic-payments",
+        "count": 1
+      },
+      {
+        "name": "blockchain",
+        "count": 1
+      },
+      {
+        "name": "mcp",
+        "count": 1
+      },
+      {
+        "name": "monad",
+        "count": 1
+      },
+      {
+        "name": "solidity",
+        "count": 1
+      },
+      {
+        "name": "wallet",
+        "count": 1
+      },
+      {
+        "name": "web3",
+        "count": 1
+      },
+      {
+        "name": "x402",
+        "count": 1
+      },
+      {
+        "name": "ai",
+        "count": 1
+      },
+      {
+        "name": "ppt",
+        "count": 1
+      },
+      {
+        "name": "presentation",
+        "count": 1
+      },
+      {
+        "name": "rust",
+        "count": 1
+      },
+      {
+        "name": "svg",
+        "count": 1
+      }
+    ]
+  },
+  "contributions": {
+    "total": 301,
+    "commits": 137,
+    "issues": 12,
+    "pullRequests": 16,
+    "reviews": 0,
+    "restricted": 70,
+    "activeDays": 70,
+    "windowDays": 370,
+    "windowStart": "2025-11-09",
+    "windowEnd": "2026-11-13",
+    "peakDay": "2026-06-21",
+    "peakCount": 24,
+    "monthly": {
+      "2025-11": 0,
+      "2025-12": 0,
+      "2026-01": 13,
+      "2026-02": 16,
+      "2026-03": 20,
+      "2026-04": 24,
+      "2026-05": 13,
+      "2026-06": 73,
+      "2026-07": 15,
+      "2026-08": 6,
+      "2026-09": 9,
+      "2026-10": 77,
+      "2026-11": 35
+    },
+    "calendar": [
+      [
+        "2025-11-09",
+        0
+      ],
+      [
+        "2025-11-10",
+        0
+      ],
+      [
+        "2025-11-11",
+        0
+      ],
+      [
+        "2025-11-12",
+        0
+      ],
+      [
+        "2025-11-13",
+        0
+      ],
+      [
+        "2025-11-14",
+        0
+      ],
+      [
+        "2025-11-15",
+        0
+      ],
+      [
+        "2025-11-16",
+        0
+      ],
+      [
+        "2025-11-17",
+        0
+      ],
+      [
+        "2025-11-18",
+        0
+      ],
+      [
+        "2025-11-19",
+        0
+      ],
+      [
+        "2025-11-20",
+        0
+      ],
+      [
+        "2025-11-21",
+        0
+      ],
+      [
+        "2025-11-22",
+        0
+      ],
+      [
+        "2025-11-23",
+        0
+      ],
+      [
+        "2025-11-24",
+        0
+      ],
+      [
+        "2025-11-25",
+        0
+      ],
+      [
+        "2025-11-26",
+        0
+      ],
+      [
+        "2025-11-27",
+        0
+      ],
+      [
+        "2025-11-28",
+        0
+      ],
+      [
+        "2025-11-29",
+        0
+      ],
+      [
+        "2025-11-30",
+        0
+      ],
+      [
+        "2025-12-01",
+        0
+      ],
+      [
+        "2025-12-02",
+        0
+      ],
+      [
+        "2025-12-03",
+        0
+      ],
+      [
+        "2025-12-04",
+        0
+      ],
+      [
+        "2025-12-05",
+        0
+      ],
+      [
+        "2025-12-06",
+        0
+      ],
+      [
+        "2025-12-07",
+        0
+      ],
+      [
+        "2025-12-08",
+        0
+      ],
+      [
+        "2025-12-09",
+        0
+      ],
+      [
+        "2025-12-10",
+        0
+      ],
+      [
+        "2025-12-11",
+        0
+      ],
+      [
+        "2025-12-12",
+        0
+      ],
+      [
+        "2025-12-13",
+        0
+      ],
+      [
+        "2025-12-14",
+        0
+      ],
+      [
+        "2025-12-15",
+        0
+      ],
+      [
+        "2025-12-16",
+        0
+      ],
+      [
+        "2025-12-17",
+        0
+      ],
+      [
+        "2025-12-18",
+        0
+      ],
+      [
+        "2025-12-19",
+        0
+      ],
+      [
+        "2025-12-20",
+        0
+      ],
+      [
+        "2025-12-21",
+        0
+      ],
+      [
+        "2025-12-22",
+        0
+      ],
+      [
+        "2025-12-23",
+        0
+      ],
+      [
+        "2025-12-24",
+        0
+      ],
+      [
+        "2025-12-25",
+        0
+      ],
+      [
+        "2025-12-26",
+        0
+      ],
+      [
+        "2025-12-27",
+        0
+      ],
+      [
+        "2025-12-28",
+        0
+      ],
+      [
+        "2025-12-29",
+        0
+      ],
+      [
+        "2025-12-30",
+        0
+      ],
+      [
+        "2025-12-31",
+        0
+      ],
+      [
+        "2026-01-01",
+        0
+      ],
+      [
+        "2026-01-02",
+        0
+      ],
+      [
+        "2026-01-03",
+        0
+      ],
+      [
+        "2026-01-04",
+        0
+      ],
+      [
+        "2026-01-05",
+        0
+      ],
+      [
+        "2026-01-06",
+        0
+      ],
+      [
+        "2026-01-07",
+        0
+      ],
+      [
+        "2026-01-08",
+        0
+      ],
+      [
+        "2026-01-09",
+        0
+      ],
+      [
+        "2026-01-10",
+        0
+      ],
+      [
+        "2026-01-11",
+        0
+      ],
+      [
+        "2026-01-12",
+        0
+      ],
+      [
+        "2026-01-13",
+        0
+      ],
+      [
+        "2026-01-14",
+        0
+      ],
+      [
+        "2026-01-15",
+        0
+      ],
+      [
+        "2026-01-16",
+        0
+      ],
+      [
+        "2026-01-17",
+        0
+      ],
+      [
+        "2026-01-18",
+        0
+      ],
+      [
+        "2026-01-19",
+        0
+      ],
+      [
+        "2026-01-20",
+        0
+      ],
+      [
+        "2026-01-21",
+        1
+      ],
+      [
+        "2026-01-22",
+        0
+      ],
+      [
+        "2026-01-23",
+        0
+      ],
+      [
+        "2026-01-24",
+        0
+      ],
+      [
+        "2026-01-25",
+        2
+      ],
+      [
+        "2026-01-26",
+        0
+      ],
+      [
+        "2026-01-27",
+        0
+      ],
+      [
+        "2026-01-28",
+        0
+      ],
+      [
+        "2026-01-29",
+        3
+      ],
+      [
+        "2026-01-30",
+        4
+      ],
+      [
+        "2026-01-31",
+        3
+      ],
+      [
+        "2026-02-01",
+        0
+      ],
+      [
+        "2026-02-02",
+        0
+      ],
+      [
+        "2026-02-03",
+        2
+      ],
+      [
+        "2026-02-04",
+        3
+      ],
+      [
+        "2026-02-05",
+        0
+      ],
+      [
+        "2026-02-06",
+        0
+      ],
+      [
+        "2026-02-07",
+        0
+      ],
+      [
+        "2026-02-08",
+        4
+      ],
+      [
+        "2026-02-09",
+        0
+      ],
+      [
+        "2026-02-10",
+        2
+      ],
+      [
+        "2026-02-11",
+        4
+      ],
+      [
+        "2026-02-12",
+        0
+      ],
+      [
+        "2026-02-13",
+        0
+      ],
+      [
+        "2026-02-14",
+        0
+      ],
+      [
+        "2026-02-15",
+        0
+      ],
+      [
+        "2026-02-16",
+        0
+      ],
+      [
+        "2026-02-17",
+        0
+      ],
+      [
+        "2026-02-18",
+        0
+      ],
+      [
+        "2026-02-19",
+        0
+      ],
+      [
+        "2026-02-20",
+        0
+      ],
+      [
+        "2026-02-21",
+        0
+      ],
+      [
+        "2026-02-22",
+        0
+      ],
+      [
+        "2026-02-23",
+        0
+      ],
+      [
+        "2026-02-24",
+        0
+      ],
+      [
+        "2026-02-25",
+        0
+      ],
+      [
+        "2026-02-26",
+        1
+      ],
+      [
+        "2026-02-27",
+        0
+      ],
+      [
+        "2026-02-28",
+        0
+      ],
+      [
+        "2026-03-01",
+        0
+      ],
+      [
+        "2026-03-02",
+        0
+      ],
+      [
+        "2026-03-03",
+        1
+      ],
+      [
+        "2026-03-04",
+        0
+      ],
+      [
+        "2026-03-05",
+        0
+      ],
+      [
+        "2026-03-06",
+        1
+      ],
+      [
+        "2026-03-07",
+        1
+      ],
+      [
+        "2026-03-08",
+        0
+      ],
+      [
+        "2026-03-09",
+        0
+      ],
+      [
+        "2026-03-10",
+        0
+      ],
+      [
+        "2026-03-11",
+        0
+      ],
+      [
+        "2026-03-12",
+        0
+      ],
+      [
+        "2026-03-13",
+        3
+      ],
+      [
+        "2026-03-14",
+        0
+      ],
+      [
+        "2026-03-15",
+        2
+      ],
+      [
+        "2026-03-16",
+        0
+      ],
+      [
+        "2026-03-17",
+        2
+      ],
+      [
+        "2026-03-18",
+        0
+      ],
+      [
+        "2026-03-19",
+        1
+      ],
+      [
+        "2026-03-20",
+        3
+      ],
+      [
+        "2026-03-21",
+        1
+      ],
+      [
+        "2026-03-22",
+        1
+      ],
+      [
+        "2026-03-23",
+        0
+      ],
+      [
+        "2026-03-24",
+        3
+      ],
+      [
+        "2026-03-25",
+        0
+      ],
+      [
+        "2026-03-26",
+        1
+      ],
+      [
+        "2026-03-27",
+        0
+      ],
+      [
+        "2026-03-28",
+        0
+      ],
+      [
+        "2026-03-29",
+        0
+      ],
+      [
+        "2026-03-30",
+        0
+      ],
+      [
+        "2026-03-31",
+        0
+      ],
+      [
+        "2026-04-01",
+        1
+      ],
+      [
+        "2026-04-02",
+        0
+      ],
+      [
+        "2026-04-03",
+        1
+      ],
+      [
+        "2026-04-04",
+        0
+      ],
+      [
+        "2026-04-05",
+        0
+      ],
+      [
+        "2026-04-06",
+        0
+      ],
+      [
+        "2026-04-07",
+        0
+      ],
+      [
+        "2026-04-08",
+        0
+      ],
+      [
+        "2026-04-09",
+        0
+      ],
+      [
+        "2026-04-10",
+        0
+      ],
+      [
+        "2026-04-11",
+        1
+      ],
+      [
+        "2026-04-12",
+        11
+      ],
+      [
+        "2026-04-13",
+        0
+      ],
+      [
+        "2026-04-14",
+        0
+      ],
+      [
+        "2026-04-15",
+        0
+      ],
+      [
+        "2026-04-16",
+        0
+      ],
+      [
+        "2026-04-17",
+        0
+      ],
+      [
+        "2026-04-18",
+        2
+      ],
+      [
+        "2026-04-19",
+        0
+      ],
+      [
+        "2026-04-20",
+        0
+      ],
+      [
+        "2026-04-21",
+        0
+      ],
+      [
+        "2026-04-22",
+        0
+      ],
+      [
+        "2026-04-23",
+        0
+      ],
+      [
+        "2026-04-24",
+        0
+      ],
+      [
+        "2026-04-25",
+        7
+      ],
+      [
+        "2026-04-26",
+        0
+      ],
+      [
+        "2026-04-27",
+        1
+      ],
+      [
+        "2026-04-28",
+        0
+      ],
+      [
+        "2026-04-29",
+        0
+      ],
+      [
+        "2026-04-30",
+        0
+      ],
+      [
+        "2026-05-01",
+        0
+      ],
+      [
+        "2026-05-02",
+        0
+      ],
+      [
+        "2026-05-03",
+        0
+      ],
+      [
+        "2026-05-04",
+        0
+      ],
+      [
+        "2026-05-05",
+        0
+      ],
+      [
+        "2026-05-06",
+        0
+      ],
+      [
+        "2026-05-07",
+        0
+      ],
+      [
+        "2026-05-08",
+        0
+      ],
+      [
+        "2026-05-09",
+        0
+      ],
+      [
+        "2026-05-10",
+        1
+      ],
+      [
+        "2026-05-11",
+        0
+      ],
+      [
+        "2026-05-12",
+        2
+      ],
+      [
+        "2026-05-13",
+        0
+      ],
+      [
+        "2026-05-14",
+        0
+      ],
+      [
+        "2026-05-15",
+        0
+      ],
+      [
+        "2026-05-16",
+        0
+      ],
+      [
+        "2026-05-17",
+        0
+      ],
+      [
+        "2026-05-18",
+        1
+      ],
+      [
+        "2026-05-19",
+        0
+      ],
+      [
+        "2026-05-20",
+        0
+      ],
+      [
+        "2026-05-21",
+        0
+      ],
+      [
+        "2026-05-22",
+        0
+      ],
+      [
+        "2026-05-23",
+        0
+      ],
+      [
+        "2026-05-24",
+        0
+      ],
+      [
+        "2026-05-25",
+        5
+      ],
+      [
+        "2026-05-26",
+        2
+      ],
+      [
+        "2026-05-27",
+        0
+      ],
+      [
+        "2026-05-28",
+        0
+      ],
+      [
+        "2026-05-29",
+        1
+      ],
+      [
+        "2026-05-30",
+        0
+      ],
+      [
+        "2026-05-31",
+        1
+      ],
+      [
+        "2026-06-01",
+        0
+      ],
+      [
+        "2026-06-02",
+        0
+      ],
+      [
+        "2026-06-03",
+        0
+      ],
+      [
+        "2026-06-04",
+        1
+      ],
+      [
+        "2026-06-05",
+        0
+      ],
+      [
+        "2026-06-06",
+        0
+      ],
+      [
+        "2026-06-07",
+        0
+      ],
+      [
+        "2026-06-08",
+        0
+      ],
+      [
+        "2026-06-09",
+        0
+      ],
+      [
+        "2026-06-10",
+        0
+      ],
+      [
+        "2026-06-11",
+        0
+      ],
+      [
+        "2026-06-12",
+        0
+      ],
+      [
+        "2026-06-13",
+        0
+      ],
+      [
+        "2026-06-14",
+        0
+      ],
+      [
+        "2026-06-15",
+        0
+      ],
+      [
+        "2026-06-16",
+        1
+      ],
+      [
+        "2026-06-17",
+        0
+      ],
+      [
+        "2026-06-18",
+        0
+      ],
+      [
+        "2026-06-19",
+        19
+      ],
+      [
+        "2026-06-20",
+        20
+      ],
+      [
+        "2026-06-21",
+        24
+      ],
+      [
+        "2026-06-22",
+        0
+      ],
+      [
+        "2026-06-23",
+        0
+      ],
+      [
+        "2026-06-24",
+        0
+      ],
+      [
+        "2026-06-25",
+        0
+      ],
+      [
+        "2026-06-26",
+        0
+      ],
+      [
+        "2026-06-27",
+        0
+      ],
+      [
+        "2026-06-28",
+        8
+      ],
+      [
+        "2026-06-29",
+        0
+      ],
+      [
+        "2026-06-30",
+        0
+      ],
+      [
+        "2026-07-01",
+        4
+      ],
+      [
+        "2026-07-02",
+        3
+      ],
+      [
+        "2026-07-03",
+        0
+      ],
+      [
+        "2026-07-04",
+        0
+      ],
+      [
+        "2026-07-05",
+        0
+      ],
+      [
+        "2026-07-06",
+        0
+      ],
+      [
+        "2026-07-07",
+        0
+      ],
+      [
+        "2026-07-08",
+        0
+      ],
+      [
+        "2026-07-09",
+        0
+      ],
+      [
+        "2026-07-10",
+        0
+      ],
+      [
+        "2026-07-11",
+        1
+      ],
+      [
+        "2026-07-12",
+        2
+      ],
+      [
+        "2026-07-13",
+        0
+      ],
+      [
+        "2026-07-14",
+        4
+      ],
+      [
+        "2026-07-15",
+        0
+      ],
+      [
+        "2026-07-16",
+        0
+      ],
+      [
+        "2026-07-17",
+        1
+      ],
+      [
+        "2026-07-18",
+        0
+      ],
+      [
+        "2026-07-19",
+        0
+      ],
+      [
+        "2026-07-20",
+        0
+      ],
+      [
+        "2026-07-21",
+        0
+      ],
+      [
+        "2026-07-22",
+        0
+      ],
+      [
+        "2026-07-23",
+        0
+      ],
+      [
+        "2026-07-24",
+        0
+      ],
+      [
+        "2026-07-25",
+        0
+      ],
+      [
+        "2026-07-26",
+        0
+      ],
+      [
+        "2026-07-27",
+        0
+      ],
+      [
+        "2026-07-28",
+        0
+      ],
+      [
+        "2026-07-29",
+        0
+      ],
+      [
+        "2026-07-30",
+        0
+      ],
+      [
+        "2026-07-31",
+        0
+      ],
+      [
+        "2026-08-01",
+        0
+      ],
+      [
+        "2026-08-02",
+        0
+      ],
+      [
+        "2026-08-03",
+        0
+      ],
+      [
+        "2026-08-04",
+        0
+      ],
+      [
+        "2026-08-05",
+        1
+      ],
+      [
+        "2026-08-06",
+        1
+      ],
+      [
+        "2026-08-07",
+        1
+      ],
+      [
+        "2026-08-08",
+        0
+      ],
+      [
+        "2026-08-09",
+        0
+      ],
+      [
+        "2026-08-10",
+        0
+      ],
+      [
+        "2026-08-11",
+        0
+      ],
+      [
+        "2026-08-12",
+        0
+      ],
+      [
+        "2026-08-13",
+        0
+      ],
+      [
+        "2026-08-14",
+        0
+      ],
+      [
+        "2026-08-15",
+        0
+      ],
+      [
+        "2026-08-16",
+        0
+      ],
+      [
+        "2026-08-17",
+        0
+      ],
+      [
+        "2026-08-18",
+        1
+      ],
+      [
+        "2026-08-19",
+        1
+      ],
+      [
+        "2026-08-20",
+        0
+      ],
+      [
+        "2026-08-21",
+        0
+      ],
+      [
+        "2026-08-22",
+        0
+      ],
+      [
+        "2026-08-23",
+        0
+      ],
+      [
+        "2026-08-24",
+        0
+      ],
+      [
+        "2026-08-25",
+        1
+      ],
+      [
+        "2026-08-26",
+        0
+      ],
+      [
+        "2026-08-27",
+        0
+      ],
+      [
+        "2026-08-28",
+        0
+      ],
+      [
+        "2026-08-29",
+        0
+      ],
+      [
+        "2026-08-30",
+        0
+      ],
+      [
+        "2026-08-31",
+        0
+      ],
+      [
+        "2026-09-01",
+        0
+      ],
+      [
+        "2026-09-02",
+        0
+      ],
+      [
+        "2026-09-03",
+        0
+      ],
+      [
+        "2026-09-04",
+        0
+      ],
+      [
+        "2026-09-05",
+        0
+      ],
+      [
+        "2026-09-06",
+        2
+      ],
+      [
+        "2026-09-07",
+        0
+      ],
+      [
+        "2026-09-08",
+        0
+      ],
+      [
+        "2026-09-09",
+        0
+      ],
+      [
+        "2026-09-10",
+        0
+      ],
+      [
+        "2026-09-11",
+        0
+      ],
+      [
+        "2026-09-12",
+        0
+      ],
+      [
+        "2026-09-13",
+        0
+      ],
+      [
+        "2026-09-14",
+        0
+      ],
+      [
+        "2026-09-15",
+        0
+      ],
+      [
+        "2026-09-16",
+        0
+      ],
+      [
+        "2026-09-17",
+        0
+      ],
+      [
+        "2026-09-18",
+        7
+      ],
+      [
+        "2026-09-19",
+        0
+      ],
+      [
+        "2026-09-20",
+        0
+      ],
+      [
+        "2026-09-21",
+        0
+      ],
+      [
+        "2026-09-22",
+        0
+      ],
+      [
+        "2026-09-23",
+        0
+      ],
+      [
+        "2026-09-24",
+        0
+      ],
+      [
+        "2026-09-25",
+        0
+      ],
+      [
+        "2026-09-26",
+        0
+      ],
+      [
+        "2026-09-27",
+        0
+      ],
+      [
+        "2026-09-28",
+        0
+      ],
+      [
+        "2026-09-29",
+        0
+      ],
+      [
+        "2026-09-30",
+        0
+      ],
+      [
+        "2026-10-01",
+        0
+      ],
+      [
+        "2026-10-02",
+        0
+      ],
+      [
+        "2026-10-03",
+        0
+      ],
+      [
+        "2026-10-04",
+        0
+      ],
+      [
+        "2026-10-05",
+        0
+      ],
+      [
+        "2026-10-06",
+        0
+      ],
+      [
+        "2026-10-07",
+        0
+      ],
+      [
+        "2026-10-08",
+        0
+      ],
+      [
+        "2026-10-09",
+        0
+      ],
+      [
+        "2026-10-10",
+        0
+      ],
+      [
+        "2026-10-11",
+        0
+      ],
+      [
+        "2026-10-12",
+        0
+      ],
+      [
+        "2026-10-13",
+        0
+      ],
+      [
+        "2026-10-14",
+        5
+      ],
+      [
+        "2026-10-15",
+        0
+      ],
+      [
+        "2026-10-16",
+        0
+      ],
+      [
+        "2026-10-17",
+        3
+      ],
+      [
+        "2026-10-18",
+        0
+      ],
+      [
+        "2026-10-19",
+        0
+      ],
+      [
+        "2026-10-20",
+        0
+      ],
+      [
+        "2026-10-21",
+        9
+      ],
+      [
+        "2026-10-22",
+        11
+      ],
+      [
+        "2026-10-23",
+        0
+      ],
+      [
+        "2026-10-24",
+        0
+      ],
+      [
+        "2026-10-25",
+        0
+      ],
+      [
+        "2026-10-26",
+        0
+      ],
+      [
+        "2026-10-27",
+        0
+      ],
+      [
+        "2026-10-28",
+        2
+      ],
+      [
+        "2026-10-29",
+        5
+      ],
+      [
+        "2026-10-30",
+        23
+      ],
+      [
+        "2026-10-31",
+        19
+      ],
+      [
+        "2026-11-01",
+        6
+      ],
+      [
+        "2026-11-02",
+        0
+      ],
+      [
+        "2026-11-03",
+        15
+      ],
+      [
+        "2026-11-04",
+        1
+      ],
+      [
+        "2026-11-05",
+        0
+      ],
+      [
+        "2026-11-06",
+        0
+      ],
+      [
+        "2026-11-07",
+        0
+      ],
+      [
+        "2026-11-08",
+        0
+      ],
+      [
+        "2026-11-09",
+        0
+      ],
+      [
+        "2026-11-10",
+        0
+      ],
+      [
+        "2026-11-11",
+        0
+      ],
+      [
+        "2026-11-12",
+        3
+      ],
+      [
+        "2026-11-13",
+        10
+      ]
+    ]
+  },
+  "clusters": [
+    {
+      "id": "winsec",
+      "title": "Windows 内部与安全工具",
+      "titleEn": "Windows Internals & Security Tooling",
+      "blurb": "只读审计、端点对抗、零依赖 PowerShell。",
+      "keywords": [
+        "windows",
+        "powershell",
+        "cache",
+        "msep",
+        "endpoint",
+        "audit",
+        "blind",
+        "raccoon"
+      ],
+      "repos": [
+        {
+          "name": "win-raccoon-lab",
+          "description": "只读的 Windows 缓存审计工具：152 条实测缓存地图 + 9 道安全闸门，已回收 30.53 GB。PowerShell，零依赖。",
+          "language": "PowerShell",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-11-12T10:53:36Z",
+          "createdAt": "2026-11-12T10:52:32Z",
+          "url": "https://github.com/flying-dragon-ai/win-raccoon-lab",
+          "homepage": "",
+          "topics": [
+            "audit",
+            "autoresearch",
+            "cache",
+            "devops",
+            "disk-cleanup",
+            "powershell",
+            "read-only",
+            "skill",
+            "sysadmin",
+            "windows"
+          ],
+          "license": null
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "title": "Agent 基础设施",
+      "titleEn": "Agent Infrastructure",
+      "blurb": "pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+      "keywords": [
+        "agent",
+        "pi-",
+        "skill",
+        "subagent",
+        "mcp",
+        "rag",
+        "llm",
+        "prompt",
+        "seedance",
+        "aigc",
+        "diner",
+        "ppt",
+        "wallet"
+      ],
+      "repos": [
+        {
+          "name": "super-agentic-diner",
+          "description": "超级智能体餐厅 Crossroads Agent Cafe - lightweight AI ordering demo: FastAPI + keyword RAG (no vector DB) + multi-agent + React19/R3F 3D frontend + A2A skill",
+          "language": "Python",
+          "stars": 2,
+          "forks": 0,
+          "pushedAt": "2026-10-12T09:26:17Z",
+          "createdAt": "2026-06-19T06:19:25Z",
+          "url": "https://github.com/flying-dragon-ai/super-agentic-diner",
+          "homepage": "",
+          "topics": [
+            "a2a",
+            "demo",
+            "fastapi",
+            "llm",
+            "multi-agent",
+            "rag",
+            "react",
+            "redis",
+            "sqlalchemy"
+          ],
+          "license": null
+        },
+        {
+          "name": "knowledge-takeback-skill",
+          "description": "npm/npx skill that turns AI-assisted tasks into interactive HTML knowledge pages, structured artifacts and learning records | AI 能力回流给人的学习型 Skill 层",
+          "language": "JavaScript",
+          "stars": 2,
+          "forks": 0,
+          "pushedAt": "2026-09-18T08:50:57Z",
+          "createdAt": "2026-05-31T06:14:15Z",
+          "url": "https://github.com/flying-dragon-ai/knowledge-takeback-skill",
+          "homepage": "",
+          "topics": [
+            "ai-agents",
+            "claude-code",
+            "codex",
+            "interactive-html",
+            "knowledge-management",
+            "learning",
+            "npx",
+            "skill"
+          ],
+          "license": null
+        },
+        {
+          "name": "seedance-agent",
+          "description": "Agent-driven AIGC video production pipeline on Volcano Ark Seedance API (2.5/2.0): storyboard preflight, credential failover, resumable generation, ffmpeg post-production.",
+          "language": "Python",
+          "stars": 2,
+          "forks": 0,
+          "pushedAt": "2026-09-18T08:32:31Z",
+          "createdAt": "2026-09-18T08:32:22Z",
+          "url": "https://github.com/flying-dragon-ai/seedance-agent",
+          "homepage": "",
+          "topics": [
+            "agent",
+            "ai-video",
+            "aigc",
+            "automation",
+            "batch-processing",
+            "bytedance",
+            "cli",
+            "ffmpeg",
+            "image-to-video",
+            "python",
+            "seedance",
+            "text-to-video",
+            "video-generation",
+            "volcengine"
+          ],
+          "license": null
+        },
+        {
+          "name": "pi-smart-search",
+          "description": "Pi extension wrapping the local smart-search CLI. Sourced web search, fetch, Chinese search, and library docs. 把本机 smart-search 包成 pi 工具，检索带出处。",
+          "language": "TypeScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-10-28T08:09:19Z",
+          "createdAt": "2026-10-21T05:43:54Z",
+          "url": "https://github.com/flying-dragon-ai/pi-smart-search",
+          "homepage": "",
+          "topics": [
+            "pi",
+            "pi-package",
+            "smart-search",
+            "typescript",
+            "web-search"
+          ],
+          "license": null
+        },
+        {
+          "name": "smartsearch",
+          "description": "Fork of smart-search with explicit Xiaohongshu and WeChat Official Account search. Search only.",
+          "language": "Python",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-10-28T08:09:06Z",
+          "createdAt": "2026-10-21T06:13:59Z",
+          "url": "https://github.com/flying-dragon-ai/smartsearch",
+          "homepage": "",
+          "topics": [],
+          "license": null
+        },
+        {
+          "name": "pi-subagent-factory",
+          "description": "Auto-scan any codebase and generate a tailored pi subagent team with ready-to-use subagent_spawn args. 自动扫描项目技术栈，自动创建专属 subagent 团队 | pi.dev package",
+          "language": "TypeScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-10-21T04:34:01Z",
+          "createdAt": "2026-10-21T04:10:09Z",
+          "url": "https://github.com/flying-dragon-ai/pi-subagent-factory",
+          "homepage": "",
+          "topics": [
+            "agent-factory",
+            "codebase-analysis",
+            "coding-agent",
+            "multi-agent",
+            "pi",
+            "pi-package",
+            "subagents",
+            "typescript"
+          ],
+          "license": null
+        },
+        {
+          "name": "AlphaMesh-wallet",
+          "description": "Monad Agentic Wallet - agent-native payment control plane: AI agents execute on-chain/off-chain payments under user policy constraints, no root key exposure. x402 + MCP",
+          "language": "TypeScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-04-12T10:35:19Z",
+          "createdAt": "2026-03-14T17:55:32Z",
+          "url": "https://github.com/flying-dragon-ai/AlphaMesh-wallet",
+          "homepage": "",
+          "topics": [
+            "agentic-payments",
+            "ai-agents",
+            "blockchain",
+            "mcp",
+            "monad",
+            "solidity",
+            "typescript",
+            "wallet",
+            "web3",
+            "x402"
+          ],
+          "license": null
+        },
+        {
+          "name": "agents-for-ppt",
+          "description": "PPT Master - AI-driven multi-agent SVG content generation for presentations, social media and posters (multi-agent collaboration, upstream: hugohe3/ppt-master)",
+          "language": "Python",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-02-11T02:06:53Z",
+          "createdAt": "2026-02-10T09:46:04Z",
+          "url": "https://github.com/flying-dragon-ai/agents-for-ppt",
+          "homepage": "https://hugohe3.github.io/ppt-master/",
+          "topics": [
+            "ai",
+            "multi-agent",
+            "ppt",
+            "presentation",
+            "python",
+            "rust",
+            "svg",
+            "typescript"
+          ],
+          "license": null
+        }
+      ]
+    },
+    {
+      "id": "web3d",
+      "title": "3D 与交互式 Web",
+      "titleEn": "3D & Interactive Web",
+      "blurb": "Three.js / WebGL / 单文件离线包，浏览器里跑得动的真 3D。",
+      "keywords": [
+        "three.js",
+        "threejs",
+        "webgl",
+        "game",
+        "游戏",
+        "h5",
+        "photo-to-3d",
+        "island",
+        "pet-world",
+        "mom_remember",
+        "image-space",
+        "offline"
+      ],
+      "repos": [
+        {
+          "name": "tihuqiche",
+          "description": "鹈鹕骑车：可离线游玩的单文件 3D 骑车闯关游戏",
+          "language": "JavaScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-11-13T02:23:51Z",
+          "createdAt": "2026-11-13T01:58:18Z",
+          "url": "https://github.com/flying-dragon-ai/tihuqiche",
+          "homepage": "",
+          "topics": [
+            "3d",
+            "game",
+            "offline",
+            "threejs",
+            "vite",
+            "vue",
+            "webgl"
+          ],
+          "license": null
+        },
+        {
+          "name": "pet-world",
+          "description": "",
+          "language": "HTML",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-11-01T02:31:32Z",
+          "createdAt": "2026-10-17T09:08:48Z",
+          "url": "https://github.com/flying-dragon-ai/pet-world",
+          "homepage": "https://flying-dragon-ai.github.io/pet-world/",
+          "topics": [],
+          "license": null
+        },
+        {
+          "name": "mom_remember",
+          "description": "重生之我成为了我的妈妈 - Mother's Day immersive interactive H5: flip open a book, live one life from mom's perspective, get a personalized share card. React19 + Vite7 + Framer Motion",
+          "language": "TypeScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-09-18T08:51:18Z",
+          "createdAt": "2026-05-10T05:44:16Z",
+          "url": "https://github.com/flying-dragon-ai/mom_remember",
+          "homepage": "",
+          "topics": [
+            "framer-motion",
+            "h5",
+            "interactive-story",
+            "mothers-day",
+            "narrative",
+            "react",
+            "tailwindcss",
+            "vite",
+            "webapp"
+          ],
+          "license": null
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "title": "小程序与产品 MVP",
+      "titleEn": "Mini Programs & Product MVPs",
+      "blurb": "微信小程序 + Koa API，从原型到可交付。",
+      "keywords": [
+        "小程序",
+        "mini program",
+        "wechat",
+        "koa",
+        "gallery",
+        "travel",
+        "uni-app"
+      ],
+      "repos": [
+        {
+          "name": "Pocket_Travel_Companion",
+          "description": "情绪疗愈型周末微旅行规划助手 · 微信小程序 + Koa API · uni-app + Vue 3 + TypeScript + PostgreSQL",
+          "language": "JavaScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-11-13T02:33:56Z",
+          "createdAt": "2026-11-13T02:25:06Z",
+          "url": "https://github.com/flying-dragon-ai/Pocket_Travel_Companion",
+          "homepage": "",
+          "topics": [
+            "koa",
+            "pinia",
+            "postgresql",
+            "travel",
+            "typescript",
+            "uni-app",
+            "vue3",
+            "wechat-miniprogram"
+          ],
+          "license": null
+        },
+        {
+          "name": "Shibi_Gallery",
+          "description": "师比画廊 Shibi Gallery - WeChat Mini Program MVP for young artists: artwork trading, copyright licensing, curation, certificates. Vue3 + uni-app + Koa + PostgreSQL monorepo",
+          "language": "TypeScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-09-18T08:51:14Z",
+          "createdAt": "2026-05-12T09:53:38Z",
+          "url": "https://github.com/flying-dragon-ai/Shibi_Gallery",
+          "homepage": "",
+          "topics": [
+            "art-marketplace",
+            "koa",
+            "monorepo",
+            "pnpm",
+            "postgresql",
+            "typescript",
+            "uni-app",
+            "vue3",
+            "wechat-miniprogram",
+            "zod"
+          ],
+          "license": null
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "title": "社区与元信息",
+      "titleEn": "Community & Meta",
+      "blurb": "交流入口与占位仓库。",
+      "keywords": [
+        "community",
+        "群",
+        "placeholder",
+        "占位"
+      ],
+      "repos": [
+        {
+          "name": "openhongguo-community",
+          "description": "openhongguo 交流群 · 入群二维码",
+          "language": null,
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-10-29T05:30:26Z",
+          "createdAt": "2026-10-29T05:30:18Z",
+          "url": "https://github.com/flying-dragon-ai/openhongguo-community",
+          "homepage": "",
+          "topics": [],
+          "license": null
+        }
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "name": "tihuqiche",
+      "description": "鹈鹕骑车：可离线游玩的单文件 3D 骑车闯关游戏",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-13T02:23:51Z",
+      "createdAt": "2026-11-13T01:58:18Z",
+      "url": "https://github.com/flying-dragon-ai/tihuqiche",
+      "homepage": "",
+      "topics": [
+        "3d",
+        "game",
+        "offline",
+        "threejs",
+        "vite",
+        "vue",
+        "webgl"
+      ],
+      "license": null
+    },
+    {
+      "name": "win-raccoon-lab",
+      "description": "只读的 Windows 缓存审计工具：152 条实测缓存地图 + 9 道安全闸门，已回收 30.53 GB。PowerShell，零依赖。",
+      "language": "PowerShell",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-12T10:53:36Z",
+      "createdAt": "2026-11-12T10:52:32Z",
+      "url": "https://github.com/flying-dragon-ai/win-raccoon-lab",
+      "homepage": "",
+      "topics": [
+        "audit",
+        "autoresearch",
+        "cache",
+        "devops",
+        "disk-cleanup",
+        "powershell",
+        "read-only",
+        "skill",
+        "sysadmin",
+        "windows"
+      ],
+      "license": null
+    },
+    {
+      "name": "pi-subagent-factory",
+      "description": "Auto-scan any codebase and generate a tailored pi subagent team with ready-to-use subagent_spawn args. 自动扫描项目技术栈，自动创建专属 subagent 团队 | pi.dev package",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-10-21T04:34:01Z",
+      "createdAt": "2026-10-21T04:10:09Z",
+      "url": "https://github.com/flying-dragon-ai/pi-subagent-factory",
+      "homepage": "",
+      "topics": [
+        "agent-factory",
+        "codebase-analysis",
+        "coding-agent",
+        "multi-agent",
+        "pi",
+        "pi-package",
+        "subagents",
+        "typescript"
+      ],
+      "license": null
+    },
+    {
+      "name": "knowledge-takeback-skill",
+      "description": "npm/npx skill that turns AI-assisted tasks into interactive HTML knowledge pages, structured artifacts and learning records | AI 能力回流给人的学习型 Skill 层",
+      "language": "JavaScript",
+      "stars": 2,
+      "forks": 0,
+      "pushedAt": "2026-09-18T08:50:57Z",
+      "createdAt": "2026-05-31T06:14:15Z",
+      "url": "https://github.com/flying-dragon-ai/knowledge-takeback-skill",
+      "homepage": "",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "interactive-html",
+        "knowledge-management",
+        "learning",
+        "npx",
+        "skill"
+      ],
+      "license": null
+    },
+    {
+      "name": "super-agentic-diner",
+      "description": "超级智能体餐厅 Crossroads Agent Cafe - lightweight AI ordering demo: FastAPI + keyword RAG (no vector DB) + multi-agent + React19/R3F 3D frontend + A2A skill",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0,
+      "pushedAt": "2026-10-12T09:26:17Z",
+      "createdAt": "2026-06-19T06:19:25Z",
+      "url": "https://github.com/flying-dragon-ai/super-agentic-diner",
+      "homepage": "",
+      "topics": [
+        "a2a",
+        "demo",
+        "fastapi",
+        "llm",
+        "multi-agent",
+        "rag",
+        "react",
+        "redis",
+        "sqlalchemy"
+      ],
+      "license": null
+    },
+    {
+      "name": "seedance-agent",
+      "description": "Agent-driven AIGC video production pipeline on Volcano Ark Seedance API (2.5/2.0): storyboard preflight, credential failover, resumable generation, ffmpeg post-production.",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0,
+      "pushedAt": "2026-09-18T08:32:31Z",
+      "createdAt": "2026-09-18T08:32:22Z",
+      "url": "https://github.com/flying-dragon-ai/seedance-agent",
+      "homepage": "",
+      "topics": [
+        "agent",
+        "ai-video",
+        "aigc",
+        "automation",
+        "batch-processing",
+        "bytedance",
+        "cli",
+        "ffmpeg",
+        "image-to-video",
+        "python",
+        "seedance",
+        "text-to-video",
+        "video-generation",
+        "volcengine"
+      ],
+      "license": null
+    }
+  ],
+  "assets": {
+    "snake": false
+  },
+  "forks": [
+    {
+      "name": "interview-new",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-11T08:40:48Z",
+      "createdAt": "2026-10-21T15:10:01Z",
+      "url": "https://github.com/flying-dragon-ai/interview-new",
+      "homepage": "https://interview-second.vercel.app",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "WeChat-AI",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-08-17T04:58:21Z",
+      "createdAt": "2026-08-18T02:44:40Z",
+      "url": "https://github.com/flying-dragon-ai/WeChat-AI",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "mcpx",
+      "description": "MCPX 是运行在开发环境中的 MCP Runtime（网关）。ChatGPT、Claude、Cursor、Grok 及其他支持 Streamable HTTP 的 MCP 客户端，可以通过统一工具面理解项目、查看 Unified Diff、修改源码、运行任务、采集环境信息，并调用本地 MCP 与 Skill。",
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-08-17T03:06:35Z",
+      "createdAt": "2026-08-19T07:46:47Z",
+      "url": "https://github.com/flying-dragon-ai/mcpx",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "ai-images-figma",
+      "description": "AI 拆图、被遮挡背景补齐、人工校准、导入可编辑 Figma 图层、导出 HTML/CSS",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-08-15T10:40:20Z",
+      "createdAt": "2026-08-25T01:24:51Z",
+      "url": "https://github.com/flying-dragon-ai/ai-images-figma",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "cc-switch",
+      "description": "CC Switch 自用增强版",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-08-08T05:42:51Z",
+      "createdAt": "2026-03-03T05:34:24Z",
+      "url": "https://github.com/flying-dragon-ai/cc-switch",
+      "homepage": "https://github.com/farion1231/cc-switch",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "ai-feishu",
+      "description": "飞书本地化ai整理再上传",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-08-05T03:16:02Z",
+      "createdAt": "2026-08-07T03:19:26Z",
+      "url": "https://github.com/flying-dragon-ai/ai-feishu",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "web-clone",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-14T02:01:30Z",
+      "createdAt": "2026-07-14T02:17:31Z",
+      "url": "https://github.com/flying-dragon-ai/web-clone",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "awesome-agent-engineering",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T14:32:02Z",
+      "createdAt": "2026-07-14T01:52:13Z",
+      "url": "https://github.com/flying-dragon-ai/awesome-agent-engineering",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "antigravity-workspace-template",
+      "description": "Give Claude Code, Cursor, Codex CLI a ChatGPT for your codebase. Multi-agent knowledge engine, grounded Q&A with file paths and line numbers. Works in any AI IDE.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:12:27Z",
+      "createdAt": "2026-05-29T08:15:54Z",
+      "url": "https://github.com/flying-dragon-ai/antigravity-workspace-template",
+      "homepage": "https://deepwiki.com/study8677/antigravity-workspace-template",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "claude-code-skill-scrapling",
+      "description": "Claude Code skill for web scraping with scrapling - auto Fetcher selection, Cloudflare bypass, site patterns",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:12:21Z",
+      "createdAt": "2026-05-25T02:26:07Z",
+      "url": "https://github.com/flying-dragon-ai/claude-code-skill-scrapling",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "browser-relay",
+      "description": "为了让 Agent 直接操作我的本地 Chrome，我做了个 Browser Relay",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:08:28Z",
+      "createdAt": "2026-05-25T02:31:34Z",
+      "url": "https://github.com/flying-dragon-ai/browser-relay",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "flymd",
+      "description": "高性能Markdown笔记工具！免费AI，智能便签、TODO推送、本地知识库、AI小说引擎。PDF解析、自动语音笔记、录音转文本。毫秒级启动High-performance Markdown note tool! Free AI, smart notes, TODO reminders, local knowledge base, AI novel engine. PDF parsing, auto voice notes, audio-to-text. Millisecond startup.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:08:07Z",
+      "createdAt": "2026-02-04T08:36:28Z",
+      "url": "https://github.com/flying-dragon-ai/flymd",
+      "homepage": "http://flymd.llingfei.com/",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "demo-ppt",
+      "description": "一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:08:03Z",
+      "createdAt": "2026-02-10T10:33:59Z",
+      "url": "https://github.com/flying-dragon-ai/demo-ppt",
+      "homepage": "https://landppt.com",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "hiclaw",
+      "description": "Open-source Agent Teams system with IM-based multi-Agent collaboration and human-in-the-loop oversight.",
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:07:59Z",
+      "createdAt": "2026-03-06T06:42:55Z",
+      "url": "https://github.com/flying-dragon-ai/hiclaw",
+      "homepage": "https://hiclaw.io",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "worldmonitor",
+      "description": "实时全球情报仪表盘—AI 驱动的新闻聚合、地缘政治监控和基础设施追踪，在一个统一态势感知界面中。",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:07:56Z",
+      "createdAt": "2026-03-07T12:35:26Z",
+      "url": "https://github.com/flying-dragon-ai/worldmonitor",
+      "homepage": "https://worldmonitor.app",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "Dev-Janitor",
+      "description": "让您的开发环境始终保持闪亮如新 ",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:07:20Z",
+      "createdAt": "2026-01-21T05:50:54Z",
+      "url": "https://github.com/flying-dragon-ai/Dev-Janitor",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "AReaL",
+      "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:07:17Z",
+      "createdAt": "2026-01-30T14:28:32Z",
+      "url": "https://github.com/flying-dragon-ai/AReaL",
+      "homepage": "https://inclusionai.github.io/AReaL/",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "python-miio",
+      "description": "Python library & console tool for controlling Xiaomi smart appliances",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:06:29Z",
+      "createdAt": "2026-03-20T15:24:20Z",
+      "url": "https://github.com/flying-dragon-ai/python-miio",
+      "homepage": "https://python-miio.readthedocs.io",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "CodeHubot",
+      "description": "AIoT智能体开发与管理平台 | 软硬件全栈 | 开源",
+      "language": "Vue",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:06:22Z",
+      "createdAt": "2026-02-08T15:50:07Z",
+      "url": "https://github.com/flying-dragon-ai/CodeHubot",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "poco-agent",
+      "description": "An intelligent agent harnessing cloud-based Claude Code to realize a Manus-like autonomous experience.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:05:38Z",
+      "createdAt": "2026-02-03T08:03:12Z",
+      "url": "https://github.com/flying-dragon-ai/poco-agent",
+      "homepage": "https://poco-ai.com",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "all-in-rag",
+      "description": "🔍大模型应用开发实战一：RAG 技术全栈指南，在线阅读地址：https://datawhalechina.github.io/all-in-rag/",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:05:34Z",
+      "createdAt": "2026-01-29T06:36:28Z",
+      "url": "https://github.com/flying-dragon-ai/all-in-rag",
+      "homepage": "https://datawhalechina.github.io/all-in-rag/",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "pandoc-markdown-docx-",
+      "description": "Template for exporting Markdown to docx (Word) using pandoc丨使用pandoc将markdown导出为docx的模板，适用于obsidian、typora、思源笔记等Markdown笔记软件",
+      "language": "Lua",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:05:24Z",
+      "createdAt": "2026-02-04T08:39:55Z",
+      "url": "https://github.com/flying-dragon-ai/pandoc-markdown-docx-",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "phistory",
+      "description": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and Hermes.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:05:00Z",
+      "createdAt": "2026-05-25T01:25:29Z",
+      "url": "https://github.com/flying-dragon-ai/phistory",
+      "homepage": "https://phistory.cc",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "skill-based-architecture",
+      "description": "A meta-skill that produces skills. Point it at any codebase and it distills the project's rules, workflows, and hard-won lessons into a dedicated skills/<name>/ directory — a project skill that becomes the single source of truth every AI agent (Cursor, Claude Code, Codex, Windsurf, Gemini) consults before every task.",
+      "language": "Shell",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:04:51Z",
+      "createdAt": "2026-05-26T02:00:45Z",
+      "url": "https://github.com/flying-dragon-ai/skill-based-architecture",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "fast-dev",
+      "description": "SpringBoot 3.x + Vue 3.x + React 19.x 脚手架",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:04:39Z",
+      "createdAt": "2026-05-25T01:34:49Z",
+      "url": "https://github.com/flying-dragon-ai/fast-dev",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "video-recap-cli",
+      "description": "l把任何视频剪辑成中文解说视频，支持剪映导出",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-13T08:04:12Z",
+      "createdAt": "2026-06-16T06:09:30Z",
+      "url": "https://github.com/flying-dragon-ai/video-recap-cli",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "Whispera",
+      "description": "This is a real-time conversation project powered by a VoxCPM-based streaming TTS model.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-12T16:48:17Z",
+      "createdAt": "2026-07-14T01:56:28Z",
+      "url": "https://github.com/flying-dragon-ai/Whispera",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "app-shell-ui",
+      "description": "App Shell UI: reusable desktop-utility frontend skill for Codex / Claude Code / Grok",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-11T07:48:26Z",
+      "createdAt": "2026-07-14T01:58:10Z",
+      "url": "https://github.com/flying-dragon-ai/app-shell-ui",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "rt-claw",
+      "description": "Making AI Assistants Cheap Again!",
+      "language": "C",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-06-04T05:08:59Z",
+      "createdAt": "2026-03-19T12:39:22Z",
+      "url": "https://github.com/flying-dragon-ai/rt-claw",
+      "homepage": "https://www.rt-claw.com",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "verdure-mcp-for-xiaozhi",
+      "description": "为小智ai创建的mcp对接服务，可以做到通过连接小智的mcp端点，进行mcp工具的远程注入。这样小智ai就可以通过对话调起外部mcp服务。",
+      "language": "C#",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-06-04T05:04:31Z",
+      "createdAt": "2026-02-08T15:53:51Z",
+      "url": "https://github.com/flying-dragon-ai/verdure-mcp-for-xiaozhi",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "cunzhi",
+      "description": "告别AI提前终止烦恼，助力AI更加持久",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-06-04T05:03:38Z",
+      "createdAt": "2026-02-26T08:32:55Z",
+      "url": "https://github.com/flying-dragon-ai/cunzhi",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "mi-gpt",
+      "description": "🏠 将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手。",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-06-04T05:02:55Z",
+      "createdAt": "2026-03-17T12:43:33Z",
+      "url": "https://github.com/flying-dragon-ai/mi-gpt",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "zot",
+      "description": "A modern terminal environment where humans and AI agents work side by side ",
+      "language": "Shell",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-04-18T05:13:17Z",
+      "createdAt": "2026-05-26T01:41:47Z",
+      "url": "https://github.com/flying-dragon-ai/zot",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "ppt-agent",
+      "description": "",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-04-15T01:03:01Z",
+      "createdAt": "2026-03-21T14:17:36Z",
+      "url": "https://github.com/flying-dragon-ai/ppt-agent",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "FastGPT",
+      "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-04-15T01:01:08Z",
+      "createdAt": "2026-01-29T06:30:34Z",
+      "url": "https://github.com/flying-dragon-ai/FastGPT",
+      "homepage": "https://fastgpt.io",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "open-xiaoai-bridge",
+      "description": "小爱音箱与外部 AI 服务（小智 AI、OpenClaw 等）的桥接器",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-04-15T01:00:52Z",
+      "createdAt": "2026-03-26T13:12:08Z",
+      "url": "https://github.com/flying-dragon-ai/open-xiaoai-bridge",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "ten-framework",
+      "description": " Open-source framework for conversational voice AI agents",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-24T01:19:00Z",
+      "createdAt": "2026-01-31T06:33:06Z",
+      "url": "https://github.com/flying-dragon-ai/ten-framework",
+      "homepage": "https://agent.theten.ai/",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "grok-skill",
+      "description": "Codex skill: aggressive web research via OpenAI-compatible Grok endpoint (2api)",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-24T01:14:59Z",
+      "createdAt": "2026-03-13T08:46:29Z",
+      "url": "https://github.com/flying-dragon-ai/grok-skill",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "DesktopFriends",
+      "description": " A desktop companion for Live2D driven by agent system.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-16T16:37:20Z",
+      "createdAt": "2026-03-20T15:26:36Z",
+      "url": "https://github.com/flying-dragon-ai/DesktopFriends",
+      "homepage": "https://tosuke-sama.github.io/DesktopFriends/",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "vital-key-chain",
+      "description": "vital-key-chain",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-14T18:22:53Z",
+      "createdAt": "2026-03-14T18:22:12Z",
+      "url": "https://github.com/flying-dragon-ai/vital-key-chain",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "wechat-access-unqclawed",
+      "description": "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-10T06:38:40Z",
+      "createdAt": "2026-03-17T12:50:50Z",
+      "url": "https://github.com/flying-dragon-ai/wechat-access-unqclawed",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "web-to-figma",
+      "description": "将html转换成figma",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-03-09T02:40:00Z",
+      "createdAt": "2026-05-12T03:18:52Z",
+      "url": "https://github.com/flying-dragon-ai/web-to-figma",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "ai-image-edit",
+      "description": "AI图片生成编辑网站，可以框选图片局部区域进行编辑修改。",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-02-10T09:40:09Z",
+      "createdAt": "2026-01-25T06:13:47Z",
+      "url": "https://github.com/flying-dragon-ai/ai-image-edit",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "doubao-voice-input-method",
+      "description": "使用豆包语音识别接口的语音输入法",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-02-06T14:40:27Z",
+      "createdAt": "2026-02-08T15:28:56Z",
+      "url": "https://github.com/flying-dragon-ai/doubao-voice-input-method",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "doubao-ime-win",
+      "description": "Windows 语音输入工具，基于豆包 ASR 实现实时语音识别。",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-02-05T09:06:05Z",
+      "createdAt": "2026-02-08T15:34:42Z",
+      "url": "https://github.com/flying-dragon-ai/doubao-ime-win",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "skill-collection",
+      "description": "徐靖峰的Qoder上skill",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-02-01T08:27:27Z",
+      "createdAt": "2026-04-03T14:19:18Z",
+      "url": "https://github.com/flying-dragon-ai/skill-collection",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "github-skill-forge",
+      "description": "一个\"制造技能的技能\"。这个工具自动化了将任意 GitHub 仓库转换为标准化技能的全过程，是扩展 AI Agent 能力的核心工具。",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-01-22T18:02:18Z",
+      "createdAt": "2026-05-25T02:27:41Z",
+      "url": "https://github.com/flying-dragon-ai/github-skill-forge",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "Xiaomi-cloud-tokens-extractor",
+      "description": "This tool retrieves tokens for all devices connected to Xiaomi cloud and encryption keys for BLE devices.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2025-11-08T01:57:43Z",
+      "createdAt": "2026-03-20T15:24:39Z",
+      "url": "https://github.com/flying-dragon-ai/Xiaomi-cloud-tokens-extractor",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "smart-mermaid",
+      "description": "一款基于 AI 技术的 Web 应用程序，可将文本内容智能转换为 Mermaid 格式的代码，并将其渲染成可视化图表。",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2025-11-03T09:30:28Z",
+      "createdAt": "2026-02-04T08:43:50Z",
+      "url": "https://github.com/flying-dragon-ai/smart-mermaid",
+      "homepage": "https://smart-mermaid.aizhi.site",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "GJavaDoc",
+      "description": "G for Garbage：把难啃的遗留代码“清运”为文档。注解扫描、切片分析、LLM 生成，支持增量/并发/重试",
+      "language": "Kotlin",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2025-09-24T05:29:29Z",
+      "createdAt": "2026-01-25T09:34:43Z",
+      "url": "https://github.com/flying-dragon-ai/GJavaDoc",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "esp_to_xiaozhi_mcp",
+      "description": "ESP32 实现 MCP 工具对接小智 AI 的 MCP 接入点",
+      "language": "C",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2025-08-14T06:44:27Z",
+      "createdAt": "2026-03-22T09:16:59Z",
+      "url": "https://github.com/flying-dragon-ai/esp_to_xiaozhi_mcp",
+      "homepage": "",
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "jobs",
+      "description": "💼【AI找工作助手】全平台自动投简历脚本：(boss、前程无忧、猎聘、拉勾、智联招聘)",
+      "language": "Java",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2025-04-03T10:47:23Z",
+      "createdAt": "2025-04-03T14:13:59Z",
+      "url": "https://github.com/flying-dragon-ai/jobs",
+      "homepage": "https://github.com/loks666/get_jobs",
+      "topics": [],
+      "license": null
+    }
+  ]
+}

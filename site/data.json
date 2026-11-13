@@ -1,0 +1,2176 @@
+{
+  "generatedAt": "2026-11-13T02:49:23.884Z",
+  "user": {
+    "login": "flying-dragon-ai",
+    "name": "flying~dragon",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/58673960?v=4",
+    "bio": "",
+    "company": "",
+    "blog": "",
+    "location": "",
+    "twitter": "",
+    "followers": 6,
+    "following": 23,
+    "publicRepos": 67,
+    "publicGists": 0,
+    "hireable": true,
+    "createdAt": "2019-12-09T02:08:04Z",
+    "htmlUrl": "https://github.com/flying-dragon-ai"
+  },
+  "voice": {
+    "$comment": "Hand-written copy. Facts live in profile.json (fetched); voice lives here. The renderer merges them.",
+    "tagline": "agent infrastructure · 3D web · windows internals",
+    "taglineZh": "agent 基础设施 · 3D 网页 · Windows 内部",
+    "intro": [
+      "我在做 agent 基础设施：把模型能力包成能装、能跑、能交付的东西 —— pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+      "另外两条线：浏览器里的真 3D（Three.js / WebGL / 单文件离线包），和 Windows 上的只读审计与端点对抗工具。"
+    ],
+    "now": "当前主线：pi 生态的扩展与 subagent 编排。",
+    "footer": "如果某个仓库省了你一小时，点个 star。"
+  },
+  "stats": {
+    "ownRepos": 15,
+    "forks": 52,
+    "totalStars": 6,
+    "totalForks": 0,
+    "languages": [
+      {
+        "name": "Python",
+        "bytes": 3442330,
+        "pct": 35.75
+      },
+      {
+        "name": "JavaScript",
+        "bytes": 1883239,
+        "pct": 19.56
+      },
+      {
+        "name": "TypeScript",
+        "bytes": 1756312,
+        "pct": 18.24
+      },
+      {
+        "name": "HTML",
+        "bytes": 1378144,
+        "pct": 14.31
+      },
+      {
+        "name": "C#",
+        "bytes": 305557,
+        "pct": 3.17
+      },
+      {
+        "name": "Swift",
+        "bytes": 273639,
+        "pct": 2.84
+      },
+      {
+        "name": "Vue",
+        "bytes": 171766,
+        "pct": 1.78
+      },
+      {
+        "name": "Rust",
+        "bytes": 133360,
+        "pct": 1.39
+      },
+      {
+        "name": "PowerShell",
+        "bytes": 111911,
+        "pct": 1.16
+      },
+      {
+        "name": "CSS",
+        "bytes": 102421,
+        "pct": 1.06
+      },
+      {
+        "name": "Shell",
+        "bytes": 32612,
+        "pct": 0.34
+      },
+      {
+        "name": "PLpgSQL",
+        "bytes": 11037,
+        "pct": 0.11
+      },
+      {
+        "name": "Solidity",
+        "bytes": 8909,
+        "pct": 0.09
+      },
+      {
+        "name": "SCSS",
+        "bytes": 7656,
+        "pct": 0.08
+      },
+      {
+        "name": "Batchfile",
+        "bytes": 5532,
+        "pct": 0.06
+      },
+      {
+        "name": "Inno Setup",
+        "bytes": 1852,
+        "pct": 0.02
+      },
+      {
+        "name": "C",
+        "bytes": 1272,
+        "pct": 0.01
+      },
+      {
+        "name": "Dockerfile",
+        "bytes": 959,
+        "pct": 0.01
+      }
+    ],
+    "topics": [
+      {
+        "name": "typescript",
+        "count": 6
+      },
+      {
+        "name": "multi-agent",
+        "count": 3
+      },
+      {
+        "name": "koa",
+        "count": 2
+      },
+      {
+        "name": "postgresql",
+        "count": 2
+      },
+      {
+        "name": "uni-app",
+        "count": 2
+      },
+      {
+        "name": "vue3",
+        "count": 2
+      },
+      {
+        "name": "wechat-miniprogram",
+        "count": 2
+      },
+      {
+        "name": "vite",
+        "count": 2
+      },
+      {
+        "name": "skill",
+        "count": 2
+      },
+      {
+        "name": "pi",
+        "count": 2
+      },
+      {
+        "name": "pi-package",
+        "count": 2
+      },
+      {
+        "name": "react",
+        "count": 2
+      },
+      {
+        "name": "ai-agents",
+        "count": 2
+      },
+      {
+        "name": "python",
+        "count": 2
+      },
+      {
+        "name": "pinia",
+        "count": 1
+      },
+      {
+        "name": "travel",
+        "count": 1
+      },
+      {
+        "name": "3d",
+        "count": 1
+      },
+      {
+        "name": "game",
+        "count": 1
+      },
+      {
+        "name": "offline",
+        "count": 1
+      },
+      {
+        "name": "threejs",
+        "count": 1
+      },
+      {
+        "name": "vue",
+        "count": 1
+      },
+      {
+        "name": "webgl",
+        "count": 1
+      },
+      {
+        "name": "audit",
+        "count": 1
+      },
+      {
+        "name": "autoresearch",
+        "count": 1
+      },
+      {
+        "name": "cache",
+        "count": 1
+      },
+      {
+        "name": "devops",
+        "count": 1
+      },
+      {
+        "name": "disk-cleanup",
+        "count": 1
+      },
+      {
+        "name": "powershell",
+        "count": 1
+      },
+      {
+        "name": "read-only",
+        "count": 1
+      },
+      {
+        "name": "sysadmin",
+        "count": 1
+      },
+      {
+        "name": "windows",
+        "count": 1
+      },
+      {
+        "name": "smart-search",
+        "count": 1
+      },
+      {
+        "name": "web-search",
+        "count": 1
+      },
+      {
+        "name": "agent-factory",
+        "count": 1
+      },
+      {
+        "name": "codebase-analysis",
+        "count": 1
+      },
+      {
+        "name": "coding-agent",
+        "count": 1
+      },
+      {
+        "name": "subagents",
+        "count": 1
+      },
+      {
+        "name": "a2a",
+        "count": 1
+      },
+      {
+        "name": "demo",
+        "count": 1
+      },
+      {
+        "name": "fastapi",
+        "count": 1
+      },
+      {
+        "name": "llm",
+        "count": 1
+      },
+      {
+        "name": "rag",
+        "count": 1
+      },
+      {
+        "name": "redis",
+        "count": 1
+      },
+      {
+        "name": "sqlalchemy",
+        "count": 1
+      },
+      {
+        "name": "framer-motion",
+        "count": 1
+      },
+      {
+        "name": "h5",
+        "count": 1
+      },
+      {
+        "name": "interactive-story",
+        "count": 1
+      },
+      {
+        "name": "mothers-day",
+        "count": 1
+      },
+      {
+        "name": "narrative",
+        "count": 1
+      },
+      {
+        "name": "tailwindcss",
+        "count": 1
+      },
+      {
+        "name": "webapp",
+        "count": 1
+      },
+      {
+        "name": "art-marketplace",
+        "count": 1
+      },
+      {
+        "name": "monorepo",
+        "count": 1
+      },
+      {
+        "name": "pnpm",
+        "count": 1
+      },
+      {
+        "name": "zod",
+        "count": 1
+      },
+      {
+        "name": "claude-code",
+        "count": 1
+      },
+      {
+        "name": "codex",
+        "count": 1
+      },
+      {
+        "name": "interactive-html",
+        "count": 1
+      },
+      {
+        "name": "knowledge-management",
+        "count": 1
+      },
+      {
+        "name": "learning",
+        "count": 1
+      },
+      {
+        "name": "npx",
+        "count": 1
+      },
+      {
+        "name": "agent",
+        "count": 1
+      },
+      {
+        "name": "ai-video",
+        "count": 1
+      },
+      {
+        "name": "aigc",
+        "count": 1
+      },
+      {
+        "name": "automation",
+        "count": 1
+      },
+      {
+        "name": "batch-processing",
+        "count": 1
+      },
+      {
+        "name": "bytedance",
+        "count": 1
+      },
+      {
+        "name": "cli",
+        "count": 1
+      },
+      {
+        "name": "ffmpeg",
+        "count": 1
+      },
+      {
+        "name": "image-to-video",
+        "count": 1
+      },
+      {
+        "name": "seedance",
+        "count": 1
+      },
+      {
+        "name": "text-to-video",
+        "count": 1
+      },
+      {
+        "name": "video-generation",
+        "count": 1
+      },
+      {
+        "name": "volcengine",
+        "count": 1
+      },
+      {
+        "name": "agentic-payments",
+        "count": 1
+      },
+      {
+        "name": "blockchain",
+        "count": 1
+      },
+      {
+        "name": "mcp",
+        "count": 1
+      },
+      {
+        "name": "monad",
+        "count": 1
+      },
+      {
+        "name": "solidity",
+        "count": 1
+      },
+      {
+        "name": "wallet",
+        "count": 1
+      },
+      {
+        "name": "web3",
+        "count": 1
+      },
+      {
+        "name": "x402",
+        "count": 1
+      },
+      {
+        "name": "ai",
+        "count": 1
+      },
+      {
+        "name": "ppt",
+        "count": 1
+      },
+      {
+        "name": "presentation",
+        "count": 1
+      },
+      {
+        "name": "rust",
+        "count": 1
+      },
+      {
+        "name": "svg",
+        "count": 1
+      }
+    ]
+  },
+  "contributions": {
+    "total": 301,
+    "commits": 137,
+    "pullRequests": 16,
+    "issues": 12,
+    "activeDays": 70,
+    "peakDay": "2026-06-21",
+    "peakCount": 24,
+    "calendar": [
+      [
+        "2025-11-09",
+        0
+      ],
+      [
+        "2025-11-10",
+        0
+      ],
+      [
+        "2025-11-11",
+        0
+      ],
+      [
+        "2025-11-12",
+        0
+      ],
+      [
+        "2025-11-13",
+        0
+      ],
+      [
+        "2025-11-14",
+        0
+      ],
+      [
+        "2025-11-15",
+        0
+      ],
+      [
+        "2025-11-16",
+        0
+      ],
+      [
+        "2025-11-17",
+        0
+      ],
+      [
+        "2025-11-18",
+        0
+      ],
+      [
+        "2025-11-19",
+        0
+      ],
+      [
+        "2025-11-20",
+        0
+      ],
+      [
+        "2025-11-21",
+        0
+      ],
+      [
+        "2025-11-22",
+        0
+      ],
+      [
+        "2025-11-23",
+        0
+      ],
+      [
+        "2025-11-24",
+        0
+      ],
+      [
+        "2025-11-25",
+        0
+      ],
+      [
+        "2025-11-26",
+        0
+      ],
+      [
+        "2025-11-27",
+        0
+      ],
+      [
+        "2025-11-28",
+        0
+      ],
+      [
+        "2025-11-29",
+        0
+      ],
+      [
+        "2025-11-30",
+        0
+      ],
+      [
+        "2025-12-01",
+        0
+      ],
+      [
+        "2025-12-02",
+        0
+      ],
+      [
+        "2025-12-03",
+        0
+      ],
+      [
+        "2025-12-04",
+        0
+      ],
+      [
+        "2025-12-05",
+        0
+      ],
+      [
+        "2025-12-06",
+        0
+      ],
+      [
+        "2025-12-07",
+        0
+      ],
+      [
+        "2025-12-08",
+        0
+      ],
+      [
+        "2025-12-09",
+        0
+      ],
+      [
+        "2025-12-10",
+        0
+      ],
+      [
+        "2025-12-11",
+        0
+      ],
+      [
+        "2025-12-12",
+        0
+      ],
+      [
+        "2025-12-13",
+        0
+      ],
+      [
+        "2025-12-14",
+        0
+      ],
+      [
+        "2025-12-15",
+        0
+      ],
+      [
+        "2025-12-16",
+        0
+      ],
+      [
+        "2025-12-17",
+        0
+      ],
+      [
+        "2025-12-18",
+        0
+      ],
+      [
+        "2025-12-19",
+        0
+      ],
+      [
+        "2025-12-20",
+        0
+      ],
+      [
+        "2025-12-21",
+        0
+      ],
+      [
+        "2025-12-22",
+        0
+      ],
+      [
+        "2025-12-23",
+        0
+      ],
+      [
+        "2025-12-24",
+        0
+      ],
+      [
+        "2025-12-25",
+        0
+      ],
+      [
+        "2025-12-26",
+        0
+      ],
+      [
+        "2025-12-27",
+        0
+      ],
+      [
+        "2025-12-28",
+        0
+      ],
+      [
+        "2025-12-29",
+        0
+      ],
+      [
+        "2025-12-30",
+        0
+      ],
+      [
+        "2025-12-31",
+        0
+      ],
+      [
+        "2026-01-01",
+        0
+      ],
+      [
+        "2026-01-02",
+        0
+      ],
+      [
+        "2026-01-03",
+        0
+      ],
+      [
+        "2026-01-04",
+        0
+      ],
+      [
+        "2026-01-05",
+        0
+      ],
+      [
+        "2026-01-06",
+        0
+      ],
+      [
+        "2026-01-07",
+        0
+      ],
+      [
+        "2026-01-08",
+        0
+      ],
+      [
+        "2026-01-09",
+        0
+      ],
+      [
+        "2026-01-10",
+        0
+      ],
+      [
+        "2026-01-11",
+        0
+      ],
+      [
+        "2026-01-12",
+        0
+      ],
+      [
+        "2026-01-13",
+        0
+      ],
+      [
+        "2026-01-14",
+        0
+      ],
+      [
+        "2026-01-15",
+        0
+      ],
+      [
+        "2026-01-16",
+        0
+      ],
+      [
+        "2026-01-17",
+        0
+      ],
+      [
+        "2026-01-18",
+        0
+      ],
+      [
+        "2026-01-19",
+        0
+      ],
+      [
+        "2026-01-20",
+        0
+      ],
+      [
+        "2026-01-21",
+        1
+      ],
+      [
+        "2026-01-22",
+        0
+      ],
+      [
+        "2026-01-23",
+        0
+      ],
+      [
+        "2026-01-24",
+        0
+      ],
+      [
+        "2026-01-25",
+        2
+      ],
+      [
+        "2026-01-26",
+        0
+      ],
+      [
+        "2026-01-27",
+        0
+      ],
+      [
+        "2026-01-28",
+        0
+      ],
+      [
+        "2026-01-29",
+        3
+      ],
+      [
+        "2026-01-30",
+        4
+      ],
+      [
+        "2026-01-31",
+        3
+      ],
+      [
+        "2026-02-01",
+        0
+      ],
+      [
+        "2026-02-02",
+        0
+      ],
+      [
+        "2026-02-03",
+        2
+      ],
+      [
+        "2026-02-04",
+        3
+      ],
+      [
+        "2026-02-05",
+        0
+      ],
+      [
+        "2026-02-06",
+        0
+      ],
+      [
+        "2026-02-07",
+        0
+      ],
+      [
+        "2026-02-08",
+        4
+      ],
+      [
+        "2026-02-09",
+        0
+      ],
+      [
+        "2026-02-10",
+        2
+      ],
+      [
+        "2026-02-11",
+        4
+      ],
+      [
+        "2026-02-12",
+        0
+      ],
+      [
+        "2026-02-13",
+        0
+      ],
+      [
+        "2026-02-14",
+        0
+      ],
+      [
+        "2026-02-15",
+        0
+      ],
+      [
+        "2026-02-16",
+        0
+      ],
+      [
+        "2026-02-17",
+        0
+      ],
+      [
+        "2026-02-18",
+        0
+      ],
+      [
+        "2026-02-19",
+        0
+      ],
+      [
+        "2026-02-20",
+        0
+      ],
+      [
+        "2026-02-21",
+        0
+      ],
+      [
+        "2026-02-22",
+        0
+      ],
+      [
+        "2026-02-23",
+        0
+      ],
+      [
+        "2026-02-24",
+        0
+      ],
+      [
+        "2026-02-25",
+        0
+      ],
+      [
+        "2026-02-26",
+        1
+      ],
+      [
+        "2026-02-27",
+        0
+      ],
+      [
+        "2026-02-28",
+        0
+      ],
+      [
+        "2026-03-01",
+        0
+      ],
+      [
+        "2026-03-02",
+        0
+      ],
+      [
+        "2026-03-03",
+        1
+      ],
+      [
+        "2026-03-04",
+        0
+      ],
+      [
+        "2026-03-05",
+        0
+      ],
+      [
+        "2026-03-06",
+        1
+      ],
+      [
+        "2026-03-07",
+        1
+      ],
+      [
+        "2026-03-08",
+        0
+      ],
+      [
+        "2026-03-09",
+        0
+      ],
+      [
+        "2026-03-10",
+        0
+      ],
+      [
+        "2026-03-11",
+        0
+      ],
+      [
+        "2026-03-12",
+        0
+      ],
+      [
+        "2026-03-13",
+        3
+      ],
+      [
+        "2026-03-14",
+        0
+      ],
+      [
+        "2026-03-15",
+        2
+      ],
+      [
+        "2026-03-16",
+        0
+      ],
+      [
+        "2026-03-17",
+        2
+      ],
+      [
+        "2026-03-18",
+        0
+      ],
+      [
+        "2026-03-19",
+        1
+      ],
+      [
+        "2026-03-20",
+        3
+      ],
+      [
+        "2026-03-21",
+        1
+      ],
+      [
+        "2026-03-22",
+        1
+      ],
+      [
+        "2026-03-23",
+        0
+      ],
+      [
+        "2026-03-24",
+        3
+      ],
+      [
+        "2026-03-25",
+        0
+      ],
+      [
+        "2026-03-26",
+        1
+      ],
+      [
+        "2026-03-27",
+        0
+      ],
+      [
+        "2026-03-28",
+        0
+      ],
+      [
+        "2026-03-29",
+        0
+      ],
+      [
+        "2026-03-30",
+        0
+      ],
+      [
+        "2026-03-31",
+        0
+      ],
+      [
+        "2026-04-01",
+        1
+      ],
+      [
+        "2026-04-02",
+        0
+      ],
+      [
+        "2026-04-03",
+        1
+      ],
+      [
+        "2026-04-04",
+        0
+      ],
+      [
+        "2026-04-05",
+        0
+      ],
+      [
+        "2026-04-06",
+        0
+      ],
+      [
+        "2026-04-07",
+        0
+      ],
+      [
+        "2026-04-08",
+        0
+      ],
+      [
+        "2026-04-09",
+        0
+      ],
+      [
+        "2026-04-10",
+        0
+      ],
+      [
+        "2026-04-11",
+        1
+      ],
+      [
+        "2026-04-12",
+        11
+      ],
+      [
+        "2026-04-13",
+        0
+      ],
+      [
+        "2026-04-14",
+        0
+      ],
+      [
+        "2026-04-15",
+        0
+      ],
+      [
+        "2026-04-16",
+        0
+      ],
+      [
+        "2026-04-17",
+        0
+      ],
+      [
+        "2026-04-18",
+        2
+      ],
+      [
+        "2026-04-19",
+        0
+      ],
+      [
+        "2026-04-20",
+        0
+      ],
+      [
+        "2026-04-21",
+        0
+      ],
+      [
+        "2026-04-22",
+        0
+      ],
+      [
+        "2026-04-23",
+        0
+      ],
+      [
+        "2026-04-24",
+        0
+      ],
+      [
+        "2026-04-25",
+        7
+      ],
+      [
+        "2026-04-26",
+        0
+      ],
+      [
+        "2026-04-27",
+        1
+      ],
+      [
+        "2026-04-28",
+        0
+      ],
+      [
+        "2026-04-29",
+        0
+      ],
+      [
+        "2026-04-30",
+        0
+      ],
+      [
+        "2026-05-01",
+        0
+      ],
+      [
+        "2026-05-02",
+        0
+      ],
+      [
+        "2026-05-03",
+        0
+      ],
+      [
+        "2026-05-04",
+        0
+      ],
+      [
+        "2026-05-05",
+        0
+      ],
+      [
+        "2026-05-06",
+        0
+      ],
+      [
+        "2026-05-07",
+        0
+      ],
+      [
+        "2026-05-08",
+        0
+      ],
+      [
+        "2026-05-09",
+        0
+      ],
+      [
+        "2026-05-10",
+        1
+      ],
+      [
+        "2026-05-11",
+        0
+      ],
+      [
+        "2026-05-12",
+        2
+      ],
+      [
+        "2026-05-13",
+        0
+      ],
+      [
+        "2026-05-14",
+        0
+      ],
+      [
+        "2026-05-15",
+        0
+      ],
+      [
+        "2026-05-16",
+        0
+      ],
+      [
+        "2026-05-17",
+        0
+      ],
+      [
+        "2026-05-18",
+        1
+      ],
+      [
+        "2026-05-19",
+        0
+      ],
+      [
+        "2026-05-20",
+        0
+      ],
+      [
+        "2026-05-21",
+        0
+      ],
+      [
+        "2026-05-22",
+        0
+      ],
+      [
+        "2026-05-23",
+        0
+      ],
+      [
+        "2026-05-24",
+        0
+      ],
+      [
+        "2026-05-25",
+        5
+      ],
+      [
+        "2026-05-26",
+        2
+      ],
+      [
+        "2026-05-27",
+        0
+      ],
+      [
+        "2026-05-28",
+        0
+      ],
+      [
+        "2026-05-29",
+        1
+      ],
+      [
+        "2026-05-30",
+        0
+      ],
+      [
+        "2026-05-31",
+        1
+      ],
+      [
+        "2026-06-01",
+        0
+      ],
+      [
+        "2026-06-02",
+        0
+      ],
+      [
+        "2026-06-03",
+        0
+      ],
+      [
+        "2026-06-04",
+        1
+      ],
+      [
+        "2026-06-05",
+        0
+      ],
+      [
+        "2026-06-06",
+        0
+      ],
+      [
+        "2026-06-07",
+        0
+      ],
+      [
+        "2026-06-08",
+        0
+      ],
+      [
+        "2026-06-09",
+        0
+      ],
+      [
+        "2026-06-10",
+        0
+      ],
+      [
+        "2026-06-11",
+        0
+      ],
+      [
+        "2026-06-12",
+        0
+      ],
+      [
+        "2026-06-13",
+        0
+      ],
+      [
+        "2026-06-14",
+        0
+      ],
+      [
+        "2026-06-15",
+        0
+      ],
+      [
+        "2026-06-16",
+        1
+      ],
+      [
+        "2026-06-17",
+        0
+      ],
+      [
+        "2026-06-18",
+        0
+      ],
+      [
+        "2026-06-19",
+        19
+      ],
+      [
+        "2026-06-20",
+        20
+      ],
+      [
+        "2026-06-21",
+        24
+      ],
+      [
+        "2026-06-22",
+        0
+      ],
+      [
+        "2026-06-23",
+        0
+      ],
+      [
+        "2026-06-24",
+        0
+      ],
+      [
+        "2026-06-25",
+        0
+      ],
+      [
+        "2026-06-26",
+        0
+      ],
+      [
+        "2026-06-27",
+        0
+      ],
+      [
+        "2026-06-28",
+        8
+      ],
+      [
+        "2026-06-29",
+        0
+      ],
+      [
+        "2026-06-30",
+        0
+      ],
+      [
+        "2026-07-01",
+        4
+      ],
+      [
+        "2026-07-02",
+        3
+      ],
+      [
+        "2026-07-03",
+        0
+      ],
+      [
+        "2026-07-04",
+        0
+      ],
+      [
+        "2026-07-05",
+        0
+      ],
+      [
+        "2026-07-06",
+        0
+      ],
+      [
+        "2026-07-07",
+        0
+      ],
+      [
+        "2026-07-08",
+        0
+      ],
+      [
+        "2026-07-09",
+        0
+      ],
+      [
+        "2026-07-10",
+        0
+      ],
+      [
+        "2026-07-11",
+        1
+      ],
+      [
+        "2026-07-12",
+        2
+      ],
+      [
+        "2026-07-13",
+        0
+      ],
+      [
+        "2026-07-14",
+        4
+      ],
+      [
+        "2026-07-15",
+        0
+      ],
+      [
+        "2026-07-16",
+        0
+      ],
+      [
+        "2026-07-17",
+        1
+      ],
+      [
+        "2026-07-18",
+        0
+      ],
+      [
+        "2026-07-19",
+        0
+      ],
+      [
+        "2026-07-20",
+        0
+      ],
+      [
+        "2026-07-21",
+        0
+      ],
+      [
+        "2026-07-22",
+        0
+      ],
+      [
+        "2026-07-23",
+        0
+      ],
+      [
+        "2026-07-24",
+        0
+      ],
+      [
+        "2026-07-25",
+        0
+      ],
+      [
+        "2026-07-26",
+        0
+      ],
+      [
+        "2026-07-27",
+        0
+      ],
+      [
+        "2026-07-28",
+        0
+      ],
+      [
+        "2026-07-29",
+        0
+      ],
+      [
+        "2026-07-30",
+        0
+      ],
+      [
+        "2026-07-31",
+        0
+      ],
+      [
+        "2026-08-01",
+        0
+      ],
+      [
+        "2026-08-02",
+        0
+      ],
+      [
+        "2026-08-03",
+        0
+      ],
+      [
+        "2026-08-04",
+        0
+      ],
+      [
+        "2026-08-05",
+        1
+      ],
+      [
+        "2026-08-06",
+        1
+      ],
+      [
+        "2026-08-07",
+        1
+      ],
+      [
+        "2026-08-08",
+        0
+      ],
+      [
+        "2026-08-09",
+        0
+      ],
+      [
+        "2026-08-10",
+        0
+      ],
+      [
+        "2026-08-11",
+        0
+      ],
+      [
+        "2026-08-12",
+        0
+      ],
+      [
+        "2026-08-13",
+        0
+      ],
+      [
+        "2026-08-14",
+        0
+      ],
+      [
+        "2026-08-15",
+        0
+      ],
+      [
+        "2026-08-16",
+        0
+      ],
+      [
+        "2026-08-17",
+        0
+      ],
+      [
+        "2026-08-18",
+        1
+      ],
+      [
+        "2026-08-19",
+        1
+      ],
+      [
+        "2026-08-20",
+        0
+      ],
+      [
+        "2026-08-21",
+        0
+      ],
+      [
+        "2026-08-22",
+        0
+      ],
+      [
+        "2026-08-23",
+        0
+      ],
+      [
+        "2026-08-24",
+        0
+      ],
+      [
+        "2026-08-25",
+        1
+      ],
+      [
+        "2026-08-26",
+        0
+      ],
+      [
+        "2026-08-27",
+        0
+      ],
+      [
+        "2026-08-28",
+        0
+      ],
+      [
+        "2026-08-29",
+        0
+      ],
+      [
+        "2026-08-30",
+        0
+      ],
+      [
+        "2026-08-31",
+        0
+      ],
+      [
+        "2026-09-01",
+        0
+      ],
+      [
+        "2026-09-02",
+        0
+      ],
+      [
+        "2026-09-03",
+        0
+      ],
+      [
+        "2026-09-04",
+        0
+      ],
+      [
+        "2026-09-05",
+        0
+      ],
+      [
+        "2026-09-06",
+        2
+      ],
+      [
+        "2026-09-07",
+        0
+      ],
+      [
+        "2026-09-08",
+        0
+      ],
+      [
+        "2026-09-09",
+        0
+      ],
+      [
+        "2026-09-10",
+        0
+      ],
+      [
+        "2026-09-11",
+        0
+      ],
+      [
+        "2026-09-12",
+        0
+      ],
+      [
+        "2026-09-13",
+        0
+      ],
+      [
+        "2026-09-14",
+        0
+      ],
+      [
+        "2026-09-15",
+        0
+      ],
+      [
+        "2026-09-16",
+        0
+      ],
+      [
+        "2026-09-17",
+        0
+      ],
+      [
+        "2026-09-18",
+        7
+      ],
+      [
+        "2026-09-19",
+        0
+      ],
+      [
+        "2026-09-20",
+        0
+      ],
+      [
+        "2026-09-21",
+        0
+      ],
+      [
+        "2026-09-22",
+        0
+      ],
+      [
+        "2026-09-23",
+        0
+      ],
+      [
+        "2026-09-24",
+        0
+      ],
+      [
+        "2026-09-25",
+        0
+      ],
+      [
+        "2026-09-26",
+        0
+      ],
+      [
+        "2026-09-27",
+        0
+      ],
+      [
+        "2026-09-28",
+        0
+      ],
+      [
+        "2026-09-29",
+        0
+      ],
+      [
+        "2026-09-30",
+        0
+      ],
+      [
+        "2026-10-01",
+        0
+      ],
+      [
+        "2026-10-02",
+        0
+      ],
+      [
+        "2026-10-03",
+        0
+      ],
+      [
+        "2026-10-04",
+        0
+      ],
+      [
+        "2026-10-05",
+        0
+      ],
+      [
+        "2026-10-06",
+        0
+      ],
+      [
+        "2026-10-07",
+        0
+      ],
+      [
+        "2026-10-08",
+        0
+      ],
+      [
+        "2026-10-09",
+        0
+      ],
+      [
+        "2026-10-10",
+        0
+      ],
+      [
+        "2026-10-11",
+        0
+      ],
+      [
+        "2026-10-12",
+        0
+      ],
+      [
+        "2026-10-13",
+        0
+      ],
+      [
+        "2026-10-14",
+        5
+      ],
+      [
+        "2026-10-15",
+        0
+      ],
+      [
+        "2026-10-16",
+        0
+      ],
+      [
+        "2026-10-17",
+        3
+      ],
+      [
+        "2026-10-18",
+        0
+      ],
+      [
+        "2026-10-19",
+        0
+      ],
+      [
+        "2026-10-20",
+        0
+      ],
+      [
+        "2026-10-21",
+        9
+      ],
+      [
+        "2026-10-22",
+        11
+      ],
+      [
+        "2026-10-23",
+        0
+      ],
+      [
+        "2026-10-24",
+        0
+      ],
+      [
+        "2026-10-25",
+        0
+      ],
+      [
+        "2026-10-26",
+        0
+      ],
+      [
+        "2026-10-27",
+        0
+      ],
+      [
+        "2026-10-28",
+        2
+      ],
+      [
+        "2026-10-29",
+        5
+      ],
+      [
+        "2026-10-30",
+        23
+      ],
+      [
+        "2026-10-31",
+        19
+      ],
+      [
+        "2026-11-01",
+        6
+      ],
+      [
+        "2026-11-02",
+        0
+      ],
+      [
+        "2026-11-03",
+        15
+      ],
+      [
+        "2026-11-04",
+        1
+      ],
+      [
+        "2026-11-05",
+        0
+      ],
+      [
+        "2026-11-06",
+        0
+      ],
+      [
+        "2026-11-07",
+        0
+      ],
+      [
+        "2026-11-08",
+        0
+      ],
+      [
+        "2026-11-09",
+        0
+      ],
+      [
+        "2026-11-10",
+        0
+      ],
+      [
+        "2026-11-11",
+        0
+      ],
+      [
+        "2026-11-12",
+        3
+      ],
+      [
+        "2026-11-13",
+        10
+      ]
+    ],
+    "monthly": {
+      "2025-11": 0,
+      "2025-12": 0,
+      "2026-01": 13,
+      "2026-02": 16,
+      "2026-03": 20,
+      "2026-04": 24,
+      "2026-05": 13,
+      "2026-06": 73,
+      "2026-07": 15,
+      "2026-08": 6,
+      "2026-09": 9,
+      "2026-10": 77,
+      "2026-11": 35
+    }
+  },
+  "clusters": [
+    {
+      "id": "winsec",
+      "title": "Windows 内部与安全工具",
+      "titleEn": "Windows Internals & Security Tooling",
+      "blurb": "只读审计、端点对抗、零依赖 PowerShell。",
+      "repos": [
+        {
+          "name": "win-raccoon-lab",
+          "description": "只读的 Windows 缓存审计工具：152 条实测缓存地图 + 9 道安全闸门，已回收 30.53 GB。PowerShell，零依赖。",
+          "language": "PowerShell",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/win-raccoon-lab"
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "title": "Agent 基础设施",
+      "titleEn": "Agent Infrastructure",
+      "blurb": "pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+      "repos": [
+        {
+          "name": "super-agentic-diner",
+          "description": "超级智能体餐厅 Crossroads Agent Cafe - lightweight AI ordering demo: FastAPI + keyword RAG (no vector DB) + multi-agent + React19/R3F 3D frontend + A2A skill",
+          "language": "Python",
+          "stars": 2,
+          "url": "https://github.com/flying-dragon-ai/super-agentic-diner"
+        },
+        {
+          "name": "knowledge-takeback-skill",
+          "description": "npm/npx skill that turns AI-assisted tasks into interactive HTML knowledge pages, structured artifacts and learning records | AI 能力回流给人的学习型 Skill 层",
+          "language": "JavaScript",
+          "stars": 2,
+          "url": "https://github.com/flying-dragon-ai/knowledge-takeback-skill"
+        },
+        {
+          "name": "seedance-agent",
+          "description": "Agent-driven AIGC video production pipeline on Volcano Ark Seedance API (2.5/2.0): storyboard preflight, credential failover, resumable generation, ffmpeg post-production.",
+          "language": "Python",
+          "stars": 2,
+          "url": "https://github.com/flying-dragon-ai/seedance-agent"
+        },
+        {
+          "name": "pi-smart-search",
+          "description": "Pi extension wrapping the local smart-search CLI. Sourced web search, fetch, Chinese search, and library docs. 把本机 smart-search 包成 pi 工具，检索带出处。",
+          "language": "TypeScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/pi-smart-search"
+        },
+        {
+          "name": "smartsearch",
+          "description": "Fork of smart-search with explicit Xiaohongshu and WeChat Official Account search. Search only.",
+          "language": "Python",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/smartsearch"
+        },
+        {
+          "name": "pi-subagent-factory",
+          "description": "Auto-scan any codebase and generate a tailored pi subagent team with ready-to-use subagent_spawn args. 自动扫描项目技术栈，自动创建专属 subagent 团队 | pi.dev package",
+          "language": "TypeScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/pi-subagent-factory"
+        },
+        {
+          "name": "AlphaMesh-wallet",
+          "description": "Monad Agentic Wallet - agent-native payment control plane: AI agents execute on-chain/off-chain payments under user policy constraints, no root key exposure. x402 + MCP",
+          "language": "TypeScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/AlphaMesh-wallet"
+        },
+        {
+          "name": "agents-for-ppt",
+          "description": "PPT Master - AI-driven multi-agent SVG content generation for presentations, social media and posters (multi-agent collaboration, upstream: hugohe3/ppt-master)",
+          "language": "Python",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/agents-for-ppt"
+        }
+      ]
+    },
+    {
+      "id": "web3d",
+      "title": "3D 与交互式 Web",
+      "titleEn": "3D & Interactive Web",
+      "blurb": "Three.js / WebGL / 单文件离线包，浏览器里跑得动的真 3D。",
+      "repos": [
+        {
+          "name": "tihuqiche",
+          "description": "鹈鹕骑车：可离线游玩的单文件 3D 骑车闯关游戏",
+          "language": "JavaScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/tihuqiche"
+        },
+        {
+          "name": "pet-world",
+          "description": "",
+          "language": "HTML",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/pet-world"
+        },
+        {
+          "name": "mom_remember",
+          "description": "重生之我成为了我的妈妈 - Mother's Day immersive interactive H5: flip open a book, live one life from mom's perspective, get a personalized share card. React19 + Vite7 + Framer Motion",
+          "language": "TypeScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/mom_remember"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "title": "小程序与产品 MVP",
+      "titleEn": "Mini Programs & Product MVPs",
+      "blurb": "微信小程序 + Koa API，从原型到可交付。",
+      "repos": [
+        {
+          "name": "Pocket_Travel_Companion",
+          "description": "情绪疗愈型周末微旅行规划助手 · 微信小程序 + Koa API · uni-app + Vue 3 + TypeScript + PostgreSQL",
+          "language": "JavaScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/Pocket_Travel_Companion"
+        },
+        {
+          "name": "Shibi_Gallery",
+          "description": "师比画廊 Shibi Gallery - WeChat Mini Program MVP for young artists: artwork trading, copyright licensing, curation, certificates. Vue3 + uni-app + Koa + PostgreSQL monorepo",
+          "language": "TypeScript",
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/Shibi_Gallery"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "title": "社区与元信息",
+      "titleEn": "Community & Meta",
+      "blurb": "交流入口与占位仓库。",
+      "repos": [
+        {
+          "name": "openhongguo-community",
+          "description": "openhongguo 交流群 · 入群二维码",
+          "language": null,
+          "stars": 0,
+          "url": "https://github.com/flying-dragon-ai/openhongguo-community"
+        }
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "name": "tihuqiche",
+      "description": "鹈鹕骑车：可离线游玩的单文件 3D 骑车闯关游戏",
+      "language": "JavaScript",
+      "stars": 0,
+      "url": "https://github.com/flying-dragon-ai/tihuqiche"
+    },
+    {
+      "name": "win-raccoon-lab",
+      "description": "只读的 Windows 缓存审计工具：152 条实测缓存地图 + 9 道安全闸门，已回收 30.53 GB。PowerShell，零依赖。",
+      "language": "PowerShell",
+      "stars": 0,
+      "url": "https://github.com/flying-dragon-ai/win-raccoon-lab"
+    },
+    {
+      "name": "pi-subagent-factory",
+      "description": "Auto-scan any codebase and generate a tailored pi subagent team with ready-to-use subagent_spawn args. 自动扫描项目技术栈，自动创建专属 subagent 团队 | pi.dev package",
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/flying-dragon-ai/pi-subagent-factory"
+    },
+    {
+      "name": "knowledge-takeback-skill",
+      "description": "npm/npx skill that turns AI-assisted tasks into interactive HTML knowledge pages, structured artifacts and learning records | AI 能力回流给人的学习型 Skill 层",
+      "language": "JavaScript",
+      "stars": 2,
+      "url": "https://github.com/flying-dragon-ai/knowledge-takeback-skill"
+    },
+    {
+      "name": "super-agentic-diner",
+      "description": "超级智能体餐厅 Crossroads Agent Cafe - lightweight AI ordering demo: FastAPI + keyword RAG (no vector DB) + multi-agent + React19/R3F 3D frontend + A2A skill",
+      "language": "Python",
+      "stars": 2,
+      "url": "https://github.com/flying-dragon-ai/super-agentic-diner"
+    },
+    {
+      "name": "seedance-agent",
+      "description": "Agent-driven AIGC video production pipeline on Volcano Ark Seedance API (2.5/2.0): storyboard preflight, credential failover, resumable generation, ffmpeg post-production.",
+      "language": "Python",
+      "stars": 2,
+      "url": "https://github.com/flying-dragon-ai/seedance-agent"
+    }
+  ]
+}

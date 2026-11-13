@@ -1,0 +1,16 @@
+{
+  "name": "flying-dragon-ai-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "First-principles GitHub profile homepage: gh CLI -> data -> render -> publish",
+  "type": "module",
+  "engines": { "node": ">=22.12" },
+  "scripts": {
+    "fetch": "node scripts/fetch.mjs",
+    "render": "node scripts/render.mjs",
+    "build": "node scripts/fetch.mjs && node scripts/render.mjs && node scripts/site.mjs",
+    "verify": "node scripts/verify.mjs",
+    "publish": "node scripts/publish.mjs",
+    "preview": "node scripts/render.mjs --all --out out"
+  }
+}

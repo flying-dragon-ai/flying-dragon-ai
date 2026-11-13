@@ -1,0 +1,11 @@
+{
+  "$comment": "Hand-written copy. Facts live in profile.json (fetched); voice lives here. The renderer merges them.",
+  "tagline": "agent infrastructure · 3D web · windows internals",
+  "taglineZh": "agent 基础设施 · 3D 网页 · Windows 内部",
+  "intro": [
+    "我在做 agent 基础设施：把模型能力包成能装、能跑、能交付的东西 —— pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+    "另外两条线：浏览器里的真 3D（Three.js / WebGL / 单文件离线包），和 Windows 上的只读审计与端点对抗工具。"
+  ],
+  "now": "当前主线：pi 生态的扩展与 subagent 编排。",
+  "footer": "如果某个仓库省了你一小时，点个 star。"
+}

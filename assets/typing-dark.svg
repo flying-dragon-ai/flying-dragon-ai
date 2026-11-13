@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="56" viewBox="0 0 720 56" role="img">
+  <rect x="0.5" y="0.5" width="719" height="55" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <clipPath id="type0"><rect x="24" y="16" width="0" height="28">
+    <animate attributeName="width" values="0;0;596;596;0;0" keyTimes="0;0;0.15;0.2833;0.3167;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <g clip-path="url(#type0)">
+    <text x="24" y="36" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" fill="#3fb3a4">agent infrastructure · 3D web · windows internals</text>
+  </g>
+  <rect x="24" y="18" width="2" height="20" fill="#2f8f83">
+    <animate attributeName="x" values="24;24;620;620;24;24" keyTimes="0;0;0.15;0.2833;0.3167;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="type1"><rect x="24" y="16" width="0" height="28">
+    <animate attributeName="width" values="0;0;524;524;0;0" keyTimes="0;0.3333;0.4833;0.6167;0.65;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <g clip-path="url(#type1)">
+    <text x="24" y="36" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" fill="#3fb3a4">15 repos · Python + JavaScript + TypeScript</text>
+  </g>
+  <rect x="24" y="18" width="2" height="20" fill="#2f8f83">
+    <animate attributeName="x" values="24;24;548;548;24;24" keyTimes="0;0.3333;0.4833;0.6167;0.65;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="type2"><rect x="24" y="16" width="0" height="28">
+    <animate attributeName="width" values="0;0;416;416;0;0" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <g clip-path="url(#type2)">
+    <text x="24" y="36" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" fill="#3fb3a4">301 contributions · 70 active days</text>
+  </g>
+  <rect x="24" y="18" width="2" height="20" fill="#2f8f83">
+    <animate attributeName="x" values="24;24;440;440;24;24" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

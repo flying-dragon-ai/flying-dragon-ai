@@ -1,0 +1,104 @@
+{
+  "$comment": "Declarative cluster rules. First match wins, evaluated against name + description + topics (lowercased). Edit here, never in the renderer.",
+  "clusters": [
+    {
+      "id": "winsec",
+      "title": "Windows 内部与安全工具",
+      "titleEn": "Windows Internals & Security Tooling",
+      "blurb": "只读审计、端点对抗、零依赖 PowerShell。",
+      "keywords": [
+        "windows",
+        "powershell",
+        "cache",
+        "msep",
+        "endpoint",
+        "audit",
+        "blind",
+        "raccoon"
+      ]
+    },
+    {
+      "id": "agent",
+      "title": "Agent 基础设施",
+      "titleEn": "Agent Infrastructure",
+      "blurb": "pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+      "keywords": [
+        "agent",
+        "pi-",
+        "skill",
+        "subagent",
+        "mcp",
+        "rag",
+        "llm",
+        "prompt",
+        "seedance",
+        "aigc",
+        "diner",
+        "ppt",
+        "wallet"
+      ]
+    },
+    {
+      "id": "web3d",
+      "title": "3D 与交互式 Web",
+      "titleEn": "3D & Interactive Web",
+      "blurb": "Three.js / WebGL / 单文件离线包，浏览器里跑得动的真 3D。",
+      "keywords": [
+        "three.js",
+        "threejs",
+        "webgl",
+        "game",
+        "游戏",
+        "h5",
+        "photo-to-3d",
+        "island",
+        "pet-world",
+        "mom_remember",
+        "image-space",
+        "offline"
+      ]
+    },
+    {
+      "id": "product",
+      "title": "小程序与产品 MVP",
+      "titleEn": "Mini Programs & Product MVPs",
+      "blurb": "微信小程序 + Koa API，从原型到可交付。",
+      "keywords": [
+        "小程序",
+        "mini program",
+        "wechat",
+        "koa",
+        "gallery",
+        "travel",
+        "uni-app"
+      ]
+    },
+    {
+      "id": "community",
+      "title": "社区与元信息",
+      "titleEn": "Community & Meta",
+      "blurb": "交流入口与占位仓库。",
+      "keywords": [
+        "community",
+        "群",
+        "placeholder",
+        "占位"
+      ]
+    }
+  ],
+  "overrides": {
+    "smartsearch": "agent"
+  },
+  "exclude": [
+    "AlphaPsychic",
+    "-"
+  ],
+  "featured": [
+    "tihuqiche",
+    "win-raccoon-lab",
+    "pi-subagent-factory",
+    "knowledge-takeback-skill",
+    "super-agentic-diner",
+    "seedance-agent"
+  ]
+}

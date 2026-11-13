@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flying~dragon · agent infrastructure · 3D web · windows internals</title>
+<meta name="description" content="flying~dragon 的 GitHub 主页：agent 基础设施、3D 网页、Windows 内部工具。数据由 gh CLI 拉取后静态渲染。">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="flying~dragon">
+<meta property="og:description" content="agent infrastructure · 3D web · windows internals">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232f8f83'/><text x='16' y='23' font-size='18' text-anchor='middle' fill='%230d1117' font-family='monospace'>f</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<main>
+  <header class="hero">
+    <img id="avatar" class="avatar" alt="" width="112" height="112">
+    <h1 id="name"></h1>
+    <p id="tagline" class="tagline"></p>
+    <p id="meta" class="meta"></p>
+    <nav class="links">
+      <a id="gh" target="_blank" rel="noopener">GitHub</a>
+      <a href="#work">仓库</a>
+      <a href="#activity">活跃度</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <div id="intro"></div>
+    <blockquote id="now"></blockquote>
+  </section>
+
+  <section class="stats" id="stats"></section>
+
+  <section id="activity" class="panel">
+    <h2>近 12 个月</h2>
+    <div id="heatmap" class="heatmap"></div>
+    <div id="months" class="months"></div>
+  </section>
+
+  <section class="panel">
+    <h2>语言分布 · 按字节</h2>
+    <div id="langbar" class="langbar"></div>
+    <ul id="langlist" class="langlist"></ul>
+  </section>
+
+  <section id="work" class="panel">
+    <h2>仓库地图</h2>
+    <div id="clusters" class="clusters"></div>
+  </section>
+
+  <footer>
+    <p id="footer"></p>
+    <p class="stamp" id="stamp"></p>
+  </footer>
+</main>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>
