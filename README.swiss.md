@@ -17,7 +17,7 @@
 | **01** | **IDENTITY** | flying~dragon / flying-dragon-ai / since 2019 |
 | **02** | **DISCIPLINE** | agent infrastructure · 3D web · windows internals |
 | **03** | **OUTPUT** | 15 repositories · 52 forks · 6 stars |
-| **04** | **CADENCE** | 311 contributions · 70 active days · peak 24 |
+| **04** | **CADENCE** | 313 contributions · 70 active days · peak 24 |
 | **05** | **STACK** | Python 35.8% · JavaScript 19.6% · TypeScript 18.2% · HTML 14.3% |
 
 ---
@@ -83,7 +83,7 @@ Windows 内部工具：只读审计、端点对抗、零依赖 PowerShell。
 
 数据由 gh CLI 拉取后静态渲染，不接受手工维护。
 
-**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 311 contributions / 12mo
+**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 313 contributions / 12mo
 
 <sub>README 由 `gh` 拉取真实数据后渲染 · 最后更新 2026-11-13</sub>
 

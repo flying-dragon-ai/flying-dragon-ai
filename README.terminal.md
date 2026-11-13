@@ -30,8 +30,8 @@ $ gh repo list flying-dragon-ai --limit 300 --json name | jq length
 67
 
 $ gh api graphql -f query=@contrib.graphql
-contributions(12mo)  311
-commits              146
+contributions(12mo)  313
+commits              148
 pull requests        16
 issues               12
 active days          70 / 370
@@ -64,7 +64,7 @@ winsec/  agent/  web3d/  product/  community/
 
 数据由 gh CLI 拉取后静态渲染，不接受手工维护。
 
-**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 311 contributions / 12mo
+**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 313 contributions / 12mo
 
 <sub>README 由 `gh` 拉取真实数据后渲染 · 最后更新 2026-11-13</sub>
 
