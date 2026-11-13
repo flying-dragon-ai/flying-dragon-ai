@@ -95,8 +95,8 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
   const glassTop = dark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.86)';
   const glassBottom = dark ? 'rgba(28,28,30,0.62)' : 'rgba(242,242,247,0.58)';
   const rim = dark ? 'rgba(255,255,255,0.22)' : 'rgba(255,255,255,0.95)';
-  const blobA = dark ? 'rgba(10,132,255,0.60)' : 'rgba(0,122,255,0.38)';
-  const blobB = dark ? 'rgba(191,90,242,0.50)' : 'rgba(175,82,222,0.30)';
+  const blobA = dark ? 'rgba(10,132,255,0.68)' : 'rgba(0,122,255,0.50)';
+  const blobB = dark ? 'rgba(191,90,242,0.58)' : 'rgba(175,82,222,0.42)';
 
   const bx1 = (w * 0.18).toFixed(1);
   const by1 = (h * 0.12).toFixed(1);
@@ -113,7 +113,7 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
     <filter id="refract" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
     <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${glassTop}"/>
-      <stop offset="0.55" stop-color="${glassTop}" stop-opacity="0.30"/>
+      <stop offset="0.55" stop-color="${glassTop}" stop-opacity="0.18"/>
       <stop offset="1" stop-color="${glassBottom}"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
