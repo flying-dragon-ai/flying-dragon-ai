@@ -1,21 +1,60 @@
 // Self-rendered SVG cards. No third-party renderer, no rate limit, no 402.
 // Every number here comes from data/profile.json, which came from `gh`.
 
-// Accent palettes. One data source, several visual identities.
+// Accent palettes.
+// `openbuild` values are measured from https://openbuild.xyz/ on 2026-11-13:
+//   page bg #F8F8F8 · card #FFFFFF · ink #1A1A1A · near-black #0A0A0A
+//   mint #01DB83 · lavender #CB9BFA · butter #F8FD91 · card radius 16px
+// Mint is a FILL in light mode (black text sits on it), a TEXT colour in dark mode.
 export const PALETTES = {
-  teal: { accent: '#2f8f83', accentSoft: '#3fb3a4', ramp: ['#1d5c55', '#2f8f83', '#4fb8a8', '#8fe0d2'] },
-  sakura: { accent: '#c2557f', accentSoft: '#e07aa2', ramp: ['#6b2a44', '#a8446a', '#d4708f', '#f2b8cc'] },
-  amber: { accent: '#b5761f', accentSoft: '#d99a3c', ramp: ['#5c3a0e', '#8f5c17', '#c08a2e', '#e8c37a'] },
+  openbuild: {
+    dark: {
+      accent: '#01DB83',
+      accentSoft: '#4DFFB0',
+      onAccent: '#0A0A0A',
+      cardBg: '#1A1A1A',
+      cardText: '#01DB83',
+      ramp: ['#0B5C3A', '#0E8F58', '#01DB83', '#7CF0BE'],
+      categorical: ['#01DB83', '#CB9BFA', '#F8FD91', '#F5F5F5', '#7CE8B8', '#E0C4FC', '#FBFEC4', '#8A8A8A', '#4A4A4A'],
+    },
+    light: {
+      accent: '#1A1A1A',
+      accentSoft: '#1A1A1A',
+      onAccent: '#FFFFFF',
+      cardBg: '#01DB83',
+      cardText: '#1A1A1A',
+      ramp: ['#A8F0CE', '#4FE0A4', '#01DB83', '#00854D'],
+      categorical: ['#01DB83', '#CB9BFA', '#F8FD91', '#1A1A1A', '#7CE8B8', '#E0C4FC', '#FBFEC4', '#8A8A8A', '#4A4A4A'],
+    },
+  },
+  lavender: {
+    dark: {
+      accent: '#CB9BFA',
+      accentSoft: '#E0C4FC',
+      onAccent: '#0A0A0A',
+      cardBg: '#1A1A1A',
+      cardText: '#CB9BFA',
+      ramp: ['#3D2456', '#6B3F94', '#CB9BFA', '#E0C4FC'],
+      categorical: ['#CB9BFA', '#01DB83', '#F8FD91', '#F5F5F5', '#E0C4FC', '#7CE8B8', '#FBFEC4', '#8A8A8A', '#4A4A4A'],
+    },
+    light: {
+      accent: '#1A1A1A',
+      accentSoft: '#1A1A1A',
+      onAccent: '#FFFFFF',
+      cardBg: '#CB9BFA',
+      cardText: '#1A1A1A',
+      ramp: ['#D9B8FB', '#C48AF7', '#CB9BFA', '#7B3FB0'],
+      categorical: ['#CB9BFA', '#01DB83', '#F8FD91', '#1A1A1A', '#E0C4FC', '#7CE8B8', '#FBFEC4', '#8A8A8A', '#4A4A4A'],
+    },
+  },
 };
 
 export const THEME = {
-  accent: PALETTES.teal.accent,
-  accentSoft: PALETTES.teal.accentSoft,
-  dark: { bg: '#0d1117', panel: '#161b22', border: '#30363d', text: '#e6edf3', muted: '#8b949e', empty: '#21262d' },
-  light: { bg: '#ffffff', panel: '#f6f8fa', border: '#d0d7de', text: '#1f2328', muted: '#656d76', empty: '#ebedf0' },
+  dark: { bg: '#0A0A0A', panel: '#1A1A1A', border: '#2A2A2A', text: '#F5F5F5', muted: '#8A8A8A', empty: '#1F1F1F' },
+  light: { bg: '#FFFFFF', panel: '#F8F8F8', border: '#E5E5E5', text: '#1A1A1A', muted: '#6B6B6B', empty: '#EDEDED' },
 };
 
-const pal = (theme) => PALETTES[theme] ?? PALETTES.teal;
+const pal = (theme, scheme) => (PALETTES[theme] ?? PALETTES.openbuild)[scheme] ?? PALETTES.openbuild.dark;
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -28,9 +67,9 @@ ${body}
 }
 
 // ---------- language bar ----------
-export function langBar(languages, scheme = 'dark', theme = 'teal') {
+export function langBar(languages, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   const top = languages.slice(0, 8);
   const rest = languages.slice(8);
   const restPct = rest.reduce((a, l) => a + l.pct, 0);
@@ -40,10 +79,7 @@ export function langBar(languages, scheme = 'dark', theme = 'teal') {
   const barY = 46;
   const barH = 14;
   const barW = W - 48;
-  const palette =
-    scheme === 'dark'
-      ? [P.accent, P.accentSoft, ...P.ramp.slice(2), '#a3e2d8', '#c4ece5', '#dff5f1', '#8b949e', '#484f58']
-      : [P.ramp[0], P.accent, P.accentSoft, ...P.ramp.slice(2), '#93ded4', '#b3eae3', '#6e7681', '#484f58'];
+  const palette = P.categorical;
 
   let x = 24;
   const segs = rows.map((l, i) => {
@@ -73,9 +109,9 @@ export function langBar(languages, scheme = 'dark', theme = 'teal') {
 }
 
 // ---------- contribution heatmap ----------
-export function heatmap(calendar, scheme = 'dark', theme = 'teal') {
+export function heatmap(calendar, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   const weeks = [];
   for (let i = 0; i < calendar.length; i += 7) weeks.push(calendar.slice(i, i + 7));
   const cell = 11;
@@ -112,9 +148,9 @@ export function heatmap(calendar, scheme = 'dark', theme = 'teal') {
 }
 
 // ---------- stat card ----------
-export function statCard(stats, contributions, scheme = 'dark', theme = 'teal') {
+export function statCard(stats, contributions, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   const items = [
     ['REPOS', stats.ownRepos],
     ['STARS', stats.totalStars],
@@ -122,21 +158,29 @@ export function statCard(stats, contributions, scheme = 'dark', theme = 'teal') 
     ['PRS', contributions.pullRequests],
     ['ACTIVE DAYS', contributions.activeDays],
   ];
+  const cardBg = P.cardBg ?? t.panel;
+  const cardText = P.cardText ?? P.accentSoft;
   const W = 720;
   const H = 108;
   const colW = (W - 48) / items.length;
-  const body = items.map(([label, value], i) => {
-    const cx = 24 + i * colW + colW / 2;
-    return `<text x="${cx}" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" font-weight="700" fill="${P.accentSoft}">${value}</text>
-  <text x="${cx}" y="76" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="${t.muted}" letter-spacing="1.4">${label}</text>`;
-  }).join('\n  ');
-  return frame(t, W, H, `  ${body}`);
+  const body = items
+    .map(([label, value], i) => {
+      const cx = 24 + i * colW + colW / 2;
+      return `<text x="${cx}" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" font-weight="700" fill="${cardText}">${value}</text>
+  <text x="${cx}" y="76" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="${cardText}" opacity="0.72" letter-spacing="1.4">${label}</text>`;
+    })
+    .join('\n  ');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img">
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="16" fill="${cardBg}" stroke="${cardBg}"/>
+  ${body}
+</svg>
+`;
 }
 
 // ---------- streak card (replaces the flaky heroku streak service) ----------
-export function streakCard(calendar, scheme = 'dark', theme = 'teal') {
+export function streakCard(calendar, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   let longest = 0;
   let run = 0;
   for (const [, c] of calendar) {
@@ -168,9 +212,9 @@ export function streakCard(calendar, scheme = 'dark', theme = 'teal') {
 }
 
 // ---------- animated typing banner (self-hosted; SMIL runs inside <img>) ----------
-export function typingCard(lines, scheme = 'dark', theme = 'teal') {
+export function typingCard(lines, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   const W = 720;
   const H = 56;
   const fs = 20;
@@ -214,9 +258,9 @@ function tier(value, thresholds) {
   return out;
 }
 
-export function trophyCard(stats, contributions, scheme = 'dark', theme = 'teal') {
+export function trophyCard(stats, contributions, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
-  const P = pal(theme);
+  const P = pal(theme, scheme);
   const items = [
     ['COMMITS', contributions.commits, { A: 50, AA: 100, AAA: 250, S: 500, SS: 1000, SSS: 2500 }],
     ['STARS', stats.totalStars, { A: 5, AA: 10, AAA: 25, S: 50, SS: 100, SSS: 250 }],

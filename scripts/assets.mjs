@@ -16,7 +16,7 @@ export function writeAssets(profile, voice) {
     `${profile.contributions.total} contributions · ${profile.contributions.activeDays} active days`,
   ];
   const written = [];
-  for (const theme of ['teal', 'sakura']) {
+  for (const theme of ['openbuild', 'lavender']) {
     for (const scheme of ['dark', 'light']) {
       const files = {
         [`lang-bar-${theme}-${scheme}.svg`]: langBar(profile.stats.languages, scheme, theme),

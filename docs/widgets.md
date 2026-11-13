@@ -25,14 +25,14 @@
 
 | 文件 | 生成函数 | 数据来源 |
 | --- | --- | --- |
-| `assets/stats-{dark,light}.svg` | `statCard()` | `stats.ownRepos`、`stats.totalStars`、`contributions.*` |
-| `assets/heatmap-{dark,light}.svg` | `heatmap()` | `contributions.calendar`（370 天） |
-| `assets/lang-bar-{dark,light}.svg` | `langBar()` | `stats.languages`（按字节） |
-| `assets/streak-{dark,light}.svg` | `streakCard()` | `contributions.calendar` |
-| `assets/typing-{dark,light}.svg` | `typingCard()` | `voice.tagline`、`stats.*` |
-| `assets/trophy-{dark,light}.svg` | `trophyCard()` | `stats.*`、`contributions.*`，六项指标分 A→SSS |
+| `assets/stats-{theme}-{dark,light}.svg` | `statCard()` | `stats.ownRepos`、`stats.totalStars`、`contributions.*` |
+| `assets/heatmap-{theme}-{dark,light}.svg` | `heatmap()` | `contributions.calendar`（370 天） |
+| `assets/lang-bar-{theme}-{dark,light}.svg` | `langBar()` | `stats.languages`（按字节） |
+| `assets/streak-{theme}-{dark,light}.svg` | `streakCard()` | `contributions.calendar` |
+| `assets/typing-{theme}-{dark,light}.svg` | `typingCard()` | `voice.tagline`、`stats.*` |
+| `assets/trophy-{theme}-{dark,light}.svg` | `trophyCard()` | `stats.*`、`contributions.*`，六项指标分 A→SSS |
 
-深浅色通过 `<picture>` + `prefers-color-scheme` 切换，GitHub 原生支持。
+深浅色通过 `<picture>` + `prefers-color-scheme` 切换，GitHub 原生支持。`{theme}` 为 `openbuild`（默认）或 `lavender`（`anime` 模式），色值见 `docs/design.md` §9。
 
 ## 可选组件接入方式
 

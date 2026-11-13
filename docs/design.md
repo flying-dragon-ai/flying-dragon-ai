@@ -80,11 +80,12 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 
 `templates/blocks.mjs` 是唯一的原语层：`hero` / `introBlock` / `statsBlock` / `langBlock` / `heatBlock` / `featuredBlock` / `clustersBlock` / `dynamicBlock` / `footerBlock`，外加 CJK 宽度正确的 `box` / `pad`。
 
-九种模式只是这些原语的不同组合，全部读同一份 `profile.json`：
+十种模式只是这些原语的不同组合，全部读同一份 `profile.json`：
 
 | 模式 | 风格 | 对应参考 |
 | --- | --- | --- |
-| `bento` | 网格卡片，信息密度最高（**默认**） | rs readme studio 的 bento 网格 |
+| `report` | 字节跳动汇报体：结论先行 → 概览 → OKR → 重点项目 → 能力分布 → 交付节奏 → 下一步（**默认**） | 内部汇报 / OKR 复盘 |
+| `bento` | 网格卡片，信息密度最高 | rs readme studio 的 bento 网格 |
 | `minimal` | 极简，三段话 + 三张卡 | short-and-sweet / 极简风 |
 | `code` | 全部塞进一个 TypeScript 文件 | code-styled / 代码风格型 |
 | `terminal` | 终端会话，所有数字是命令输出 | 终端绿 |
@@ -94,9 +95,9 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 | `pixel` | 8-bit HUD + 方块进度条 | 复古像素 8-bit |
 | `swiss` | 编号分节、大写标签、严格网格 | 瑞士国际主义 |
 
-配色也是参数：`scripts/svg.mjs` 的 `PALETTES` 提供 `teal`（默认）与 `sakura`（`anime` 模式使用），每种主题各生成深浅两套 SVG。
+配色也是参数：`scripts/svg.mjs` 的 `PALETTES` 提供 `openbuild`（默认）与 `lavender`（`anime` 模式使用），每种主题各生成深浅两套 SVG。
 
-切换：`node scripts/render.mjs --mode game`，或 `--all` 一次生成九份到 `out/`。
+切换：`node scripts/render.mjs --mode game`，或 `--all` 一次生成十份到 `out/`。
 
 ## 8. 参考清单的去留
 
@@ -119,7 +120,52 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 | 奖杯墙 | 自绘 `assets/trophy-*.svg`：六项指标按绝对阈值分 A→SSS 六档 | `github-profile-trophy`（实测 402） |
 | 贪吃蛇贡献图 | `snake.yml` 生成到 `output` 分支，`fetch.mjs` 探测后自动接入 | — |
 
-## 9. 维护
+## 9. 配色：从 openbuild.xyz 实测
+
+2026-11-13 抓取 `https://openbuild.xyz/` 的两份 CSS（`_next/static/css/*.css`，共 612 KB）并用 Playwright 读取渲染后的计算样式，取到的是**实际生效**的色值，不是主题变量里的默认值。
+
+站点锁定 `data-theme="light"`，不跟随 `prefers-color-scheme`，所以主视觉是浅色。
+
+| 角色 | 色值 | 来源 |
+| --- | --- | --- |
+| 页面底色 | `#F8F8F8` | 计算样式 `backgroundColor` |
+| 卡片 | `#FFFFFF` | 同上 |
+| 主文字 / 主按钮 | `#1A1A1A` | 同上，出现 992 次 |
+| 近黑卡片 | `#0A0A0A` | 同上 |
+| **薄荷绿（签名色）** | `#01DB83` | 同上，作为色块背景出现 48 次 |
+| 薰衣草紫 | `#CB9BFA` | 同上 |
+| 奶油黄 | `#F8FD91` | 同上 |
+| 卡片圆角 | `16px` | 同上 |
+
+设计语言：**黑白单色底 + 高饱和色块 + 16px 圆角 + 粗字重 + 大数字**。薄荷绿在浅色下是**填充色**（黑字压在上面），在深色下才是**文字色**——这条规则直接写进了 `PALETTES`：
+
+```js
+openbuild.light = { accent: '#1A1A1A', cardBg: '#01DB83', cardText: '#1A1A1A', ... }
+openbuild.dark  = { accent: '#01DB83', cardBg: '#1A1A1A', cardText: '#01DB83', ... }
+```
+
+`statCard()` 因此渲染成真正的色块，而不是白底彩字。`PALETTES` 里缺 `cardBg` 时会回退到面板色，避免出现黑底黑字的隐形卡片。
+
+语言条改用 `categorical` 色板（薄荷 / 薰衣草 / 奶油 / 墨黑），直接来自参考站的四张色块卡片。
+
+## 10. 汇报体：结论先行
+
+默认模式从 `bento` 换成 `report`，骨架是内部汇报的固定结构：
+
+| 段 | 作用 |
+| --- | --- |
+| 首屏 | 一句话结论：仓库数 + 产品线 + 贡献量 |
+| 结论块 | 色块承载，先说结论再说细节 |
+| 一、概览 | 指标 / 数值 / 口径三列，每个数字带口径 |
+| 二、目标与关键结果 | O + KR + 数据 + 状态，状态由数据算出 |
+| 三、重点项目 | 做了什么 / 结果 / 栈，结果列写量化产出 |
+| 四、能力分布 | 语言字节占比 + 仓库地图 |
+| 五、交付节奏 | 热力图 + 等宽数字块 |
+| 六、下一步 | 三条，全部由当前数据推出 |
+
+**数字不手写。** `voice.json` 里只有带 `{slot}` 的句子，`render.mjs` 用 `slots(profile)` 把 `{ownRepos}`、`{contributions}`、`{agentCount}` 等替换成 `profile.json` 的真实值。写错一个数字的唯一方式是把字面量写进 voice.json，而 `verify.mjs` 的 SVG 一致性检查会拦住渲染层的漂移。
+
+## 11. 维护
 
 - `.github/workflows/refresh.yml` —— 每天 03:17 UTC 重新采集、渲染、提交；`taxonomy.json` / `voice.json` / 模板变更也会触发。
 - `.github/workflows/snake.yml` —— 生成贪吃蛇到 `output` 分支。`fetch.mjs` 会探测该分支是否存在，存在才在 README 里输出贪吃蛇区块，所以首次部署不会出现破图。

@@ -19,7 +19,7 @@ const MODES = readdirSync(join(ROOT, 'templates'))
   .map((f) => f.replace(/\.mjs$/, ''))
   .sort();
 
-const DEFAULT_MODE = 'bento';
+const DEFAULT_MODE = 'report';
 
 async function render(mode) {
   const mod = await import(pathToFileURL(join(ROOT, 'templates', `${mode}.mjs`)).href);

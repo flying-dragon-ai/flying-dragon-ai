@@ -8,7 +8,7 @@ export function trim(s, n = 96) {
   return flat.length > n ? flat.slice(0, n - 1).trimEnd() + '…' : flat;
 }
 
-export function pic(base, alt, width, theme = 'teal') {
+export function pic(base, alt, width, theme = 'openbuild') {
   return `<div align="center"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/${base}-${theme}-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/${base}-${theme}-light.svg">
@@ -41,19 +41,19 @@ ${v.intro.join('\n\n')}
 > ${v.now}`;
 }
 
-export function statsBlock(theme = 'teal') {
+export function statsBlock(theme = 'openbuild') {
   return pic('stats', 'repos / stars / commits / PRs / active days', 720, theme);
 }
 
-export function langBlock(theme = 'teal') {
+export function langBlock(theme = 'openbuild') {
   return pic('lang-bar', 'language mix by bytes', 720, theme);
 }
 
-export function trophyBlock(theme = 'teal') {
+export function trophyBlock(theme = 'openbuild') {
   return pic('trophy', 'trophy wall', 720, theme);
 }
 
-export function heatBlock(theme = 'teal') {
+export function heatBlock(theme = 'openbuild') {
   return pic('heatmap', 'contribution heatmap, last 12 months', 790, theme);
 }
 
@@ -82,7 +82,7 @@ export function clustersBlock(p, { heading = '## 仓库地图' } = {}) {
 ${rows.join('\n')}`;
 }
 
-export function dynamicBlock(p, v, { heading = '## 动态', theme = 'teal' } = {}) {
+export function dynamicBlock(p, v, { heading = '## 动态', theme = 'openbuild' } = {}) {
   const u = p.user.login;
   const parts = [pic('typing', 'typing banner', 720, theme)];
   if (p.assets?.snake) {
@@ -142,4 +142,39 @@ export function box(lines, width) {
   const bot = '└' + '─'.repeat(w) + '┘';
   const body = lines.map((l) => '│ ' + pad(l, w - 2) + ' │').join('\n');
   return [top, body, bot].join('\n');
+}
+
+// ---------- data slots ----------
+// voice.json holds prose with {slots}; every number is resolved here from profile.json.
+export function slots(p) {
+  const c = p.contributions;
+  const top = p.stats.languages[0] ?? { name: '—', pct: 0 };
+  const count = (id) => p.clusters.find((x) => x.id === id)?.repos.length ?? 0;
+  return {
+    ownRepos: p.stats.ownRepos,
+    forks: p.stats.forks,
+    stars: p.stats.totalStars,
+    followers: p.user.followers,
+    contributions: c.total,
+    commits: c.commits,
+    prs: c.pullRequests,
+    issues: c.issues,
+    activeDays: c.activeDays,
+    windowDays: c.windowDays,
+    peakCount: c.peakCount,
+    peakDay: c.peakDay,
+    topLang: top.name,
+    topLangPct: top.pct.toFixed(1),
+    langCount: p.stats.languages.length,
+    agentCount: count('agent'),
+    web3dCount: count('web3d'),
+    winsecCount: count('winsec'),
+    productCount: count('product'),
+    communityCount: count('community'),
+    since: p.user.createdAt.slice(0, 4),
+  };
+}
+
+export function fill(str, ctx) {
+  return String(str).replace(/\{([a-zA-Z0-9]+)\}/g, (m, k) => (k in ctx ? String(ctx[k]) : m));
 }

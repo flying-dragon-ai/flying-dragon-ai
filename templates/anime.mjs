@@ -1,7 +1,7 @@
 import { hero, statsBlock, heatBlock, langBlock, featuredBlock, clustersBlock, footerBlock, trim, box, pad } from './blocks.mjs';
 
 const F = '```';
-const T = 'sakura';
+const T = 'lavender';
 
 export default function render(p, v) {
   const c = p.contributions;

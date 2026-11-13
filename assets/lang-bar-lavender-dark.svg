@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="204" viewBox="0 0 720 204" role="img">
+  <rect x="0.5" y="0.5" width="719" height="203" rx="12" fill="#0A0A0A" stroke="#2A2A2A"/>
+  <text x="24" y="28" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" font-weight="600" fill="#8A8A8A" letter-spacing="1.2">LANGUAGE MIX · BY BYTES</text>
+  <g clip-path="url(#barclip)"><rect x="24.00" y="46" width="238.24" height="14" fill="#CB9BFA"/>
+  <rect x="264.24" y="46" width="129.44" height="14" fill="#01DB83"/>
+  <rect x="395.68" y="46" width="120.57" height="14" fill="#F8FD91"/>
+  <rect x="518.26" y="46" width="94.16" height="14" fill="#F5F5F5"/>
+  <rect x="614.42" y="46" width="19.30" height="14" fill="#E0C4FC"/>
+  <rect x="635.72" y="46" width="17.08" height="14" fill="#7CE8B8"/>
+  <rect x="654.81" y="46" width="9.96" height="14" fill="#FBFEC4"/>
+  <rect x="666.77" y="46" width="7.34" height="14" fill="#8A8A8A"/>
+  <rect x="676.11" y="46" width="17.76" height="14" fill="#4A4A4A"/></g>
+  <defs><clipPath id="barclip"><rect x="24" y="46" width="672" height="14" rx="7"/></clipPath></defs>
+  <circle cx="29" cy="82" r="5" fill="#CB9BFA"/>
+  <text x="42" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">Python</text>
+  <text x="336" y="86" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">35.8%</text>
+  <circle cx="365" cy="82" r="5" fill="#01DB83"/>
+  <text x="378" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">JavaScript</text>
+  <text x="672" y="86" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">19.6%</text>
+  <circle cx="29" cy="104" r="5" fill="#F8FD91"/>
+  <text x="42" y="108" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">TypeScript</text>
+  <text x="336" y="108" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">18.2%</text>
+  <circle cx="365" cy="104" r="5" fill="#F5F5F5"/>
+  <text x="378" y="108" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">HTML</text>
+  <text x="672" y="108" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">14.3%</text>
+  <circle cx="29" cy="126" r="5" fill="#E0C4FC"/>
+  <text x="42" y="130" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">C#</text>
+  <text x="336" y="130" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">3.2%</text>
+  <circle cx="365" cy="126" r="5" fill="#7CE8B8"/>
+  <text x="378" y="130" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">Swift</text>
+  <text x="672" y="130" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">2.8%</text>
+  <circle cx="29" cy="148" r="5" fill="#FBFEC4"/>
+  <text x="42" y="152" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">Vue</text>
+  <text x="336" y="152" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">1.8%</text>
+  <circle cx="365" cy="148" r="5" fill="#8A8A8A"/>
+  <text x="378" y="152" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">Rust</text>
+  <text x="672" y="152" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">1.4%</text>
+  <circle cx="29" cy="170" r="5" fill="#4A4A4A"/>
+  <text x="42" y="174" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#F5F5F5">Other</text>
+  <text x="336" y="174" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#8A8A8A">2.9%</text>
+</svg>

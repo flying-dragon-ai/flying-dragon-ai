@@ -1,18 +1,58 @@
 {
-  "$comment": "Hand-written copy. Facts live in profile.json (fetched); voice lives here. The renderer merges them.",
+  "$comment": "Hand-written copy in report register. {slots} are filled from data/profile.json by render.mjs — never type a number here.",
   "tagline": "agent infrastructure · 3D web · windows internals",
-  "taglineZh": "agent 基础设施 · 3D 网页 · Windows 内部",
+  "headline": "{ownRepos} 个公开仓库，三条产品线，近 12 个月 {contributions} 次贡献。",
+  "conclusion": "主攻 agent 基础设施（{agentCount} 个仓库），兼做 3D Web（{web3dCount} 个）与 Windows 内部工具（{winsecCount} 个）。主力栈 {topLang} {topLangPct}%，近 12 个月 {activeDays} 个活跃日、峰值单日 {peakCount} 次提交。",
   "intro": [
-    "我在做 agent 基础设施：把模型能力包成能装、能跑、能交付的东西 —— pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
-    "另外两条线：浏览器里的真 3D（Three.js / WebGL / 单文件离线包），和 Windows 上的只读审计与端点对抗工具。"
+    "agent 基础设施：把模型能力包成能装、能跑、能交付的东西 —— pi 扩展、subagent 工厂、skill 打包、AIGC 流水线。",
+    "3D Web：Three.js / WebGL / 单文件离线包，浏览器里跑得动的真 3D。",
+    "Windows 内部工具：只读审计、端点对抗、零依赖 PowerShell。"
   ],
   "now": "当前主线：pi 生态的扩展与 subagent 编排。",
-  "footer": "如果某个仓库省了你一小时，点个 star。",
+  "objectives": [
+    {
+      "id": "O1",
+      "title": "建立 agent 基础设施能力",
+      "cluster": "agent",
+      "kr": "pi 扩展 / subagent 工厂 / skill 打包 / AIGC 流水线四条子线全部有可运行仓库"
+    },
+    {
+      "id": "O2",
+      "title": "交付可运行的 3D Web 产品",
+      "cluster": "web3d",
+      "kr": "Three.js 场景、单文件离线包、移动端触屏操作全部落地"
+    },
+    {
+      "id": "O3",
+      "title": "沉淀 Windows 内部工具",
+      "cluster": "winsec",
+      "kr": "只读审计工具带实测缓存地图与安全闸门，零依赖"
+    },
+    {
+      "id": "O4",
+      "title": "保持稳定交付节奏",
+      "cluster": null,
+      "kr": "近 12 个月贡献与活跃日维持在可用水平，不靠集中冲刺"
+    }
+  ],
+  "results": {
+    "tihuqiche": "12 关 · 8 种载具 · 4 种模式 · 单文件离线包",
+    "win-raccoon-lab": "152 条缓存地图 · 9 道安全闸门 · 回收 30.53 GB",
+    "pi-subagent-factory": "自动扫描代码库并生成 subagent 团队",
+    "knowledge-takeback-skill": "npm/npx 分发 · 2 ★",
+    "super-agentic-diner": "FastAPI + 关键词 RAG，无向量库 · 2 ★",
+    "seedance-agent": "分镜 → 预检 → 生成流水线 · 2 ★"
+  },
+  "next": [
+    "提升分发：{ownRepos} 个仓库合计 {stars} 个 star，曝光与文档是当前瓶颈。",
+    "整理私有仓库后公开，补齐公开面。",
+    "维持节奏：当前 {activeDays}/{windowDays} 活跃日，目标是不低于此。"
+  ],
   "quotes": [
-    "好代码首先是给人读的，其次才是给机器执行的。",
-    "能跑、能读、能删——三者缺一，都是债。",
+    "结论先行，数据说话。",
+    "没有度量就没有改进。",
     "先让它正确，再让它快，最后才让它好看。",
-    "没有测试的规则，只是愿望。",
     "把没用的东西删掉，是最便宜的优化。"
-  ]
+  ],
+  "footer": "数据由 gh CLI 拉取后静态渲染，不接受手工维护。"
 }

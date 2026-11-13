@@ -9,7 +9,8 @@ const el = (tag, cls, text) => {
   return n;
 };
 
-const PALETTE = ['#2f8f83', '#3fb3a4', '#5ec8b8', '#7fd6c8', '#a3e2d8', '#c4ece5', '#dff5f1', '#8b949e', '#484f58'];
+// Categorical palette measured from openbuild.xyz: mint / lavender / butter / ink.
+const PALETTE = ['#01DB83', '#CB9BFA', '#F8FD91', '#1A1A1A', '#7CE8B8', '#E0C4FC', '#FBFEC4', '#8A8A8A', '#4A4A4A'];
 
 const data = await fetch('data.json', { cache: 'no-cache' }).then((r) => {
   if (!r.ok) throw new Error(`data.json ${r.status}`);
@@ -21,6 +22,7 @@ $('avatar').src = data.user.avatarUrl;
 $('avatar').alt = data.user.login;
 $('name').textContent = data.user.name;
 $('gh').href = data.user.htmlUrl;
+$('headline').textContent = data.voice.headline;
 $('meta').textContent = [
   data.user.hireable ? 'open to work' : null,
   data.user.login,
@@ -29,54 +31,8 @@ $('meta').textContent = [
   .filter(Boolean)
   .join(' · ');
 
-// typing effect over the tagline
-const lines = [data.voice.tagline, `${data.stats.ownRepos} repos · ${data.stats.languages.slice(0, 3).map((l) => l.name).join(' + ')}`];
-const tagline = $('tagline');
-let li = 0;
-let ci = 0;
-let erasing = false;
-function tick() {
-  const line = lines[li];
-  tagline.textContent = line.slice(0, ci);
-  if (!erasing) {
-    if (ci < line.length) ci++;
-    else {
-      erasing = true;
-      return setTimeout(tick, 2200);
-    }
-  } else {
-    if (ci > 0) ci--;
-    else {
-      erasing = false;
-      li = (li + 1) % lines.length;
-      return setTimeout(tick, 320);
-    }
-  }
-  setTimeout(tick, erasing ? 26 : 52);
-}
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) tick();
-else tagline.textContent = lines[0];
-
-// ---------- intro ----------
-for (const p of data.voice.intro) $('intro').appendChild(el('p', null, p));
-$('now').textContent = data.voice.now;
-
-// 一言：本地轮播，不请求任何第三方接口
-const quotes = data.voice.quotes ?? [];
-if (quotes.length) {
-  const q = $('quote');
-  let qi = Math.floor(Math.random() * quotes.length);
-  const show = () => {
-    q.style.opacity = '0';
-    setTimeout(() => {
-      q.textContent = quotes[qi % quotes.length];
-      q.style.opacity = '.85';
-      qi++;
-    }, 500);
-  };
-  show();
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(show, 9000);
-}
+// ---------- conclusion ----------
+$('conclusion-text').textContent = data.voice.conclusion;
 
 // ---------- stats ----------
 const stats = [
@@ -93,28 +49,48 @@ for (const [label, value] of stats) {
   $('stats').appendChild(card);
 }
 
-// ---------- heatmap ----------
-const level = (n) => (n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : 4);
-const cal = data.contributions.calendar;
-const weeks = [];
-for (let i = 0; i < cal.length; i += 7) weeks.push(cal.slice(i, i + 7));
-const hm = $('heatmap');
-for (const week of weeks) {
-  for (const [date, count] of week) {
-    const cell = el('i');
-    cell.dataset.l = String(level(count));
-    cell.title = `${date}: ${count}`;
-    hm.appendChild(cell);
-  }
+// ---------- overview table ----------
+const table = $('overview-table');
+const thead = el('thead');
+const hrow = el('tr');
+for (const h of ['指标', '数值', '口径']) hrow.appendChild(el('th', null, h));
+thead.appendChild(hrow);
+table.appendChild(thead);
+const tbody = el('tbody');
+for (const [k, v, note] of data.report.overview) {
+  const tr = el('tr');
+  tr.appendChild(el('td', null, k));
+  tr.appendChild(el('td', null, v));
+  tr.appendChild(el('td', null, note));
+  tbody.appendChild(tr);
 }
-const monthNames = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-const seen = new Set();
-for (const [date] of cal) {
-  const m = date.slice(0, 7);
-  if (!seen.has(m)) seen.add(m);
+table.appendChild(tbody);
+
+// ---------- OKR ----------
+for (const o of data.report.objectives) {
+  const item = el('div', 'okr-item');
+  item.appendChild(el('div', 'oid', o.id));
+  const body = el('div');
+  body.appendChild(el('h3', null, o.title));
+  body.appendChild(el('p', null, `${o.kr} · ${o.data}`));
+  item.appendChild(body);
+  const cls = o.status === '达成' ? 'status' : o.status === '进行中' ? 'status wip' : 'status todo';
+  item.appendChild(el('span', cls, o.status));
+  $('okr-list').appendChild(item);
 }
-for (const m of [...seen].filter((_, i) => i % 2 === 0)) {
-  $('months').appendChild(el('span', null, monthNames[+m.slice(5, 7) - 1]));
+
+// ---------- projects ----------
+for (const r of data.featured) {
+  const card = el('div', 'project');
+  const a = el('a', null, r.name);
+  a.href = r.url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  card.appendChild(a);
+  card.appendChild(el('span', 'lang', r.language ?? '—'));
+  card.appendChild(el('p', 'what', r.description || ''));
+  card.appendChild(el('p', 'result', r.result));
+  $('projects').appendChild(card);
 }
 
 // ---------- language bar ----------
@@ -140,7 +116,7 @@ rows.forEach((l, i) => {
 
 // ---------- clusters ----------
 for (const c of data.clusters) {
-  const card = el('div', 'cluster reveal');
+  const card = el('div', 'cluster');
   const h = el('h3');
   h.appendChild(el('span', null, c.title));
   h.appendChild(el('em', null, String(c.repos.length)));
@@ -159,9 +135,66 @@ for (const c of data.clusters) {
   $('clusters').appendChild(card);
 }
 
+// ---------- heatmap ----------
+const level = (n) => (n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : 4);
+const cal = data.contributions.calendar;
+const weeks = [];
+for (let i = 0; i < cal.length; i += 7) weeks.push(cal.slice(i, i + 7));
+const hm = $('heatmap');
+for (const week of weeks) {
+  for (const [date, count] of week) {
+    const cell = el('i');
+    cell.dataset.l = String(level(count));
+    cell.title = `${date}: ${count}`;
+    hm.appendChild(cell);
+  }
+}
+const seen = new Set();
+for (const [date] of cal) seen.add(date.slice(0, 7));
+for (const m of [...seen].filter((_, i) => i % 2 === 0)) {
+  $('months').appendChild(el('span', null, m.slice(5, 7)));
+}
+
+// ---------- cadence facts ----------
+const c = data.contributions;
+const facts = [
+  ['窗口', `${cal[0]?.[0] ?? ''} → ${cal.at(-1)?.[0] ?? ''}`],
+  ['贡献总数', String(c.total)],
+  ['提交', String(c.commits)],
+  ['PR / Issue', `${c.pullRequests} / ${c.issues}`],
+  ['活跃日', `${c.activeDays} / ${cal.length}`],
+  ['峰值', `${c.peakDay} · ${c.peakCount}`],
+];
+for (const [k, v] of facts) {
+  const wrap = el('div');
+  wrap.appendChild(el('dt', null, k));
+  wrap.appendChild(el('dd', null, v));
+  $('cadence-facts').appendChild(wrap);
+}
+
+// ---------- next ----------
+for (const s of data.report.next) $('next').appendChild(el('li', null, s));
+
 // ---------- footer ----------
 $('footer').textContent = data.voice.footer;
-$('stamp').textContent = `${data.user.login} · ${data.stats.ownRepos} repos · ${data.contributions.total} contributions / 12mo · 数据由 gh CLI 拉取 · ${data.generatedAt.slice(0, 10)}`;
+$('stamp').textContent = `${data.user.login} · ${data.stats.ownRepos} repos · ${c.total} contributions / 12mo · 数据由 gh CLI 拉取 · ${data.generatedAt.slice(0, 10)}`;
+
+// ---------- quote rotation (local, no third-party API) ----------
+const quotes = data.voice.quotes ?? [];
+if (quotes.length) {
+  const q = $('quote');
+  let qi = Math.floor(Math.random() * quotes.length);
+  const show = () => {
+    q.style.opacity = '0';
+    setTimeout(() => {
+      q.textContent = quotes[qi % quotes.length];
+      q.style.opacity = '1';
+      qi++;
+    }, 500);
+  };
+  show();
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(show, 9000);
+}
 
 // ---------- reveal on scroll ----------
 const io = new IntersectionObserver(
@@ -170,7 +203,7 @@ const io = new IntersectionObserver(
   },
   { rootMargin: '0px 0px -10% 0px' },
 );
-for (const n of document.querySelectorAll('.reveal, .panel, .stats, .intro')) {
+for (const n of document.querySelectorAll('.block, .conclusion, .stats')) {
   n.classList.add('reveal');
   io.observe(n);
 }
@@ -190,13 +223,13 @@ function resize() {
   canvas.width = innerWidth * dpr;
   canvas.height = innerHeight * dpr;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  const count = Math.min(70, Math.round((innerWidth * innerHeight) / 26000));
+  const count = Math.min(60, Math.round((innerWidth * innerHeight) / 30000));
   dots = Array.from({ length: count }, () => ({
     x: Math.random() * innerWidth,
     y: Math.random() * innerHeight,
-    vx: (Math.random() - 0.5) * 0.22,
-    vy: (Math.random() - 0.5) * 0.22,
-    r: Math.random() * 1.6 + 0.6,
+    vx: (Math.random() - 0.5) * 0.2,
+    vy: (Math.random() - 0.5) * 0.2,
+    r: Math.random() * 1.5 + 0.6,
   }));
 }
 
@@ -209,7 +242,7 @@ function frame() {
     if (d.y < 0 || d.y > innerHeight) d.vy *= -1;
     ctx.beginPath();
     ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(63,179,164,.55)';
+    ctx.fillStyle = 'rgba(1,219,131,.5)';
     ctx.fill();
   }
   for (let i = 0; i < dots.length; i++) {
@@ -221,7 +254,7 @@ function frame() {
         ctx.beginPath();
         ctx.moveTo(dots[i].x, dots[i].y);
         ctx.lineTo(dots[j].x, dots[j].y);
-        ctx.strokeStyle = `rgba(47,143,131,${(1 - dist / 130) * 0.22})`;
+        ctx.strokeStyle = `rgba(1,219,131,${(1 - dist / 130) * 0.2})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
