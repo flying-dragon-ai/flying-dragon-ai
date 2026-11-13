@@ -9,10 +9,11 @@ try {
   // fall through to PATH lookup
 }
 
-export function gh(args, { json = false } = {}) {
+export function gh(args, { json = false, quiet = false } = {}) {
   const out = execFileSync(GH, args, {
     encoding: 'utf8',
     maxBuffer: 128 * 1024 * 1024,
+    stdio: quiet ? ['ignore', 'pipe', 'ignore'] : ['ignore', 'pipe', 'pipe'],
     env: { ...process.env, GH_PAGER: 'cat', NO_COLOR: '1' },
   });
   return json ? JSON.parse(out) : out;

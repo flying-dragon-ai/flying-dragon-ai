@@ -103,6 +103,24 @@ const contributions = {
 };
 
 // ---------- clustering (declarative, auditable) ----------
+// Short ASCII keywords must sit on a word boundary: "dragon" must not match "rag".
+function hasWord(hay, k) {
+  let i = hay.indexOf(k);
+  while (i !== -1) {
+    const before = i === 0 ? ' ' : hay[i - 1];
+    const after = i + k.length >= hay.length ? ' ' : hay[i + k.length];
+    if (!/[a-z0-9]/.test(before) && !/[a-z0-9]/.test(after)) return true;
+    i = hay.indexOf(k, i + 1);
+  }
+  return false;
+}
+
+function keywordHit(hay, kw) {
+  const k = kw.toLowerCase();
+  if (k.endsWith('-') || k.length > 4 || !/^[a-z0-9-]+$/.test(k)) return hay.includes(k);
+  return hasWord(hay, k);
+}
+
 function classify(repo) {
   const forced = taxonomy.overrides?.[repo.name];
   if (forced) return forced;
@@ -110,7 +128,7 @@ function classify(repo) {
     .join(' ')
     .toLowerCase();
   for (const c of taxonomy.clusters) {
-    if (c.keywords.some((k) => hay.includes(k.toLowerCase()))) return c.id;
+    if (c.keywords.some((k) => keywordHit(hay, k))) return c.id;
   }
   return 'other';
 }
@@ -152,7 +170,7 @@ const topics = Object.entries(topicCount).sort((a, b) => b[1] - a[1]).map(([name
 // ---------- optional remote assets (only advertise what actually exists) ----------
 function hasSnake() {
   try {
-    gh(['api', `repos/${login}/${login}/contents/output/github-contribution-grid-snake.svg?ref=output`], { json: true });
+    gh(['api', `repos/${login}/${login}/contents/github-contribution-grid-snake.svg?ref=output`], { json: true, quiet: true });
     return true;
   } catch {
     return false;

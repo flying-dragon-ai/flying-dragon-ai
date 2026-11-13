@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T02:54:19.439Z",
+  "generatedAt": "2026-11-13T02:56:32.255Z",
   "user": {
     "login": "flying-dragon-ai",
     "name": "flying~dragon",
@@ -29,7 +29,7 @@
     "footer": "如果某个仓库省了你一小时，点个 star。"
   },
   "stats": {
-    "ownRepos": 16,
+    "ownRepos": 15,
     "forks": 52,
     "totalStars": 6,
     "totalForks": 0,
@@ -37,42 +37,42 @@
       {
         "name": "Python",
         "bytes": 3442330,
-        "pct": 35.53
+        "pct": 35.75
       },
       {
         "name": "JavaScript",
-        "bytes": 1935263,
-        "pct": 19.97
+        "bytes": 1883239,
+        "pct": 19.56
       },
       {
         "name": "TypeScript",
         "bytes": 1756312,
-        "pct": 18.13
+        "pct": 18.24
       },
       {
         "name": "HTML",
-        "bytes": 1380284,
-        "pct": 14.25
+        "bytes": 1378144,
+        "pct": 14.31
       },
       {
         "name": "C#",
         "bytes": 305557,
-        "pct": 3.15
+        "pct": 3.17
       },
       {
         "name": "Swift",
         "bytes": 273639,
-        "pct": 2.82
+        "pct": 2.84
       },
       {
         "name": "Vue",
         "bytes": 171766,
-        "pct": 1.77
+        "pct": 1.78
       },
       {
         "name": "Rust",
         "bytes": 133360,
-        "pct": 1.38
+        "pct": 1.39
       },
       {
         "name": "PowerShell",
@@ -81,8 +81,8 @@
       },
       {
         "name": "CSS",
-        "bytes": 108765,
-        "pct": 1.12
+        "bytes": 102421,
+        "pct": 1.06
       },
       {
         "name": "Shell",
@@ -181,26 +181,6 @@
       {
         "name": "python",
         "count": 2
-      },
-      {
-        "name": "generator",
-        "count": 1
-      },
-      {
-        "name": "gh-cli",
-        "count": 1
-      },
-      {
-        "name": "github-profile",
-        "count": 1
-      },
-      {
-        "name": "profile-readme",
-        "count": 1
-      },
-      {
-        "name": "readme",
-        "count": 1
       },
       {
         "name": "pinia",
@@ -1007,11 +987,11 @@
       ],
       [
         "2026-03-14",
-        2
+        0
       ],
       [
         "2026-03-15",
-        0
+        2
       ],
       [
         "2026-03-16",
@@ -2044,13 +2024,6 @@
           "language": "Python",
           "stars": 2,
           "url": "https://github.com/flying-dragon-ai/seedance-agent"
-        },
-        {
-          "name": "flying-dragon-ai",
-          "description": "GitHub profile homepage — data fetched with gh, rendered from templates",
-          "language": "JavaScript",
-          "stars": 0,
-          "url": "https://github.com/flying-dragon-ai/flying-dragon-ai"
         },
         {
           "name": "pi-smart-search",
