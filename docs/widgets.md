@@ -7,7 +7,7 @@
 | 组件 | 端点 | 状态 | 处置 |
 | --- | --- | --- | --- |
 | GitHub 统计卡 | `github-readme-stats.vercel.app/api` | **503** | 弃用，改自绘 `assets/stats-*.svg` |
-| 奖杯墙 | `github-profile-trophy.vercel.app` | **402** | 弃用，改自绘 |
+| 奖杯墙 | `github-profile-trophy.vercel.app` | **402** | 弃用，改自绘 `assets/trophy-*.svg` |
 | 连续天数卡 | `github-readme-streak-stats.herokuapp.com` | 200 | 弃用，改自绘 `assets/streak-*.svg`（端点可用但依赖第三方可用性） |
 | 打字动画 | `readme-typing-svg.demolab.com` | 200 | 弃用，改自绘 `assets/typing-*.svg`（SMIL 动画在 `<img>` 内可运行） |
 | Star 历史 | `api.star-history.com/svg` | 200 | 保留为可选（按仓库，非按用户） |
@@ -30,6 +30,7 @@
 | `assets/lang-bar-{dark,light}.svg` | `langBar()` | `stats.languages`（按字节） |
 | `assets/streak-{dark,light}.svg` | `streakCard()` | `contributions.calendar` |
 | `assets/typing-{dark,light}.svg` | `typingCard()` | `voice.tagline`、`stats.*` |
+| `assets/trophy-{dark,light}.svg` | `trophyCard()` | `stats.*`、`contributions.*`，六项指标分 A→SSS |
 
 深浅色通过 `<picture>` + `prefers-color-scheme` 切换，GitHub 原生支持。
 

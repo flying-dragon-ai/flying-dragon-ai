@@ -204,6 +204,7 @@ const profile = {
     forks: forks.length,
     totalStars: own.reduce((a, r) => a + r.stargazerCount, 0),
     totalForks: own.reduce((a, r) => a + r.forkCount, 0),
+    followers: user.followers,
     languages,
     topics,
   },

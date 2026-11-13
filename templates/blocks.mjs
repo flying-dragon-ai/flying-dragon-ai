@@ -49,6 +49,10 @@ export function langBlock(theme = 'teal') {
   return pic('lang-bar', 'language mix by bytes', 720, theme);
 }
 
+export function trophyBlock(theme = 'teal') {
+  return pic('trophy', 'trophy wall', 720, theme);
+}
+
 export function heatBlock(theme = 'teal') {
   return pic('heatmap', 'contribution heatmap, last 12 months', 790, theme);
 }

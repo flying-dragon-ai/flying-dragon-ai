@@ -1,4 +1,4 @@
-import { hero, introBlock, statsBlock, langBlock, heatBlock, featuredBlock, clustersBlock, dynamicBlock, footerBlock, trim } from './blocks.mjs';
+import { trophyBlock, hero, introBlock, statsBlock, langBlock, heatBlock, featuredBlock, clustersBlock, dynamicBlock, footerBlock, trim } from './blocks.mjs';
 
 export default function render(p, v) {
   const top = p.stats.languages.slice(0, 3).map((l) => `${l.name} ${l.pct.toFixed(0)}%`).join(' · ');
@@ -35,6 +35,8 @@ ${introBlock(v)}
 ${grid}
 
 ${statsBlock()}
+
+${trophyBlock()}
 
 ${heatBlock()}
 

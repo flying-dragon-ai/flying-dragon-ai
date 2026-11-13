@@ -3,7 +3,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { langBar, heatmap, statCard, streakCard, typingCard } from './svg.mjs';
+import { langBar, heatmap, statCard, streakCard, typingCard, trophyCard } from './svg.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -24,6 +24,7 @@ export function writeAssets(profile, voice) {
         [`stats-${theme}-${scheme}.svg`]: statCard(profile.stats, profile.contributions, scheme, theme),
         [`streak-${theme}-${scheme}.svg`]: streakCard(profile.contributions.calendar, scheme, theme),
         [`typing-${theme}-${scheme}.svg`]: typingCard(lines, scheme, theme),
+        [`trophy-${theme}-${scheme}.svg`]: trophyCard({ ...profile.stats, followers: profile.user.followers }, profile.contributions, scheme, theme),
       };
       for (const [name, body] of Object.entries(files)) {
         writeFileSync(join(dir, name), body);

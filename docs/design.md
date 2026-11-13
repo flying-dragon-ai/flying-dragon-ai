@@ -116,7 +116,7 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 | `srizzon/git-city` | `game` 模式里的 3D 城市入口 | 嵌入 iframe |
 | 动态打字特效 | 自绘 `assets/typing-*.svg`（SMIL 在 `<img>` 内可运行） | `readme-typing-svg` 第三方端点 |
 | GitHub 统计卡片 | 自绘 `assets/stats-*.svg` | `github-readme-stats`（实测 503） |
-| 奖杯墙 | — | `github-profile-trophy`（实测 402），无自绘替代：奖杯语义需要 GitHub 侧数据，`gh` 拿不到 |
+| 奖杯墙 | 自绘 `assets/trophy-*.svg`：六项指标按绝对阈值分 A→SSS 六档 | `github-profile-trophy`（实测 402） |
 | 贪吃蛇贡献图 | `snake.yml` 生成到 `output` 分支，`fetch.mjs` 探测后自动接入 | — |
 
 ## 9. 维护

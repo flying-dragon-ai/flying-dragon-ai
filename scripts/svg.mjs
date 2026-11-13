@@ -203,3 +203,45 @@ export function typingCard(lines, scheme = 'dark', theme = 'teal') {
 
   return frame(t, W, H, rows, { radius: 10 });
 }
+
+// ---------- trophy wall (replaces github-profile-trophy, which returns 402) ----------
+// Absolute thresholds, calibrated for a working account rather than a celebrity one.
+const TIER_ORDER = ['A', 'AA', 'AAA', 'S', 'SS', 'SSS'];
+
+function tier(value, thresholds) {
+  let out = null;
+  for (const key of TIER_ORDER) if (value >= thresholds[key]) out = key;
+  return out;
+}
+
+export function trophyCard(stats, contributions, scheme = 'dark', theme = 'teal') {
+  const t = THEME[scheme];
+  const P = pal(theme);
+  const items = [
+    ['COMMITS', contributions.commits, { A: 50, AA: 100, AAA: 250, S: 500, SS: 1000, SSS: 2500 }],
+    ['STARS', stats.totalStars, { A: 5, AA: 10, AAA: 25, S: 50, SS: 100, SSS: 250 }],
+    ['REPOS', stats.ownRepos, { A: 5, AA: 10, AAA: 20, S: 35, SS: 50, SSS: 100 }],
+    ['FOLLOWERS', stats.followers ?? 0, { A: 5, AA: 10, AAA: 25, S: 50, SS: 100, SSS: 250 }],
+    ['PRS', contributions.pullRequests, { A: 5, AA: 10, AAA: 25, S: 50, SS: 100, SSS: 250 }],
+    ['ACTIVE DAYS', contributions.activeDays, { A: 30, AA: 60, AAA: 120, S: 180, SS: 240, SSS: 300 }],
+  ]
+    .map(([label, value, thresholds]) => ({ label, value, tier: tier(value, thresholds) }))
+    .filter((i) => i.tier);
+
+  if (items.length === 0) return '';
+
+  const W = 720;
+  const H = 104;
+  const gap = 10;
+  const cardW = (W - 48 - gap * (items.length - 1)) / items.length;
+  const body = items
+    .map((it, i) => {
+      const x = 24 + i * (cardW + gap);
+      return `<rect x="${x.toFixed(1)}" y="22" width="${cardW.toFixed(1)}" height="60" rx="8" fill="${t.panel}" stroke="${t.border}"/>
+  <text x="${(x + cardW / 2).toFixed(1)}" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="${P.accentSoft}">${it.tier}</text>
+  <text x="${(x + cardW / 2).toFixed(1)}" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="${t.muted}" letter-spacing="1">${it.label}</text>
+  <text x="${(x + cardW / 2).toFixed(1)}" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="${t.text}">${it.value}</text>`;
+    })
+    .join('\n  ');
+  return frame(t, W, H, `  ${body}`);
+}

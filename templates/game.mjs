@@ -1,4 +1,4 @@
-import { hero, introBlock, statsBlock, heatBlock, langBlock, clustersBlock, footerBlock, trim, box, pad, dw } from './blocks.mjs';
+import { trophyBlock, hero, introBlock, statsBlock, heatBlock, langBlock, clustersBlock, footerBlock, trim, box, pad, dw } from './blocks.mjs';
 
 const F = '```';
 
@@ -38,6 +38,8 @@ ${F}
 ${introBlock(v)}
 
 ${statsBlock()}
+
+${trophyBlock()}
 
 ${heatBlock()}
 

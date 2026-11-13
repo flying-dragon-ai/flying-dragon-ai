@@ -60,6 +60,12 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 </picture></div>
 
 <div align="center"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trophy-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/trophy-teal-light.svg">
+  <img src="assets/trophy-teal-light.svg" alt="trophy wall" width="720">
+</picture></div>
+
+<div align="center"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-teal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/heatmap-teal-light.svg">
   <img src="assets/heatmap-teal-light.svg" alt="contribution heatmap, last 12 months" width="790">
