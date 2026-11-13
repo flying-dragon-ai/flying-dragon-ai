@@ -8,11 +8,11 @@ export function trim(s, n = 96) {
   return flat.length > n ? flat.slice(0, n - 1).trimEnd() + '…' : flat;
 }
 
-export function pic(base, alt, width) {
+export function pic(base, alt, width, theme = 'teal') {
   return `<div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/${base}-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/${base}-light.svg">
-  <img src="assets/${base}-light.svg" alt="${alt}" width="${width}">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/${base}-${theme}-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/${base}-${theme}-light.svg">
+  <img src="assets/${base}-${theme}-light.svg" alt="${alt}" width="${width}">
 </picture></div>`;
 }
 
@@ -41,16 +41,16 @@ ${v.intro.join('\n\n')}
 > ${v.now}`;
 }
 
-export function statsBlock() {
-  return pic('stats', 'repos / stars / commits / PRs / active days', 720);
+export function statsBlock(theme = 'teal') {
+  return pic('stats', 'repos / stars / commits / PRs / active days', 720, theme);
 }
 
-export function langBlock() {
-  return pic('lang-bar', 'language mix by bytes', 720);
+export function langBlock(theme = 'teal') {
+  return pic('lang-bar', 'language mix by bytes', 720, theme);
 }
 
-export function heatBlock() {
-  return pic('heatmap', 'contribution heatmap, last 12 months', 790);
+export function heatBlock(theme = 'teal') {
+  return pic('heatmap', 'contribution heatmap, last 12 months', 790, theme);
 }
 
 export function featuredBlock(p, { limit = 6, heading = '## 在做什么' } = {}) {
@@ -78,9 +78,9 @@ export function clustersBlock(p, { heading = '## 仓库地图' } = {}) {
 ${rows.join('\n')}`;
 }
 
-export function dynamicBlock(p, v, { heading = '## 动态' } = {}) {
+export function dynamicBlock(p, v, { heading = '## 动态', theme = 'teal' } = {}) {
   const u = p.user.login;
-  const parts = [pic('typing', 'typing banner', 720)];
+  const parts = [pic('typing', 'typing banner', 720, theme)];
   if (p.assets?.snake) {
     parts.push(`<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${u}/${u}/output/github-contribution-grid-snake-dark.svg">
@@ -88,7 +88,7 @@ export function dynamicBlock(p, v, { heading = '## 动态' } = {}) {
   <img src="https://raw.githubusercontent.com/${u}/${u}/output/github-contribution-grid-snake.svg" alt="contribution snake" width="720">
 </picture>`);
   }
-  parts.push(pic('streak', 'current streak / longest streak / total', 720));
+  parts.push(pic('streak', 'current streak / longest streak / total', 720, theme));
   return `${heading}
 
 <div align="center">

@@ -61,6 +61,23 @@ else tagline.textContent = lines[0];
 for (const p of data.voice.intro) $('intro').appendChild(el('p', null, p));
 $('now').textContent = data.voice.now;
 
+// 一言：本地轮播，不请求任何第三方接口
+const quotes = data.voice.quotes ?? [];
+if (quotes.length) {
+  const q = $('quote');
+  let qi = Math.floor(Math.random() * quotes.length);
+  const show = () => {
+    q.style.opacity = '0';
+    setTimeout(() => {
+      q.textContent = quotes[qi % quotes.length];
+      q.style.opacity = '.85';
+      qi++;
+    }, 500);
+  };
+  show();
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(show, 9000);
+}
+
 // ---------- stats ----------
 const stats = [
   ['repos', data.stats.ownRepos],

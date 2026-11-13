@@ -16,17 +16,19 @@ export function writeAssets(profile, voice) {
     `${profile.contributions.total} contributions · ${profile.contributions.activeDays} active days`,
   ];
   const written = [];
-  for (const scheme of ['dark', 'light']) {
-    const files = {
-      [`lang-bar-${scheme}.svg`]: langBar(profile.stats.languages, scheme),
-      [`heatmap-${scheme}.svg`]: heatmap(profile.contributions.calendar, scheme),
-      [`stats-${scheme}.svg`]: statCard(profile.stats, profile.contributions, scheme),
-      [`streak-${scheme}.svg`]: streakCard(profile.contributions.calendar, scheme),
-      [`typing-${scheme}.svg`]: typingCard(lines, scheme),
-    };
-    for (const [name, body] of Object.entries(files)) {
-      writeFileSync(join(dir, name), body);
-      written.push(name);
+  for (const theme of ['teal', 'sakura']) {
+    for (const scheme of ['dark', 'light']) {
+      const files = {
+        [`lang-bar-${theme}-${scheme}.svg`]: langBar(profile.stats.languages, scheme, theme),
+        [`heatmap-${theme}-${scheme}.svg`]: heatmap(profile.contributions.calendar, scheme, theme),
+        [`stats-${theme}-${scheme}.svg`]: statCard(profile.stats, profile.contributions, scheme, theme),
+        [`streak-${theme}-${scheme}.svg`]: streakCard(profile.contributions.calendar, scheme, theme),
+        [`typing-${theme}-${scheme}.svg`]: typingCard(lines, scheme, theme),
+      };
+      for (const [name, body] of Object.entries(files)) {
+        writeFileSync(join(dir, name), body);
+        written.push(name);
+      }
     }
   }
   return written;

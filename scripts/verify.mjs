@@ -27,7 +27,7 @@ for (const f of localFiles) {
 
 // Consistency gate: the rendered SVGs must agree with data/profile.json.
 const profile = JSON.parse(readFileSync(join(ROOT, 'data', 'profile.json'), 'utf8'));
-const statsSvg = readFileSync(join(ROOT, 'assets', 'stats-dark.svg'), 'utf8');
+const statsSvg = readFileSync(join(ROOT, 'assets', 'stats-teal-dark.svg'), 'utf8');
 const expected = [
   profile.stats.ownRepos,
   profile.stats.totalStars,
@@ -40,7 +40,7 @@ const same = expected.length === rendered.length && expected.every((v, i) => v =
 if (!same) fail++;
 console.log(`stats card: ${same ? 'OK  ' : 'STALE'} rendered=[${rendered}] expected=[${expected}]`);
 
-const langSvg = readFileSync(join(ROOT, 'assets', 'lang-bar-dark.svg'), 'utf8');
+const langSvg = readFileSync(join(ROOT, 'assets', 'lang-bar-teal-dark.svg'), 'utf8');
 const langRendered = [...langSvg.matchAll(/>([0-9.]+)%</g)].map((m) => Number(m[1]));
 const langExpected = profile.stats.languages.slice(0, 8).map((l) => Number(l.pct.toFixed(1)));
 const langSame = langExpected.every((v, i) => Math.abs(v - (langRendered[i] ?? -1)) < 0.06);

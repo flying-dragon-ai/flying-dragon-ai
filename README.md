@@ -54,21 +54,21 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 </table>
 
 <div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
-  <img src="assets/stats-light.svg" alt="repos / stars / commits / PRs / active days" width="720">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-teal-light.svg">
+  <img src="assets/stats-teal-light.svg" alt="repos / stars / commits / PRs / active days" width="720">
 </picture></div>
 
 <div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/heatmap-light.svg">
-  <img src="assets/heatmap-light.svg" alt="contribution heatmap, last 12 months" width="790">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/heatmap-teal-light.svg">
+  <img src="assets/heatmap-teal-light.svg" alt="contribution heatmap, last 12 months" width="790">
 </picture></div>
 
 <div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/lang-bar-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/lang-bar-light.svg">
-  <img src="assets/lang-bar-light.svg" alt="language mix by bytes" width="720">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lang-bar-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/lang-bar-teal-light.svg">
+  <img src="assets/lang-bar-teal-light.svg" alt="language mix by bytes" width="720">
 </picture></div>
 
 ## 在做什么
@@ -97,9 +97,9 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 <div align="center">
 
 <div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/typing-light.svg">
-  <img src="assets/typing-light.svg" alt="typing banner" width="720">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/typing-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/typing-teal-light.svg">
+  <img src="assets/typing-teal-light.svg" alt="typing banner" width="720">
 </picture></div>
 
 <picture>
@@ -109,9 +109,9 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 </picture>
 
 <div align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/streak-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/streak-light.svg">
-  <img src="assets/streak-light.svg" alt="current streak / longest streak / total" width="720">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/streak-teal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/streak-teal-light.svg">
+  <img src="assets/streak-teal-light.svg" alt="current streak / longest streak / total" width="720">
 </picture></div>
 
 </div>

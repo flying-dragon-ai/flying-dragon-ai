@@ -80,31 +80,44 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 
 `templates/blocks.mjs` 是唯一的原语层：`hero` / `introBlock` / `statsBlock` / `langBlock` / `heatBlock` / `featuredBlock` / `clustersBlock` / `dynamicBlock` / `footerBlock`，外加 CJK 宽度正确的 `box` / `pad`。
 
-六种模式只是这些原语的不同组合：
+九种模式只是这些原语的不同组合，全部读同一份 `profile.json`：
 
 | 模式 | 风格 | 对应参考 |
 | --- | --- | --- |
 | `bento` | 网格卡片，信息密度最高（**默认**） | rs readme studio 的 bento 网格 |
-| `minimal` | 极简，三段话 + 三张卡 | short-and-sweet |
-| `code` | 全部塞进一个 TypeScript 文件 | code-styled |
+| `minimal` | 极简，三段话 + 三张卡 | short-and-sweet / 极简风 |
+| `code` | 全部塞进一个 TypeScript 文件 | code-styled / 代码风格型 |
 | `terminal` | 终端会话，所有数字是命令输出 | 终端绿 |
-| `dynamic` | 动态模块优先 | dynamic-realtime |
+| `dynamic` | 动态模块优先 | dynamic-realtime / 动态实时 |
 | `game` | 玩家卡 + 成就 + 任务 | 游戏模式 / git city |
+| `anime` | 角色卡 + 技能树 + 图鉴，樱色配色 | 动漫 / 角色卡 |
+| `pixel` | 8-bit HUD + 方块进度条 | 复古像素 8-bit |
+| `swiss` | 编号分节、大写标签、严格网格 | 瑞士国际主义 |
 
-切换：`node scripts/render.mjs --mode game`，或 `--all` 一次生成六份到 `out/`。
+配色也是参数：`scripts/svg.mjs` 的 `PALETTES` 提供 `teal`（默认）与 `sakura`（`anime` 模式使用），每种主题各生成深浅两套 SVG。
+
+切换：`node scripts/render.mjs --mode game`，或 `--all` 一次生成九份到 `out/`。
 
 ## 8. 参考清单的去留
 
+逐条对照，采纳什么、丢弃什么、为什么。
+
 | 参考 | 采纳 | 丢弃 |
 | --- | --- | --- |
-| `abhisheknaiidu/awesome-github-profile-readme` | 分类思路（游戏/代码/动态/极简） | 直接克隆别人的主页 |
-| `kautukkundan/Awesome-Profile-README-templates` | short-and-sweet / code-styled / dynamic-realtime 三种模式的骨架 | 静态 Markdown 复制 |
-| `rzashakeri/beautify-github-profile` | 效果清单（作为 `docs/widgets.md` 的候选池） | 逐个堆叠徽章 |
-| `iuricode/readme-template` | 7 类模板的受众划分 | 与本人仓库无关的通用段落 |
-| `rahuldkjain/gh-profile-readme-generator` | 表单式生成的思路 → 这里换成 `voice.json` | 生成器产出的固定排版 |
+| `abhisheknaiidu/awesome-github-profile-readme` | 分类思路（游戏 / 代码 / 动态 / 极简） | 直接克隆别人的主页 |
+| `kautukkundan/Awesome-Profile-README-templates` | short-and-sweet、code-styled、dynamic-realtime、elaborate 的骨架 | 静态 Markdown 复制 |
+| `rzashakeri/beautify-github-profile` | 效果清单，作为 `docs/widgets.md` 的候选池 | 逐个堆叠徽章 |
+| `iuricode/readme-template` | 7 类模板的受众划分 → 基础信息（`minimal`）、代码风格（`code`）、数据统计（`bento` / `swiss`）、综合展示（`bento`） | 与本人仓库无关的通用段落；职业经历 / 技能图标 / 数据分析三类没有对应素材，未强行凑 |
+| 精美 GitHub 个人主页模板大全（100+ 社区合集） | 风格谱系（简约 / 创意 / 技术感）作为模式划分依据 | 逐个收录 |
+| `rs` readme studio | 极简风、暗黑霓虹（`site/` 深色科技主题）、bento 网格、终端绿、复古像素 8-bit、瑞士国际主义 | 编辑杂志（无排版素材）；星系图谱（无数据支撑） |
+| `rahuldkjain/gh-profile-readme-generator` | 表单式生成的思路 → 换成 `data/voice.json` | 生成器产出的固定排版 |
+| `jackyzou2510/home` | 打字机、随机图片位（头像）、一言（`voice.json` 的 `quotes`） | 看板娘、音乐播放器（与定位无关，且引入第三方资源） |
+| `quietseek/home` | Vue 3 深色科技主题 → 零依赖等价实现、粒子动画背景、霓虹光效、滚动入场、打字机、响应式 | Vue 运行时（静态站不需要） |
 | `srizzon/git-city` | `game` 模式里的 3D 城市入口 | 嵌入 iframe |
-| `jackyzou2510/home`、`quietseek/home` | 打字机、粒子背景、滚动入场 → `site/` | 看板娘、音乐播放器（与定位无关） |
-| 统计卡 / 奖杯墙 / 贪吃蛇 | 贪吃蛇（`snake.yml`，自建分支） | 统计卡与奖杯墙（503 / 402） |
+| 动态打字特效 | 自绘 `assets/typing-*.svg`（SMIL 在 `<img>` 内可运行） | `readme-typing-svg` 第三方端点 |
+| GitHub 统计卡片 | 自绘 `assets/stats-*.svg` | `github-readme-stats`（实测 503） |
+| 奖杯墙 | — | `github-profile-trophy`（实测 402），无自绘替代：奖杯语义需要 GitHub 侧数据，`gh` 拿不到 |
+| 贪吃蛇贡献图 | `snake.yml` 生成到 `output` 分支，`fetch.mjs` 探测后自动接入 | — |
 
 ## 9. 维护
 

@@ -1,12 +1,21 @@
 // Self-rendered SVG cards. No third-party renderer, no rate limit, no 402.
 // Every number here comes from data/profile.json, which came from `gh`.
 
+// Accent palettes. One data source, several visual identities.
+export const PALETTES = {
+  teal: { accent: '#2f8f83', accentSoft: '#3fb3a4', ramp: ['#1d5c55', '#2f8f83', '#4fb8a8', '#8fe0d2'] },
+  sakura: { accent: '#c2557f', accentSoft: '#e07aa2', ramp: ['#6b2a44', '#a8446a', '#d4708f', '#f2b8cc'] },
+  amber: { accent: '#b5761f', accentSoft: '#d99a3c', ramp: ['#5c3a0e', '#8f5c17', '#c08a2e', '#e8c37a'] },
+};
+
 export const THEME = {
-  accent: '#2f8f83',
-  accentSoft: '#3fb3a4',
+  accent: PALETTES.teal.accent,
+  accentSoft: PALETTES.teal.accentSoft,
   dark: { bg: '#0d1117', panel: '#161b22', border: '#30363d', text: '#e6edf3', muted: '#8b949e', empty: '#21262d' },
   light: { bg: '#ffffff', panel: '#f6f8fa', border: '#d0d7de', text: '#1f2328', muted: '#656d76', empty: '#ebedf0' },
 };
+
+const pal = (theme) => PALETTES[theme] ?? PALETTES.teal;
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -19,8 +28,9 @@ ${body}
 }
 
 // ---------- language bar ----------
-export function langBar(languages, scheme = 'dark') {
+export function langBar(languages, scheme = 'dark', theme = 'teal') {
   const t = THEME[scheme];
+  const P = pal(theme);
   const top = languages.slice(0, 8);
   const rest = languages.slice(8);
   const restPct = rest.reduce((a, l) => a + l.pct, 0);
@@ -32,8 +42,8 @@ export function langBar(languages, scheme = 'dark') {
   const barW = W - 48;
   const palette =
     scheme === 'dark'
-      ? ['#2f8f83', '#3fb3a4', '#5ec8b8', '#7fd6c8', '#a3e2d8', '#c4ece5', '#dff5f1', '#8b949e', '#484f58']
-      : ['#1f6f66', '#2f8f83', '#3fa79a', '#57bdb0', '#74cfc3', '#93ded4', '#b3eae3', '#6e7681', '#484f58'];
+      ? [P.accent, P.accentSoft, ...P.ramp.slice(2), '#a3e2d8', '#c4ece5', '#dff5f1', '#8b949e', '#484f58']
+      : [P.ramp[0], P.accent, P.accentSoft, ...P.ramp.slice(2), '#93ded4', '#b3eae3', '#6e7681', '#484f58'];
 
   let x = 24;
   const segs = rows.map((l, i) => {
@@ -63,8 +73,9 @@ export function langBar(languages, scheme = 'dark') {
 }
 
 // ---------- contribution heatmap ----------
-export function heatmap(calendar, scheme = 'dark') {
+export function heatmap(calendar, scheme = 'dark', theme = 'teal') {
   const t = THEME[scheme];
+  const P = pal(theme);
   const weeks = [];
   for (let i = 0; i < calendar.length; i += 7) weeks.push(calendar.slice(i, i + 7));
   const cell = 11;
@@ -75,7 +86,7 @@ export function heatmap(calendar, scheme = 'dark') {
   const H = top + 7 * (cell + gap) + 26;
 
   const levels = (n) => (n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : 4);
-  const fills = [t.empty, '#1d5c55', '#2f8f83', '#4fb8a8', '#8fe0d2'];
+  const fills = [t.empty, ...P.ramp];
 
   let cells = '';
   weeks.forEach((week, wi) => {
@@ -101,8 +112,9 @@ export function heatmap(calendar, scheme = 'dark') {
 }
 
 // ---------- stat card ----------
-export function statCard(stats, contributions, scheme = 'dark') {
+export function statCard(stats, contributions, scheme = 'dark', theme = 'teal') {
   const t = THEME[scheme];
+  const P = pal(theme);
   const items = [
     ['REPOS', stats.ownRepos],
     ['STARS', stats.totalStars],
@@ -115,15 +127,16 @@ export function statCard(stats, contributions, scheme = 'dark') {
   const colW = (W - 48) / items.length;
   const body = items.map(([label, value], i) => {
     const cx = 24 + i * colW + colW / 2;
-    return `<text x="${cx}" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" font-weight="700" fill="${THEME.accentSoft}">${value}</text>
+    return `<text x="${cx}" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" font-weight="700" fill="${P.accentSoft}">${value}</text>
   <text x="${cx}" y="76" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="${t.muted}" letter-spacing="1.4">${label}</text>`;
   }).join('\n  ');
   return frame(t, W, H, `  ${body}`);
 }
 
 // ---------- streak card (replaces the flaky heroku streak service) ----------
-export function streakCard(calendar, scheme = 'dark') {
+export function streakCard(calendar, scheme = 'dark', theme = 'teal') {
   const t = THEME[scheme];
+  const P = pal(theme);
   let longest = 0;
   let run = 0;
   for (const [, c] of calendar) {
@@ -147,7 +160,7 @@ export function streakCard(calendar, scheme = 'dark') {
   const body = items
     .map(([label, value], i) => {
       const cx = 24 + i * colW + colW / 2;
-      return `<text x="${cx}" y="48" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="28" font-weight="700" fill="${THEME.accentSoft}">${value}</text>
+      return `<text x="${cx}" y="48" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="28" font-weight="700" fill="${P.accentSoft}">${value}</text>
   <text x="${cx}" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="${t.muted}" letter-spacing="1.4">${label}</text>`;
     })
     .join('\n  ');
@@ -155,8 +168,9 @@ export function streakCard(calendar, scheme = 'dark') {
 }
 
 // ---------- animated typing banner (self-hosted; SMIL runs inside <img>) ----------
-export function typingCard(lines, scheme = 'dark') {
+export function typingCard(lines, scheme = 'dark', theme = 'teal') {
   const t = THEME[scheme];
+  const P = pal(theme);
   const W = 720;
   const H = 56;
   const fs = 20;
@@ -179,9 +193,9 @@ export function typingCard(lines, scheme = 'dark') {
     <animate attributeName="width" values="${vals}" keyTimes="${kt}" dur="${dur}s" repeatCount="indefinite"/>
   </rect></clipPath>
   <g clip-path="url(#type${i})">
-    <text x="${left}" y="${y}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="${fs}" font-weight="600" fill="${THEME.accentSoft}">${esc(line)}</text>
+    <text x="${left}" y="${y}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="${fs}" font-weight="600" fill="${P.accentSoft}">${esc(line)}</text>
   </g>
-  <rect x="${left}" y="${y - fs + 2}" width="2" height="${fs}" fill="${THEME.accent}">
+  <rect x="${left}" y="${y - fs + 2}" width="2" height="${fs}" fill="${P.accent}">
     <animate attributeName="x" values="${left};${left};${left + w};${left + w};${left};${left}" keyTimes="${kt}" dur="${dur}s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0" dur="1s" repeatCount="indefinite"/>
   </rect>`;
