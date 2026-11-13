@@ -1,17 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="116" viewBox="0 0 720 116" role="img">
-  <rect x="60.0" y="16" width="24" height="2" rx="1" fill="#7B3FB0"/>
-  <text x="72.0" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="40" font-weight="200" fill="#1D1D1F" letter-spacing="-1.5">15</text>
-  <text x="72.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#86868B" letter-spacing="1.6">REPOS</text>
-  <rect x="204.0" y="16" width="24" height="2" rx="1" fill="#7B3FB0"/>
-  <text x="216.0" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="40" font-weight="200" fill="#1D1D1F" letter-spacing="-1.5">6</text>
-  <text x="216.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#86868B" letter-spacing="1.6">STARS</text>
-  <rect x="348.0" y="16" width="24" height="2" rx="1" fill="#7B3FB0"/>
-  <text x="360.0" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="40" font-weight="200" fill="#1D1D1F" letter-spacing="-1.5">146</text>
-  <text x="360.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#86868B" letter-spacing="1.6">COMMITS</text>
-  <rect x="492.0" y="16" width="24" height="2" rx="1" fill="#7B3FB0"/>
-  <text x="504.0" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="40" font-weight="200" fill="#1D1D1F" letter-spacing="-1.5">16</text>
-  <text x="504.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#86868B" letter-spacing="1.6">PRS</text>
-  <rect x="636.0" y="16" width="24" height="2" rx="1" fill="#7B3FB0"/>
-  <text x="648.0" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="40" font-weight="200" fill="#1D1D1F" letter-spacing="-1.5">70</text>
-  <text x="648.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#86868B" letter-spacing="1.6">ACTIVE DAYS</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="132" viewBox="0 0 720 132" role="img">
+  <defs><filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/></filter></defs>
+  <rect x="0" y="0" width="720" height="132" rx="20" fill="#F2F2F7" filter="url(#card)"/>
+  <rect x="60.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
+  <text x="72.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#000000" letter-spacing="-1.5">15</text>
+  <text x="72.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">REPOS</text>
+  <rect x="204.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
+  <text x="216.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#000000" letter-spacing="-1.5">6</text>
+  <text x="216.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">STARS</text>
+  <rect x="348.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
+  <text x="360.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#000000" letter-spacing="-1.5">146</text>
+  <text x="360.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">COMMITS</text>
+  <rect x="492.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
+  <text x="504.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#000000" letter-spacing="-1.5">16</text>
+  <text x="504.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">PRS</text>
+  <rect x="636.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
+  <text x="648.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#000000" letter-spacing="-1.5">70</text>
+  <text x="648.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">ACTIVE DAYS</text>
 </svg>

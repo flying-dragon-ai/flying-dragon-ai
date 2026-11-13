@@ -1,60 +1,62 @@
 // Self-rendered SVG cards. No third-party renderer, no rate limit, no 402.
 // Every number here comes from data/profile.json, which came from `gh`.
 //
-// Visual rule: monochrome base (Apple system greys) + exactly one accent colour
-// (OpenBuild mint, measured from https://openbuild.xyz/ on 2026-11-13).
-// Typography: thin display weights (200) paired with bold micro-labels (600).
+// Visual language: Apple iOS system palette.
+//   System Blue #007AFF · System Purple #AF52DE · Gray 6 #F2F2F7 · White #FFFFFF
+//   Black #000000 · Gray #8E8E93 · Gray 1 #1C1C1E
+// Dark-mode variants are Apple's own: Blue #0A84FF, Purple #BF5AF2.
+// Cards use large radii, soft shadows and Gray 6 / Gray 1 fills.
 
 export const PALETTES = {
   openbuild: {
-    dark: {
-      accent: '#01DB83',
-      accentSoft: '#01DB83',
-      onAccent: '#000000',
-      cardBg: '#000000',
-      cardText: '#F5F5F7',
-      ramp: ['#1F2A25', '#0E4A33', '#01DB83', '#7CF0BE'],
-      categorical: ['#01DB83', '#F5F5F7', '#86868B', '#D2D2D7', '#48484A', '#2C2C2E', '#6E6E73', '#3A3A3C', '#1C1C1E'],
-    },
     light: {
-      accent: '#00A05C',
-      accentSoft: '#00A05C',
+      accent: '#007AFF',
+      accent2: '#AF52DE',
       onAccent: '#FFFFFF',
-      cardBg: '#FFFFFF',
-      cardText: '#1D1D1F',
-      ramp: ['#E3F7EC', '#A8E8C8', '#3FD79A', '#00A05C'],
-      categorical: ['#00A05C', '#1D1D1F', '#86868B', '#D2D2D7', '#48484A', '#6E6E73', '#A1A1A6', '#3A3A3C', '#C7C7CC'],
+      cardBg: '#F2F2F7',
+      cardText: '#000000',
+      ramp: ['#D6E9FF', '#9CC9FF', '#4D9FFF', '#007AFF'],
+      categorical: ['#007AFF', '#AF52DE', '#5AC8FA', '#8E8E93', '#C7C7CC', '#AEAEB2', '#D1D1D6', '#E5E5EA', '#F2F2F7'],
+    },
+    dark: {
+      accent: '#0A84FF',
+      accent2: '#BF5AF2',
+      onAccent: '#FFFFFF',
+      cardBg: '#1C1C1E',
+      cardText: '#FFFFFF',
+      ramp: ['#0A2540', '#0A4A8A', '#0A84FF', '#5AC8FA'],
+      categorical: ['#0A84FF', '#BF5AF2', '#64D2FF', '#8E8E93', '#48484A', '#636366', '#3A3A3C', '#2C2C2E', '#1C1C1E'],
     },
   },
   lavender: {
-    dark: {
-      accent: '#CB9BFA',
-      accentSoft: '#CB9BFA',
-      onAccent: '#000000',
-      cardBg: '#000000',
-      cardText: '#F5F5F7',
-      ramp: ['#241A33', '#4A2E6B', '#CB9BFA', '#E0C4FC'],
-      categorical: ['#CB9BFA', '#F5F5F7', '#86868B', '#D2D2D7', '#48484A', '#2C2C2E', '#6E6E73', '#3A3A3C', '#1C1C1E'],
-    },
     light: {
-      accent: '#7B3FB0',
-      accentSoft: '#7B3FB0',
+      accent: '#AF52DE',
+      accent2: '#007AFF',
       onAccent: '#FFFFFF',
-      cardBg: '#FFFFFF',
-      cardText: '#1D1D1F',
-      ramp: ['#F1E6FD', '#D9B8FB', '#B77DF0', '#7B3FB0'],
-      categorical: ['#7B3FB0', '#1D1D1F', '#86868B', '#D2D2D7', '#48484A', '#6E6E73', '#A1A1A6', '#3A3A3C', '#C7C7CC'],
+      cardBg: '#F2F2F7',
+      cardText: '#000000',
+      ramp: ['#F0DFFC', '#DDB4F7', '#C77BEE', '#AF52DE'],
+      categorical: ['#AF52DE', '#007AFF', '#5AC8FA', '#8E8E93', '#C7C7CC', '#AEAEB2', '#D1D1D6', '#E5E5EA', '#F2F2F7'],
+    },
+    dark: {
+      accent: '#BF5AF2',
+      accent2: '#0A84FF',
+      onAccent: '#FFFFFF',
+      cardBg: '#1C1C1E',
+      cardText: '#FFFFFF',
+      ramp: ['#2E1240', '#5A1F7A', '#BF5AF2', '#E0A8FF'],
+      categorical: ['#BF5AF2', '#0A84FF', '#64D2FF', '#8E8E93', '#48484A', '#636366', '#3A3A3C', '#2C2C2E', '#1C1C1E'],
     },
   },
 };
 
 export const THEME = {
-  dark: { bg: '#000000', panel: '#0A0A0A', border: '#1F1F22', text: '#F5F5F7', muted: '#86868B', empty: '#161618' },
-  light: { bg: '#FFFFFF', panel: '#FAFAFC', border: '#E8E8ED', text: '#1D1D1F', muted: '#86868B', empty: '#F0F0F3' },
+  light: { bg: '#FFFFFF', panel: '#F2F2F7', border: '#E5E5EA', text: '#000000', muted: '#8E8E93', empty: '#E5E5EA' },
+  dark: { bg: '#000000', panel: '#1C1C1E', border: '#38383A', text: '#FFFFFF', muted: '#8E8E93', empty: '#2C2C2E' },
 };
 
 // Single quotes: this string is interpolated into a double-quoted SVG attribute.
-export const FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif";
+export const FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif";
 export const MONO = 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace';
 
 const pal = (theme, scheme) => (PALETTES[theme] ?? PALETTES.openbuild)[scheme] ?? PALETTES.openbuild.dark;
@@ -64,8 +66,24 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const svg = (w, h, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">\n${body}\n</svg>\n`;
 
-// ---------- metric row (no frame: sits directly on the page) ----------
-function metricRow(items, scheme, theme, { numberSize = 40, height = 116 } = {}) {
+// iOS card: large radius, soft shadow, Gray 6 / Gray 1 fill.
+function cardFrame(w, h, scheme, theme, body, { radius = 20 } = {}) {
+  const P = pal(theme, scheme);
+  const shadow =
+    scheme === 'dark'
+      ? '<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#000" flood-opacity="0.55"/>'
+      : '<feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/>';
+  return svg(
+    w,
+    h,
+    `  <defs><filter id="card" x="-8%" y="-12%" width="116%" height="132%">${shadow}</filter></defs>
+  <rect x="0" y="0" width="${w}" height="${h}" rx="${radius}" fill="${P.cardBg}" filter="url(#card)"/>
+${body}`,
+  );
+}
+
+// ---------- metric row ----------
+function metricRow(items, scheme, theme, { numberSize = 40, height = 132 } = {}) {
   const t = THEME[scheme];
   const P = pal(theme, scheme);
   const W = 720;
@@ -73,12 +91,12 @@ function metricRow(items, scheme, theme, { numberSize = 40, height = 116 } = {})
   const body = items
     .map(([label, value], i) => {
       const cx = i * colW + colW / 2;
-      return `  <rect x="${(cx - 12).toFixed(1)}" y="16" width="24" height="2" rx="1" fill="${P.accent}"/>
-  <text x="${cx.toFixed(1)}" y="${16 + numberSize + 14}" text-anchor="middle" font-family="${FONT}" font-size="${numberSize}" font-weight="200" fill="${t.text}" letter-spacing="-1.5">${value}</text>
-  <text x="${cx.toFixed(1)}" y="${16 + numberSize + 38}" text-anchor="middle" font-family="${FONT}" font-size="10" font-weight="600" fill="${t.muted}" letter-spacing="1.6">${label}</text>`;
+      return `  <rect x="${(cx - 12).toFixed(1)}" y="30" width="24" height="3" rx="1.5" fill="${P.accent}"/>
+  <text x="${cx.toFixed(1)}" y="${30 + numberSize + 16}" text-anchor="middle" font-family="${FONT}" font-size="${numberSize}" font-weight="300" fill="${P.cardText}" letter-spacing="-1.5">${value}</text>
+  <text x="${cx.toFixed(1)}" y="${30 + numberSize + 40}" text-anchor="middle" font-family="${FONT}" font-size="10" font-weight="600" fill="${t.muted}" letter-spacing="1.6">${label}</text>`;
     })
     .join('\n');
-  return svg(W, height, body);
+  return cardFrame(W, height, scheme, theme, body);
 }
 
 export function statCard(stats, contributions, scheme = 'dark', theme = 'openbuild') {
@@ -116,11 +134,11 @@ export function streakCard(calendar, scheme = 'dark', theme = 'openbuild') {
     ],
     scheme,
     theme,
-    { numberSize: 36, height: 104 },
+    { numberSize: 34, height: 120 },
   );
 }
 
-// ---------- language bar: one accent, everything else grey ----------
+// ---------- language bar ----------
 export function langBar(languages, scheme = 'dark', theme = 'openbuild') {
   const t = THEME[scheme];
   const P = pal(theme, scheme);
@@ -129,17 +147,16 @@ export function langBar(languages, scheme = 'dark', theme = 'openbuild') {
   const rows = restPct > 0.05 ? [...top, { name: 'Other', pct: +restPct.toFixed(2) }] : top;
 
   const W = 720;
-  const barY = 18;
-  const barH = 6;
-  const barW = W;
-  const greys = scheme === 'dark' ? ['#F5F5F7', '#86868B', '#6E6E73', '#48484A', '#3A3A3C', '#2C2C2E'] : ['#1D1D1F', '#86868B', '#A1A1A6', '#C7C7CC', '#D2D2D7', '#E8E8ED'];
+  const pad = 28;
+  const barY = 34;
+  const barH = 8;
+  const barW = W - pad * 2;
 
-  let x = 0;
+  let x = pad;
   const segs = rows
     .map((l, i) => {
       const w = Math.max(2, (l.pct / 100) * barW);
-      const fill = i === 0 ? P.accent : greys[(i - 1) % greys.length];
-      const seg = `<rect x="${x.toFixed(2)}" y="${barY}" width="${Math.max(1, w - 2).toFixed(2)}" height="${barH}" rx="3" fill="${fill}"/>`;
+      const seg = `<rect x="${x.toFixed(2)}" y="${barY}" width="${Math.max(1, w - 3).toFixed(2)}" height="${barH}" rx="4" fill="${P.categorical[i % P.categorical.length]}"/>`;
       x += w;
       return seg;
     })
@@ -148,15 +165,18 @@ export function langBar(languages, scheme = 'dark', theme = 'openbuild') {
   const legend = rows
     .slice(0, 4)
     .map((l, i) => {
-      const fill = i === 0 ? P.accent : greys[(i - 1) % greys.length];
-      return `<circle cx="${i * 180 + 4}" cy="${barY + barH + 22}" r="3.5" fill="${fill}"/>
-  <text x="${i * 180 + 14}" y="${barY + barH + 26}" font-family="${FONT}" font-size="12" font-weight="500" fill="${t.text}">${esc(l.name)}</text>
-  <text x="${i * 180 + 14 + l.name.length * 7 + 8}" y="${barY + barH + 26}" font-family="${FONT}" font-size="12" font-weight="400" fill="${t.muted}">${l.pct.toFixed(1)}%</text>`;
+      const lx = pad + i * 150;
+      return `<circle cx="${lx + 4}" cy="${barY + barH + 26}" r="4" fill="${P.categorical[i % P.categorical.length]}"/>
+  <text x="${lx + 16}" y="${barY + barH + 30}" font-family="${FONT}" font-size="13" font-weight="500" fill="${P.cardText}">${esc(l.name)}</text>
+  <text x="${lx + 16 + l.name.length * 7.6 + 16}" y="${barY + barH + 30}" font-family="${FONT}" font-size="13" font-weight="400" fill="${t.muted}">${l.pct.toFixed(1)}%</text>`;
     })
     .join('\n  ');
 
-  const more = languages.length > 4 ? `<text x="${W}" y="${barY + barH + 26}" text-anchor="end" font-family="${FONT}" font-size="12" font-weight="400" fill="${t.muted}">+${languages.length - 4} more</text>` : '';
-  return svg(W, barY + barH + 44, `  ${segs}\n  ${legend}\n  ${more}`);
+  const more =
+    languages.length > 4
+      ? `<text x="${W - pad}" y="${barY + barH + 30}" text-anchor="end" font-family="${FONT}" font-size="13" font-weight="400" fill="${t.muted}">+${languages.length - 4} more</text>`
+      : '';
+  return cardFrame(W, barY + barH + 52, scheme, theme, `  ${segs}\n  ${legend}\n  ${more}`);
 }
 
 // ---------- contribution heatmap ----------
@@ -167,9 +187,10 @@ export function heatmap(calendar, scheme = 'dark', theme = 'openbuild') {
   for (let i = 0; i < calendar.length; i += 7) weeks.push(calendar.slice(i, i + 7));
   const cell = 11;
   const gap = 3;
-  const top = 34;
-  const W = weeks.length * (cell + gap);
-  const H = top + 7 * (cell + gap) + 22;
+  const pad = 28;
+  const top = 52;
+  const W = weeks.length * (cell + gap) + pad * 2 - gap;
+  const H = top + 7 * (cell + gap) + 34;
 
   const levels = (n) => (n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : 4);
   const fills = [t.empty, ...P.ramp];
@@ -177,7 +198,7 @@ export function heatmap(calendar, scheme = 'dark', theme = 'openbuild') {
   let cells = '';
   weeks.forEach((week, wi) => {
     week.forEach(([date, count], di) => {
-      const x = wi * (cell + gap);
+      const x = pad + wi * (cell + gap);
       const y = top + di * (cell + gap);
       cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${fills[levels(count)]}"><title>${date}: ${count}</title></rect>`;
     });
@@ -185,10 +206,10 @@ export function heatmap(calendar, scheme = 'dark', theme = 'openbuild') {
 
   const total = calendar.reduce((a, [, c]) => a + c, 0);
   const active = calendar.filter(([, c]) => c > 0).length;
-  const head = `  <text x="0" y="14" font-family="${FONT}" font-size="10" font-weight="600" fill="${t.muted}" letter-spacing="1.6">CONTRIBUTIONS · LAST 12 MONTHS</text>
-  <text x="${W}" y="14" text-anchor="end" font-family="${FONT}" font-size="12" font-weight="400" fill="${t.muted}">${total} total · ${active} active days</text>`;
-  const foot = `  <text x="0" y="${H - 4}" font-family="${FONT}" font-size="11" font-weight="400" fill="${t.muted}">${calendar[0]?.[0] ?? ''} → ${calendar.at(-1)?.[0] ?? ''}</text>`;
-  return svg(W, H, `${head}\n  ${cells}\n${foot}`);
+  const head = `  <text x="${pad}" y="30" font-family="${FONT}" font-size="10" font-weight="600" fill="${t.muted}" letter-spacing="1.6">CONTRIBUTIONS · LAST 12 MONTHS</text>
+  <text x="${W - pad}" y="30" text-anchor="end" font-family="${FONT}" font-size="13" font-weight="400" fill="${t.muted}">${total} total · ${active} active days</text>`;
+  const foot = `  <text x="${pad}" y="${H - 14}" font-family="${FONT}" font-size="11" font-weight="400" fill="${t.muted}">${calendar[0]?.[0] ?? ''} → ${calendar.at(-1)?.[0] ?? ''}</text>`;
+  return cardFrame(W, H, scheme, theme, `${head}\n  ${cells}\n${foot}`);
 }
 
 // ---------- animated typing banner (self-hosted; SMIL runs inside <img>) ----------
@@ -255,15 +276,15 @@ export function trophyCard(stats, contributions, scheme = 'dark', theme = 'openb
   if (items.length === 0) return '';
 
   const W = 720;
-  const H = 92;
+  const H = 108;
   const colW = W / items.length;
   const body = items
     .map((it, i) => {
       const cx = i * colW + colW / 2;
-      return `  <text x="${cx.toFixed(1)}" y="40" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="200" fill="${P.accent}" letter-spacing="-0.5">${it.tier}</text>
-  <text x="${cx.toFixed(1)}" y="62" text-anchor="middle" font-family="${FONT}" font-size="9" font-weight="600" fill="${t.muted}" letter-spacing="1.4">${it.label}</text>
-  <text x="${cx.toFixed(1)}" y="80" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="400" fill="${t.muted}">${it.value}</text>`;
+      return `  <text x="${cx.toFixed(1)}" y="46" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="300" fill="${P.accent}" letter-spacing="-0.5">${it.tier}</text>
+  <text x="${cx.toFixed(1)}" y="68" text-anchor="middle" font-family="${FONT}" font-size="9" font-weight="600" fill="${t.muted}" letter-spacing="1.4">${it.label}</text>
+  <text x="${cx.toFixed(1)}" y="88" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="400" fill="${t.muted}">${it.value}</text>`;
     })
     .join('\n');
-  return svg(W, H, body);
+  return cardFrame(W, H, scheme, theme, body);
 }

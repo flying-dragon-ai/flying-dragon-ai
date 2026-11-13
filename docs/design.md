@@ -120,38 +120,36 @@ TypeScript 28.5% · Python 28.4% · JavaScript 21.1% · HTML 11.5% · C# 2.5% ·
 | 奖杯墙 | 自绘 `assets/trophy-*.svg`：六项指标按绝对阈值分 A→SSS 六档 | `github-profile-trophy`（实测 402） |
 | 贪吃蛇贡献图 | `snake.yml` 生成到 `output` 分支，`fetch.mjs` 探测后自动接入 | — |
 
-## 9. 配色：单色底 + 单一强调色
+## 9. 配色：Apple iOS 系统色板
 
-强调色取自 `https://openbuild.xyz/`，2026-11-13 实测：抓两份 CSS（`_next/static/css/*.css`，共 612 KB）并用 Playwright 读渲染后的计算样式，取的是**实际生效**的值。
-
-| 角色 | 色值 | 来源 |
-| --- | --- | --- |
-| 薄荷绿（唯一强调色） | `#01DB83` | 计算样式 `backgroundColor`，作为色块出现 48 次 |
-| 页面底色 | `#F8F8F8` | 同上 |
-| 主文字 | `#1A1A1A` | 同上，出现 992 次 |
-| 近黑 | `#0A0A0A` | 同上 |
-
-参考站本身是多色块系统（薄荷 / 薰衣草 / 奶油黄 / 墨黑）。本仓库只取它的**强调色**，其余全部换成 Apple 系统灰，因为最终方向是发布会式极简：
+强调色最初取自 `https://openbuild.xyz/`（2026-11-13 实测：抓两份 CSS 共 612 KB + Playwright 读计算样式，取到薄荷绿 `#01DB83`）。最终方向定为 iOS 原生视觉后，改用 Apple 官方系统色值：
 
 | 角色 | 浅色 | 深色 |
 | --- | --- | --- |
-| 背景 | `#FFFFFF` | `#000000` |
-| 主文字 | `#1D1D1F` | `#F5F5F7` |
-| 次级文字 | `#86868B` | `#86868B` |
-| 分隔线 | `#E8E8ED` | `#1F1F22` |
-| 强调色 | `#00A05C` | `#01DB83` |
+| 主色 System Blue | `#007AFF` | `#0A84FF` |
+| 强调色 System Purple | `#AF52DE` | `#BF5AF2` |
+| 背景 System Gray 6 | `#F2F2F7` | `#000000` |
+| 卡片 | `#FFFFFF` | `#1C1C1E`（Gray 1） |
+| 文字 | `#000000` | `#FFFFFF` |
+| 次要文字 System Gray | `#8E8E93` | `#8E8E93` |
+| 分隔线 | `rgba(60,60,67,.18)` | `rgba(84,84,88,.6)` |
 
-浅色下强调色压深到 `#00A05C` 是为了在纯白上达到可读对比度；深色下用原色 `#01DB83`。
+深色模式用的是 Apple 自己的深色变体（Blue `#0A84FF`、Purple `#BF5AF2`），不是把浅色值直接搬过去。
 
-**规则：一个强调色，其余全灰。** 语言条只有第一名用强调色，其余走灰阶；热力图是单一色相的深浅；奖杯等级用强调色，数字用灰。
+**用法克制**：蓝色只出现在强调线、状态、链接、热力图；紫色只用于「进行中」状态和语言条第二段；其余全部是灰阶。
 
-## 10. 排版：细体与粗体的配对
+## 10. 质感：大圆角、磨砂玻璃、柔和投影
 
-- 展示层（大数字、标题）：`font-weight: 200`，负字距 `-0.04em`
-- 标签层（微标签、状态）：`font-weight: 600`，大写，字距 `0.16em`
-- 字体栈：`-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Segoe UI", sans-serif`
+| 元素 | 做法 |
+| --- | --- |
+| 卡片 | 圆角 20px（小卡 14px），Gray 6 / Gray 1 填充 |
+| 投影 | `0 2px 8px rgba(0,0,0,.06), 0 12px 32px rgba(0,0,0,.04)`；深色下加重到 `.5 / .35` |
+| SVG 卡片 | `feDropShadow` 滤镜，浅色 `stdDeviation=8 / opacity=.06`，深色 `4 / .55` |
+| 顶栏 | `backdrop-filter: saturate(180%) blur(20px)` + 半透明底，滚动时内容从下面透出来 |
+| 字体 | `-apple-system, "SF Pro Display", "SF Pro Text"`；大数字 300 字重，微标签 600 |
+| 微交互 | 卡片 hover 上浮 1px + 投影加深；链接 hover 换色；头像 hover 去灰 |
 
-SVG 里的字体栈用**单引号**：`FONT` 常量会被插进双引号的 `font-family="..."` 属性，用双引号会把标签截断，整份 SVG 变成非法 XML，浏览器直接不渲染。`verify.mjs` 现在有 `svg well-formed` 闸门专门拦这个。
+SVG 里的字体栈用**单引号**：`FONT` 常量会被插进双引号的 `font-family="..."` 属性，用双引号会把标签截断，整份 SVG 变成非法 XML，浏览器直接不渲染。`verify.mjs` 的 `svg well-formed` 闸门专门拦这个。
 
 ## 11. 汇报体：结论先行，去掉冗余
 
