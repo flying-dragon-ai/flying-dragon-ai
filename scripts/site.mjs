@@ -24,13 +24,7 @@ const payload = {
     footer: voice.footer,
   },
   report: {
-    overview: [
-      ['公开仓库', String(ctx.ownRepos), `另有 ${ctx.forks} 个 fork`],
-      ['Star', String(ctx.stars), `${ctx.ownRepos} 个仓库合计`],
-      ['近 12 个月贡献', String(ctx.contributions), `${ctx.commits} commits · ${ctx.prs} PR · ${ctx.issues} issues`],
-      ['活跃日', `${ctx.activeDays} / ${ctx.windowDays}`, `峰值 ${ctx.peakDay} 单日 ${ctx.peakCount} 次`],
-      ['主力栈', `${ctx.topLang} ${ctx.topLangPct}%`, `共 ${ctx.langCount} 种语言，按字节统计`],
-    ],
+    summary: `${ctx.ownRepos} 个自有仓库　·　${ctx.forks} 个 fork　·　${ctx.stars} 个 star　·　${ctx.langCount} 种语言　·　since ${ctx.since}`,
     objectives: voice.objectives.map((o) => {
       const n = o.cluster ? (profile.clusters.find((x) => x.id === o.cluster)?.repos.length ?? 0) : null;
       return {

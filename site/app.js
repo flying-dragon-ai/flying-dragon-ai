@@ -49,22 +49,8 @@ for (const [label, value] of stats) {
   $('stats').appendChild(card);
 }
 
-// ---------- overview table ----------
-const table = $('overview-table');
-const thead = el('thead');
-const hrow = el('tr');
-for (const h of ['指标', '数值', '口径']) hrow.appendChild(el('th', null, h));
-thead.appendChild(hrow);
-table.appendChild(thead);
-const tbody = el('tbody');
-for (const [k, v, note] of data.report.overview) {
-  const tr = el('tr');
-  tr.appendChild(el('td', null, k));
-  tr.appendChild(el('td', null, v));
-  tr.appendChild(el('td', null, note));
-  tbody.appendChild(tr);
-}
-table.appendChild(tbody);
+// ---------- summary ----------
+$('summary').textContent = data.report.summary;
 
 // ---------- OKR ----------
 for (const o of data.report.objectives) {
@@ -104,7 +90,10 @@ rows.forEach((l, i) => {
   seg.style.background = PALETTE[i % PALETTE.length];
   seg.title = `${l.name} ${l.pct.toFixed(1)}%`;
   $('langbar').appendChild(seg);
+});
 
+// Legend stays at four entries; the rest is one muted line. No clutter.
+rows.slice(0, 4).forEach((l, i) => {
   const item = el('li');
   const dot = el('span', 'dot');
   dot.style.background = PALETTE[i % PALETTE.length];
@@ -113,6 +102,11 @@ rows.forEach((l, i) => {
   item.appendChild(el('span', 'pct', `${l.pct.toFixed(1)}%`));
   $('langlist').appendChild(item);
 });
+if (rows.length > 4) {
+  const more = el('li');
+  more.appendChild(el('span', 'pct', `+${rows.length - 4} more`));
+  $('langlist').appendChild(more);
+}
 
 // ---------- clusters ----------
 for (const c of data.clusters) {

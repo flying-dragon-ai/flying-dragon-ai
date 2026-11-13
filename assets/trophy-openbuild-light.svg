@@ -1,27 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="104" viewBox="0 0 720 104" role="img">
-  <rect x="0.5" y="0.5" width="719" height="103" rx="12" fill="#FFFFFF" stroke="#E5E5E5"/>
-  <rect x="24.0" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="75.8" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">AA</text>
-  <text x="75.8" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">COMMITS</text>
-  <text x="75.8" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">145</text>
-  <rect x="137.7" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="189.5" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">A</text>
-  <text x="189.5" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">STARS</text>
-  <text x="189.5" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">6</text>
-  <rect x="251.3" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="303.2" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">AA</text>
-  <text x="303.2" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">REPOS</text>
-  <text x="303.2" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">15</text>
-  <rect x="365.0" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="416.8" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">A</text>
-  <text x="416.8" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">FOLLOWERS</text>
-  <text x="416.8" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">6</text>
-  <rect x="478.7" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="530.5" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">AA</text>
-  <text x="530.5" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">PRS</text>
-  <text x="530.5" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">16</text>
-  <rect x="592.3" y="22" width="103.7" height="60" rx="8" fill="#F8F8F8" stroke="#E5E5E5"/>
-  <text x="644.2" y="52" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="700" fill="#1A1A1A">AA</text>
-  <text x="644.2" y="70" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#6B6B6B" letter-spacing="1">ACTIVE DAYS</text>
-  <text x="644.2" y="96" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#1A1A1A">70</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="92" viewBox="0 0 720 92" role="img">
+  <text x="60.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">AA</text>
+  <text x="60.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">COMMITS</text>
+  <text x="60.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">145</text>
+  <text x="180.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">A</text>
+  <text x="180.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">STARS</text>
+  <text x="180.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">6</text>
+  <text x="300.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">AA</text>
+  <text x="300.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">REPOS</text>
+  <text x="300.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">15</text>
+  <text x="420.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">A</text>
+  <text x="420.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">FOLLOWERS</text>
+  <text x="420.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">6</text>
+  <text x="540.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">AA</text>
+  <text x="540.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">PRS</text>
+  <text x="540.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">16</text>
+  <text x="660.0" y="40" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="26" font-weight="200" fill="#00A05C" letter-spacing="-0.5">AA</text>
+  <text x="660.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#86868B" letter-spacing="1.4">ACTIVE DAYS</text>
+  <text x="660.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#86868B">70</text>
 </svg>

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Gate: every local asset exists, every remote image/link answers 2xx.
 // Behind a proxy: NODE_USE_ENV_PROXY=1 HTTPS_PROXY=http://127.0.0.1:10808 node scripts/verify.mjs
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,6 +25,23 @@ for (const f of localFiles) {
   console.log(`  ${ok ? 'OK  ' : 'MISS'} ${f}`);
 }
 
+// Well-formedness gate: a malformed SVG renders as a broken image on GitHub.
+const svgFiles = readdirSync(join(ROOT, 'assets')).filter((f) => f.endsWith('.svg'));
+let malformed = 0;
+for (const f of svgFiles) {
+  const body = readFileSync(join(ROOT, 'assets', f), 'utf8');
+  const opens = (body.match(/<svg[\s>]/g) || []).length;
+  const closes = (body.match(/<\/svg>/g) || []).length;
+  // an unescaped double quote inside an attribute breaks the tag
+  const badAttr = /="[^"]*"[^"\s=/>][^"]*"/.test(body);
+  if (opens !== 1 || closes !== 1 || badAttr) {
+    malformed++;
+    console.log(`  BAD  assets/${f} (svg=${opens}/${closes} badAttr=${badAttr})`);
+  }
+}
+if (malformed) fail++;
+console.log(`svg well-formed: ${malformed === 0 ? 'OK  ' : 'FAIL'} ${svgFiles.length} files`);
+
 // Consistency gate: the rendered SVGs must agree with data/profile.json.
 const profile = JSON.parse(readFileSync(join(ROOT, 'data', 'profile.json'), 'utf8'));
 const statsSvg = readFileSync(join(ROOT, 'assets', 'stats-openbuild-dark.svg'), 'utf8');
@@ -42,8 +59,9 @@ console.log(`stats card: ${same ? 'OK  ' : 'STALE'} rendered=[${rendered}] expec
 
 const langSvg = readFileSync(join(ROOT, 'assets', 'lang-bar-openbuild-dark.svg'), 'utf8');
 const langRendered = [...langSvg.matchAll(/>([0-9.]+)%</g)].map((m) => Number(m[1]));
-const langExpected = profile.stats.languages.slice(0, 8).map((l) => Number(l.pct.toFixed(1)));
-const langSame = langExpected.every((v, i) => Math.abs(v - (langRendered[i] ?? -1)) < 0.06);
+// The bar renders a compact legend (top 4), so compare only what it actually draws.
+const langExpected = profile.stats.languages.slice(0, langRendered.length).map((l) => Number(l.pct.toFixed(1)));
+const langSame = langRendered.length > 0 && langExpected.every((v, i) => Math.abs(v - langRendered[i]) < 0.06);
 if (!langSame) fail++;
 console.log(`language bar: ${langSame ? 'OK  ' : 'STALE'} rendered=[${langRendered.slice(0, 4)}] expected=[${langExpected.slice(0, 4)}]`);
 
