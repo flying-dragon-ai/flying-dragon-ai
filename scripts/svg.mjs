@@ -255,15 +255,18 @@ export function heatmap(calendar, scheme = 'dark', theme = 'openbuild') {
   const W = weeks.length * (cell + gap) + pad * 2 - gap;
   const H = top + 7 * (cell + gap) + 34;
 
+  // One accent colour, four opacity steps — no off-palette tints.
   const levels = (n) => (n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : 4);
-  const fills = [t.empty, ...P.ramp];
+  const steps = [0, 0.16, 0.38, 0.66, 1];
 
   let cells = '';
   weeks.forEach((week, wi) => {
     week.forEach(([date, count], di) => {
       const x = pad + wi * (cell + gap);
       const y = top + di * (cell + gap);
-      cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${fills[levels(count)]}"><title>${date}: ${count}</title></rect>`;
+      const lv = levels(count);
+      const paint = lv === 0 ? `fill="${t.empty}"` : `fill="${P.accent}" fill-opacity="${steps[lv]}"`;
+      cells += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" ${paint}><title>${date}: ${count}</title></rect>`;
     });
   });
 
