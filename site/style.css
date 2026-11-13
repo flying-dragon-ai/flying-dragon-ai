@@ -1,6 +1,8 @@
 /* Apple keynote minimalism × OpenBuild mint.
-   Monochrome base (Apple system greys) + exactly one accent (#01DB83 / #00A05C).
-   Thin display weights paired with bold micro-labels. Generous negative space. */
+   Accent measured from https://openbuild.xyz/ on 2026-11-13: #01DB83 (light-mode
+   variant #00A05C for contrast on white). Everything else is Apple system grey.
+   Rule: one accent colour, monochrome base, thin display weights (200) paired
+   with bold micro-labels (600), generous negative space. */
 
 :root {
   --mint: #00a05c;
