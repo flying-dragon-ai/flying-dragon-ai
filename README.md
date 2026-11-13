@@ -31,7 +31,7 @@
 
 **栈**
 
-Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br><br><sub>18 种语言 · 按字节统计</sub>
+Python 35.5%<br>JavaScript 20.0%<br>TypeScript 18.1%<br>HTML 14.3%<br>C# 3.1%<br><br><sub>18 种语言 · 按字节统计</sub>
 
 </td>
 </tr>
@@ -40,14 +40,14 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 
 **近 12 个月**
 
-301 contributions<br>70 active days<br>peak 24 on 2026-06-21
+305 contributions<br>70 active days<br>peak 24 on 2026-06-21
 
 </td>
 <td width="50%" valign="top">
 
 **仓库**
 
-15 own · 52 forks<br>6 stars<br>[交流群](https://github.com/flying-dragon-ai/openhongguo-community)
+16 own · 52 forks<br>6 stars<br>[交流群](https://github.com/flying-dragon-ai/openhongguo-community)
 
 </td>
 </tr>
@@ -87,7 +87,7 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 | 方向 | # | 仓库 |
 | --- | --- | --- |
 | **Windows 内部与安全工具** | 1 | [win-raccoon-lab](https://github.com/flying-dragon-ai/win-raccoon-lab) |
-| **Agent 基础设施** | 8 | [super-agentic-diner](https://github.com/flying-dragon-ai/super-agentic-diner) · [knowledge-takeback-skill](https://github.com/flying-dragon-ai/knowledge-takeback-skill) · [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · [pi-smart-search](https://github.com/flying-dragon-ai/pi-smart-search) · [smartsearch](https://github.com/flying-dragon-ai/smartsearch) · [pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory) · +2 |
+| **Agent 基础设施** | 9 | [super-agentic-diner](https://github.com/flying-dragon-ai/super-agentic-diner) · [knowledge-takeback-skill](https://github.com/flying-dragon-ai/knowledge-takeback-skill) · [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · [flying-dragon-ai](https://github.com/flying-dragon-ai/flying-dragon-ai) · [pi-smart-search](https://github.com/flying-dragon-ai/pi-smart-search) · [smartsearch](https://github.com/flying-dragon-ai/smartsearch) · +3 |
 | **3D 与交互式 Web** | 3 | [tihuqiche](https://github.com/flying-dragon-ai/tihuqiche) · [pet-world](https://github.com/flying-dragon-ai/pet-world) · [mom_remember](https://github.com/flying-dragon-ai/mom_remember) |
 | **小程序与产品 MVP** | 2 | [Pocket_Travel_Companion](https://github.com/flying-dragon-ai/Pocket_Travel_Companion) · [Shibi_Gallery](https://github.com/flying-dragon-ai/Shibi_Gallery) |
 | **社区与元信息** | 1 | [openhongguo-community](https://github.com/flying-dragon-ai/openhongguo-community) |
@@ -114,7 +114,7 @@ Python 35.8%<br>JavaScript 19.6%<br>TypeScript 18.2%<br>HTML 14.3%<br>C# 3.2%<br
 
 如果某个仓库省了你一小时，点个 star。
 
-**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 301 contributions / 12mo
+**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 16 repos · 6 stars · 305 contributions / 12mo
 
 <sub>README 由 `gh` 拉取真实数据后渲染 · 最后更新 2026-11-13</sub>
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T02:49:23.884Z",
+  "generatedAt": "2026-11-13T02:54:19.439Z",
   "source": {
     "tool": "gh",
     "login": "flying-dragon-ai"
@@ -15,14 +15,14 @@
     "twitter": "",
     "followers": 6,
     "following": 23,
-    "publicRepos": 67,
+    "publicRepos": 68,
     "publicGists": 0,
     "hireable": true,
     "createdAt": "2019-12-09T02:08:04Z",
     "htmlUrl": "https://github.com/flying-dragon-ai"
   },
   "stats": {
-    "ownRepos": 15,
+    "ownRepos": 16,
     "forks": 52,
     "totalStars": 6,
     "totalForks": 0,
@@ -30,42 +30,42 @@
       {
         "name": "Python",
         "bytes": 3442330,
-        "pct": 35.75
+        "pct": 35.53
       },
       {
         "name": "JavaScript",
-        "bytes": 1883239,
-        "pct": 19.56
+        "bytes": 1935263,
+        "pct": 19.97
       },
       {
         "name": "TypeScript",
         "bytes": 1756312,
-        "pct": 18.24
+        "pct": 18.13
       },
       {
         "name": "HTML",
-        "bytes": 1378144,
-        "pct": 14.31
+        "bytes": 1380284,
+        "pct": 14.25
       },
       {
         "name": "C#",
         "bytes": 305557,
-        "pct": 3.17
+        "pct": 3.15
       },
       {
         "name": "Swift",
         "bytes": 273639,
-        "pct": 2.84
+        "pct": 2.82
       },
       {
         "name": "Vue",
         "bytes": 171766,
-        "pct": 1.78
+        "pct": 1.77
       },
       {
         "name": "Rust",
         "bytes": 133360,
-        "pct": 1.39
+        "pct": 1.38
       },
       {
         "name": "PowerShell",
@@ -74,8 +74,8 @@
       },
       {
         "name": "CSS",
-        "bytes": 102421,
-        "pct": 1.06
+        "bytes": 108765,
+        "pct": 1.12
       },
       {
         "name": "Shell",
@@ -174,6 +174,26 @@
       {
         "name": "python",
         "count": 2
+      },
+      {
+        "name": "generator",
+        "count": 1
+      },
+      {
+        "name": "gh-cli",
+        "count": 1
+      },
+      {
+        "name": "github-profile",
+        "count": 1
+      },
+      {
+        "name": "profile-readme",
+        "count": 1
+      },
+      {
+        "name": "readme",
+        "count": 1
       },
       {
         "name": "pinia",
@@ -470,8 +490,8 @@
     ]
   },
   "contributions": {
-    "total": 301,
-    "commits": 137,
+    "total": 305,
+    "commits": 140,
     "issues": 12,
     "pullRequests": 16,
     "reviews": 0,
@@ -495,7 +515,7 @@
       "2026-08": 6,
       "2026-09": 9,
       "2026-10": 77,
-      "2026-11": 35
+      "2026-11": 39
     },
     "calendar": [
       [
@@ -1000,11 +1020,11 @@
       ],
       [
         "2026-03-14",
-        0
+        2
       ],
       [
         "2026-03-15",
-        2
+        0
       ],
       [
         "2026-03-16",
@@ -1976,7 +1996,7 @@
       ],
       [
         "2026-11-13",
-        10
+        14
       ]
     ]
   },
@@ -2114,6 +2134,25 @@
             "text-to-video",
             "video-generation",
             "volcengine"
+          ],
+          "license": null
+        },
+        {
+          "name": "flying-dragon-ai",
+          "description": "GitHub profile homepage — data fetched with gh, rendered from templates",
+          "language": "JavaScript",
+          "stars": 0,
+          "forks": 0,
+          "pushedAt": "2026-11-13T02:54:01Z",
+          "createdAt": "2026-11-13T02:50:25Z",
+          "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
+          "homepage": "",
+          "topics": [
+            "generator",
+            "gh-cli",
+            "github-profile",
+            "profile-readme",
+            "readme"
           ],
           "license": null
         },
