@@ -32,7 +32,7 @@ jobs:
       - name: Fetch live data via gh
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/fetch.mjs
+        run: node scripts/fetch.mjs ${{ github.repository_owner }}
 
       - name: Render README and site payload
         run: |

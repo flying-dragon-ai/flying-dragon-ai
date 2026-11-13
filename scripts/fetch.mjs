@@ -10,7 +10,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
 mkdirSync(DATA, { recursive: true });
 
-const login = process.argv[2] || whoami();
+// In Actions the token is an installation token: GET /user returns 403.
+// Prefer an explicit argument, then the repo owner, then the authenticated user.
+const login = process.argv[2] || process.env.GITHUB_REPOSITORY_OWNER || whoami();
 const taxonomy = JSON.parse(readFileSync(join(DATA, 'taxonomy.json'), 'utf8'));
 const excluded = new Set(taxonomy.exclude || []);
 
