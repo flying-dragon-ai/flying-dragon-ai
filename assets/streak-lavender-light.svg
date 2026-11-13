@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="120" viewBox="0 0 720 120" role="img">
-  <defs><filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/></filter></defs>
-  <rect x="0" y="0" width="720" height="120" rx="20" fill="#F2F2F7" filter="url(#card)"/>
+  <defs>
+    <filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.05"/><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.04"/></filter>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F2F2F7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="720" height="120" rx="24" fill="url(#fill)" filter="url(#card)"/>
   <rect x="108.0" y="30" width="24" height="3" rx="1.5" fill="#AF52DE"/>
   <text x="120.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#000000" letter-spacing="-1.5">2d</text>
   <text x="120.0" y="104" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">CURRENT STREAK</text>

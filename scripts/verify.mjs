@@ -78,6 +78,13 @@ async function probe(url) {
   }
 }
 
+const offline = process.argv.includes('--offline');
+if (offline) {
+  console.log('remote urls: skipped (--offline)');
+  console.log(fail === 0 ? 'verify: PASS' : `verify: ${fail} problem(s)`);
+  process.exit(fail === 0 ? 0 : 1);
+}
+
 console.log(`remote urls: ${remoteUrls.length}`);
 const results = await Promise.all(remoteUrls.map(async (u) => [u, await probe(u)]));
 for (const [u, status] of results) {

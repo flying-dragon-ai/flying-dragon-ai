@@ -31,6 +31,9 @@ $('meta').textContent = [
   .filter(Boolean)
   .join(' · ');
 
+// ---------- dynamic island ----------
+$('island-text').textContent = `${data.stats.ownRepos} repos · ${data.contributions.total} contributions · ${data.contributions.activeDays} active days`;
+
 // ---------- conclusion ----------
 $('conclusion-text').textContent = data.voice.conclusion;
 

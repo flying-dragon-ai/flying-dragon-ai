@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="94" viewBox="0 0 720 94" role="img">
-  <defs><filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/></filter></defs>
-  <rect x="0" y="0" width="720" height="94" rx="20" fill="#F2F2F7" filter="url(#card)"/>
+  <defs>
+    <filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.05"/><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.04"/></filter>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F2F2F7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="720" height="94" rx="24" fill="url(#fill)" filter="url(#card)"/>
   <rect x="28.00" y="34" width="234.38" height="8" rx="4" fill="#AF52DE"/>
   <rect x="265.38" y="34" width="126.88" height="8" rx="4" fill="#007AFF"/>
   <rect x="395.26" y="34" width="118.11" height="8" rx="4" fill="#5AC8FA"/>

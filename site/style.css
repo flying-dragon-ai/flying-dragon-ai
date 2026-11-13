@@ -7,6 +7,9 @@
 :root {
   --blue: #007aff;
   --purple: #af52de;
+  --green: #34c759;
+  --orange: #ff9500;
+  --red: #ff3b30;
   --gray6: #f2f2f7;
   --gray5: #e5e5ea;
   --gray4: #d1d1d6;
@@ -22,11 +25,12 @@
   --accent-2: var(--purple);
   --separator: rgba(60, 60, 67, 0.18);
   --glass: rgba(255, 255, 255, 0.72);
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 20px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  --card-grad: linear-gradient(180deg, #ffffff 0%, #f7f7fa 100%);
 
-  --radius: 20px;
-  --radius-sm: 14px;
+  --radius: 24px;
+  --radius-sm: 18px;
   --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
   --space: clamp(64px, 9vw, 112px);
@@ -40,10 +44,14 @@
     --muted: #8e8e93;
     --accent: #0a84ff;
     --accent-2: #bf5af2;
+    --green: #30d158;
+    --orange: #ff9f0a;
+    --red: #ff453a;
     --separator: rgba(84, 84, 88, 0.6);
     --glass: rgba(28, 28, 30, 0.72);
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 12px 32px rgba(0, 0, 0, 0.35);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 8px 20px rgba(0, 0, 0, 0.35);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
+    --card-grad: linear-gradient(180deg, #1f1f22 0%, #1c1c1e 100%);
   }
 }
 
@@ -98,6 +106,43 @@ body {
 }
 
 .topbar nav a:hover { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+
+.island {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #000;
+  color: #fff;
+  border-radius: 999px;
+  padding: 7px 18px;
+  font-size: .74rem;
+  font-weight: 500;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  transition: padding .35s cubic-bezier(.2,.7,.3,1), background .35s ease;
+}
+
+.island::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex: none;
+}
+
+.island:hover { padding: 7px 26px; }
+
+@media (prefers-color-scheme: dark) {
+  .island { background: #1c1c1e; border: 1px solid #2c2c2e; }
+}
+
+@media (max-width: 860px) {
+  .island { display: none; }
+}
 
 main {
   position: relative;
@@ -161,7 +206,7 @@ h1 {
 .conclusion {
   margin: var(--space) 0 0;
   padding: 28px 30px;
-  background: var(--card);
+  background: var(--card-grad);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -211,7 +256,7 @@ h2 .num {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
   gap: 8px;
-  background: var(--card);
+  background: var(--card-grad);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 30px 16px;
@@ -290,7 +335,8 @@ h2 .num {
   white-space: nowrap;
 }
 
-.okr-item .status.wip { color: var(--accent-2); }
+.okr-item .status { color: var(--green); }
+.okr-item .status.wip { color: var(--orange); }
 .okr-item .status.todo { color: var(--muted); }
 
 /* ---------- projects ---------- */
@@ -393,7 +439,7 @@ h2 .num {
   gap: 3px;
   overflow-x: auto;
   padding: 24px;
-  background: var(--card);
+  background: var(--card-grad);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }

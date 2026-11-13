@@ -12,6 +12,9 @@ export const PALETTES = {
     light: {
       accent: '#007AFF',
       accent2: '#AF52DE',
+      success: '#34C759',
+      warning: '#FF9500',
+      danger: '#FF3B30',
       onAccent: '#FFFFFF',
       cardBg: '#F2F2F7',
       cardText: '#000000',
@@ -21,6 +24,9 @@ export const PALETTES = {
     dark: {
       accent: '#0A84FF',
       accent2: '#BF5AF2',
+      success: '#30D158',
+      warning: '#FF9F0A',
+      danger: '#FF453A',
       onAccent: '#FFFFFF',
       cardBg: '#1C1C1E',
       cardText: '#FFFFFF',
@@ -32,6 +38,9 @@ export const PALETTES = {
     light: {
       accent: '#AF52DE',
       accent2: '#007AFF',
+      success: '#34C759',
+      warning: '#FF9500',
+      danger: '#FF3B30',
       onAccent: '#FFFFFF',
       cardBg: '#F2F2F7',
       cardText: '#000000',
@@ -41,6 +50,9 @@ export const PALETTES = {
     dark: {
       accent: '#BF5AF2',
       accent2: '#0A84FF',
+      success: '#30D158',
+      warning: '#FF9F0A',
+      danger: '#FF453A',
       onAccent: '#FFFFFF',
       cardBg: '#1C1C1E',
       cardText: '#FFFFFF',
@@ -66,18 +78,26 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const svg = (w, h, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">\n${body}\n</svg>\n`;
 
-// iOS card: large radius, soft shadow, Gray 6 / Gray 1 fill.
-function cardFrame(w, h, scheme, theme, body, { radius = 20 } = {}) {
+// iOS 18 card: extra-large radius, low-saturation gradient fill, refined micro shadow.
+function cardFrame(w, h, scheme, theme, body, { radius = 24 } = {}) {
   const P = pal(theme, scheme);
   const shadow =
     scheme === 'dark'
-      ? '<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#000" flood-opacity="0.55"/>'
-      : '<feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/>';
+      ? '<feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>'
+      : '<feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.05"/><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.04"/>';
+  const gradFrom = scheme === 'dark' ? '#1F1F22' : '#FFFFFF';
+  const gradTo = P.cardBg;
   return svg(
     w,
     h,
-    `  <defs><filter id="card" x="-8%" y="-12%" width="116%" height="132%">${shadow}</filter></defs>
-  <rect x="0" y="0" width="${w}" height="${h}" rx="${radius}" fill="${P.cardBg}" filter="url(#card)"/>
+    `  <defs>
+    <filter id="card" x="-8%" y="-12%" width="116%" height="132%">${shadow}</filter>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${gradFrom}"/>
+      <stop offset="1" stop-color="${gradTo}"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="${w}" height="${h}" rx="${radius}" fill="url(#fill)" filter="url(#card)"/>
 ${body}`,
   );
 }
