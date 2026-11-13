@@ -96,14 +96,14 @@ function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
   const glassBottom = dark ? 'rgba(28,28,30,0.62)' : 'rgba(242,242,247,0.58)';
   const rim = dark ? 'rgba(255,255,255,0.20)' : 'rgba(255,255,255,0.90)';
   const edge = dark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.09)';
-  const blobA = dark ? 'rgba(10,132,255,0.62)' : 'rgba(0,122,255,0.42)';
-  const blobB = dark ? 'rgba(191,90,242,0.52)' : 'rgba(175,82,222,0.34)';
+  const blobA = dark ? 'rgba(10,132,255,0.50)' : 'rgba(0,122,255,0.36)';
+  const blobB = dark ? 'rgba(191,90,242,0.42)' : 'rgba(175,82,222,0.28)';
 
-  const bx1 = (w * 0.18).toFixed(1);
-  const by1 = (h * 0.12).toFixed(1);
+  const bx1 = (w * 0.10).toFixed(1);
+  const by1 = (h * 0.95).toFixed(1);
   const br1 = (Math.min(w, h) * 0.48).toFixed(1);
-  const bx2 = (w * 0.86).toFixed(1);
-  const by2 = (h * 0.92).toFixed(1);
+  const bx2 = (w * 0.92).toFixed(1);
+  const by2 = (h * 0.05).toFixed(1);
   const br2 = (Math.min(w, h) * 0.42).toFixed(1);
 
   return svg(

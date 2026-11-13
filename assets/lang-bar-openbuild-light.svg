@@ -17,11 +17,11 @@
   </defs>
   <g clip-path="url(#glassclip)">
     <g filter="url(#refract)">
-      <circle cx="129.6" cy="11.3" r="45.1" fill="rgba(0,122,255,0.42)">
-        <animate attributeName="cx" values="129.6;244.8;129.6" dur="14s" repeatCount="indefinite"/>
+      <circle cx="72.0" cy="89.3" r="45.1" fill="rgba(0,122,255,0.36)">
+        <animate attributeName="cx" values="72.0;244.8;72.0" dur="14s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="619.2" cy="86.5" r="39.5" fill="rgba(175,82,222,0.34)">
-        <animate attributeName="cy" values="86.5;58.3;86.5" dur="18s" repeatCount="indefinite"/>
+      <circle cx="662.4" cy="4.7" r="39.5" fill="rgba(175,82,222,0.28)">
+        <animate attributeName="cy" values="4.7;58.3;4.7" dur="18s" repeatCount="indefinite"/>
       </circle>
     </g>
     <rect x="0" y="0" width="720" height="94" fill="url(#glass)"/>
