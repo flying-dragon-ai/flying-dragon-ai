@@ -1,12 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="94" viewBox="0 0 720 94" role="img">
   <defs>
-    <filter id="card" x="-8%" y="-12%" width="116%" height="132%"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/></filter>
-    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1F1F22"/>
-      <stop offset="1" stop-color="#1C1C1E"/>
+    <filter id="card" x="-10%" y="-16%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.55"/><feDropShadow dx="0" dy="10" stdDeviation="24" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="refract" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="0.55" stop-color="rgba(255,255,255,0.10)" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="rgba(28,28,30,0.62)"/>
     </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="0.35" stop-color="rgba(255,255,255,0.16)"/>
+      <stop offset="0.7" stop-color="rgba(255,255,255,0.04)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="glassclip"><rect x="0" y="0" width="720" height="94" rx="26"/></clipPath>
   </defs>
-  <rect x="0" y="0" width="720" height="94" rx="24" fill="url(#fill)" filter="url(#card)"/>
+  <g clip-path="url(#glassclip)">
+    <g filter="url(#refract)">
+      <circle cx="129.6" cy="11.3" r="58.3" fill="rgba(10,132,255,0.55)">
+        <animate attributeName="cx" values="129.6;244.8;129.6" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="619.2" cy="86.5" r="51.7" fill="rgba(191,90,242,0.45)">
+        <animate attributeName="cy" values="86.5;58.3;86.5" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="0" y="0" width="720" height="94" fill="url(#glass)"/>
+    <rect x="0" y="0" width="720" height="94" fill="url(#sheen)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="0.5" y="0.5" width="719" height="93" rx="26" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1" filter="url(#card)"/>
   <rect x="28.00" y="34" width="234.38" height="8" rx="4" fill="#0A84FF"/>
   <rect x="265.38" y="34" width="126.88" height="8" rx="4" fill="#BF5AF2"/>
   <rect x="395.26" y="34" width="118.11" height="8" rx="4" fill="#64D2FF"/>

@@ -78,26 +78,67 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const svg = (w, h, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img">\n${body}\n</svg>\n`;
 
-// iOS 18 card: extra-large radius, low-saturation gradient fill, refined micro shadow.
-function cardFrame(w, h, scheme, theme, body, { radius = 24 } = {}) {
+// iOS 26 Liquid Glass card.
+// Structure, back to front:
+//   1. blurred colour blobs clipped to the card  -> the "wallpaper" behind the glass
+//   2. translucent body gradient                 -> the glass itself
+//   3. diagonal white sheen                      -> specular reflection, animated
+//   4. light rim stroke                          -> light comes from above
+//   5. content
+function cardFrame(w, h, scheme, theme, body, { radius = 26 } = {}) {
   const P = pal(theme, scheme);
-  const shadow =
-    scheme === 'dark'
-      ? '<feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>'
-      : '<feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.05"/><feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.04"/>';
-  const gradFrom = scheme === 'dark' ? '#1F1F22' : '#FFFFFF';
-  const gradTo = P.cardBg;
+  const dark = scheme === 'dark';
+  const shadow = dark
+    ? '<feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.55"/><feDropShadow dx="0" dy="10" stdDeviation="24" flood-color="#000" flood-opacity="0.45"/>'
+    : '<feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.06"/><feDropShadow dx="0" dy="10" stdDeviation="24" flood-color="#000" flood-opacity="0.05"/>';
+
+  const glassTop = dark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.86)';
+  const glassBottom = dark ? 'rgba(28,28,30,0.62)' : 'rgba(242,242,247,0.58)';
+  const rim = dark ? 'rgba(255,255,255,0.16)' : 'rgba(255,255,255,0.75)';
+  const blobA = dark ? 'rgba(10,132,255,0.55)' : 'rgba(0,122,255,0.30)';
+  const blobB = dark ? 'rgba(191,90,242,0.45)' : 'rgba(175,82,222,0.24)';
+
+  const bx1 = (w * 0.18).toFixed(1);
+  const by1 = (h * 0.12).toFixed(1);
+  const br1 = (Math.min(w, h) * 0.62).toFixed(1);
+  const bx2 = (w * 0.86).toFixed(1);
+  const by2 = (h * 0.92).toFixed(1);
+  const br2 = (Math.min(w, h) * 0.55).toFixed(1);
+
   return svg(
     w,
     h,
     `  <defs>
-    <filter id="card" x="-8%" y="-12%" width="116%" height="132%">${shadow}</filter>
-    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="${gradFrom}"/>
-      <stop offset="1" stop-color="${gradTo}"/>
+    <filter id="card" x="-10%" y="-16%" width="120%" height="140%">${shadow}</filter>
+    <filter id="refract" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${glassTop}"/>
+      <stop offset="0.55" stop-color="${glassTop}" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="${glassBottom}"/>
     </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="0.35" stop-color="rgba(255,255,255,0.16)"/>
+      <stop offset="0.7" stop-color="rgba(255,255,255,0.04)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="glassclip"><rect x="0" y="0" width="${w}" height="${h}" rx="${radius}"/></clipPath>
   </defs>
-  <rect x="0" y="0" width="${w}" height="${h}" rx="${radius}" fill="url(#fill)" filter="url(#card)"/>
+  <g clip-path="url(#glassclip)">
+    <g filter="url(#refract)">
+      <circle cx="${bx1}" cy="${by1}" r="${br1}" fill="${blobA}">
+        <animate attributeName="cx" values="${bx1};${(w * 0.34).toFixed(1)};${bx1}" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="${bx2}" cy="${by2}" r="${br2}" fill="${blobB}">
+        <animate attributeName="cy" values="${by2};${(h * 0.62).toFixed(1)};${by2}" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect x="0" y="0" width="${w}" height="${h}" fill="url(#glass)"/>
+    <rect x="0" y="0" width="${w}" height="${h}" fill="url(#sheen)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="${radius}" fill="none" stroke="${rim}" stroke-width="1" filter="url(#card)"/>
 ${body}`,
   );
 }
