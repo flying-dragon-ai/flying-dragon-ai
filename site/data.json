@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T03:30:42.414Z",
+  "generatedAt": "2026-11-13T03:38:13.394Z",
   "user": {
     "login": "flying-dragon-ai",
     "name": "flying~dragon",
@@ -19,7 +19,7 @@
   },
   "voice": {
     "tagline": "agent infrastructure · 3D web · windows internals",
-    "headline": "15 个公开仓库，三条产品线，近 12 个月 311 次贡献。",
+    "headline": "15 个公开仓库，三条产品线，近 12 个月 313 次贡献。",
     "conclusion": "主攻 agent 基础设施（8 个仓库），兼做 3D Web（3 个）与 Windows 内部工具（1 个）。主力栈 Python 35.8%，近 12 个月 70 个活跃日、峰值单日 24 次提交。",
     "now": "当前主线：pi 生态的扩展与 subagent 编排。",
     "quotes": [
@@ -58,7 +58,7 @@
         "id": "O4",
         "title": "保持稳定交付节奏",
         "kr": "近 12 个月贡献与活跃日维持在可用水平，不靠集中冲刺",
-        "data": "311 贡献 · 70 活跃日",
+        "data": "313 贡献 · 70 活跃日",
         "status": "进行中"
       }
     ],
@@ -526,8 +526,8 @@
     ]
   },
   "contributions": {
-    "total": 311,
-    "commits": 146,
+    "total": 313,
+    "commits": 148,
     "pullRequests": 16,
     "issues": 12,
     "activeDays": 70,
@@ -2012,7 +2012,7 @@
       ],
       [
         "2026-11-13",
-        20
+        22
       ]
     ],
     "monthly": {
@@ -2028,7 +2028,7 @@
       "2026-08": 6,
       "2026-09": 9,
       "2026-10": 77,
-      "2026-11": 45
+      "2026-11": 47
     }
   },
   "clusters": [

@@ -4,7 +4,7 @@
 
 # flying~dragon
 
-**15 个公开仓库，三条产品线，近 12 个月 311 次贡献。**
+**15 个公开仓库，三条产品线，近 12 个月 313 次贡献。**
 
 agent infrastructure · 3D web · windows internals
 
@@ -30,7 +30,7 @@ agent infrastructure · 3D web · windows internals
 
 **O3**　沉淀 Windows 内部工具　·　1 个仓库　·　达成
 
-**O4**　保持稳定交付节奏　·　311 贡献 · 70 活跃日　·　进行中
+**O4**　保持稳定交付节奏　·　313 贡献 · 70 活跃日　·　进行中
 
 ## 03　重点项目
 
@@ -79,7 +79,7 @@ agent infrastructure · 3D web · windows internals
 
 数据由 gh CLI 拉取后静态渲染，不接受手工维护。
 
-**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 311 contributions / 12mo
+**[flying-dragon-ai](https://github.com/flying-dragon-ai)** · 15 repos · 6 stars · 313 contributions / 12mo
 
 <sub>README 由 `gh` 拉取真实数据后渲染 · 最后更新 2026-11-13</sub>
 

@@ -23,7 +23,7 @@
     <animate attributeName="width" values="0;0;396.96000000000004;396.96000000000004;0;0" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>
   </rect></clipPath>
   <g clip-path="url(#type2)">
-    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="22" font-weight="300" fill="#FFFFFF" letter-spacing="-0.4">311 contributions · 70 active days</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="22" font-weight="300" fill="#FFFFFF" letter-spacing="-0.4">313 contributions · 70 active days</text>
   </g>
   <rect x="0" y="13" width="2" height="22" fill="#0A84FF">
     <animate attributeName="x" values="0;0;396.96000000000004;396.96000000000004;0;0" keyTimes="0;0.6667;0.8167;0.95;0.9833;1" dur="12s" repeatCount="indefinite"/>
