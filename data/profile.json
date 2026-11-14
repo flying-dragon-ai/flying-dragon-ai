@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T10:57:00.719Z",
+  "generatedAt": "2026-11-14T10:20:46.080Z",
   "source": {
     "tool": "gh",
     "login": "flying-dragon-ai"
@@ -15,7 +15,7 @@
     "twitter": "",
     "followers": 6,
     "following": 23,
-    "publicRepos": 68,
+    "publicRepos": 69,
     "publicGists": 0,
     "hireable": true,
     "createdAt": "2019-12-09T02:08:04Z",
@@ -23,7 +23,7 @@
   },
   "stats": {
     "ownRepos": 15,
-    "forks": 52,
+    "forks": 53,
     "totalStars": 6,
     "totalForks": 0,
     "followers": 6,
@@ -471,16 +471,16 @@
     ]
   },
   "contributions": {
-    "total": 326,
+    "total": 329,
     "commits": 160,
-    "issues": 13,
-    "pullRequests": 16,
+    "issues": 14,
+    "pullRequests": 17,
     "reviews": 0,
     "restricted": 70,
-    "activeDays": 70,
-    "windowDays": 370,
+    "activeDays": 71,
+    "windowDays": 371,
     "windowStart": "2025-11-09",
-    "windowEnd": "2026-11-13",
+    "windowEnd": "2026-11-14",
     "peakDay": "2026-11-13",
     "peakCount": 35,
     "monthly": {
@@ -496,7 +496,7 @@
       "2026-08": 6,
       "2026-09": 9,
       "2026-10": 77,
-      "2026-11": 60
+      "2026-11": 63
     },
     "calendar": [
       [
@@ -1978,6 +1978,10 @@
       [
         "2026-11-13",
         35
+      ],
+      [
+        "2026-11-14",
+        3
       ]
     ]
   },
@@ -2536,6 +2540,19 @@
     "snake": true
   },
   "forks": [
+    {
+      "name": "sglang",
+      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-11-14T06:45:10Z",
+      "createdAt": "2026-11-14T06:22:42Z",
+      "url": "https://github.com/flying-dragon-ai/sglang",
+      "homepage": "https://sglang.io",
+      "topics": [],
+      "license": null
+    },
     {
       "name": "interview-new",
       "description": "",

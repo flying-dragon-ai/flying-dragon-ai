@@ -32,12 +32,12 @@
   <rect x="0.5" y="0.5" width="719" height="119" rx="26" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" filter="url(#card)"/>
   <rect x="1.5" y="1.5" width="717" height="117" rx="25" fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="1"/>
   <rect x="108.0" y="30" width="24" height="3" rx="1.5" fill="#0A84FF"/>
-  <text x="120.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">2d</text>
+  <text x="120.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">3d</text>
   <text x="120.0" y="104" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">CURRENT STREAK</text>
   <rect x="348.0" y="30" width="24" height="3" rx="1.5" fill="#0A84FF"/>
   <text x="360.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">5d</text>
   <text x="360.0" y="104" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">LONGEST STREAK</text>
   <rect x="588.0" y="30" width="24" height="3" rx="1.5" fill="#0A84FF"/>
-  <text x="600.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">326</text>
+  <text x="600.0" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="34" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">329</text>
   <text x="600.0" y="104" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">TOTAL</text>
 </svg>

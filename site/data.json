@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T10:57:00.719Z",
+  "generatedAt": "2026-11-14T10:20:46.080Z",
   "user": {
     "login": "flying-dragon-ai",
     "name": "flying~dragon",
@@ -11,7 +11,7 @@
     "twitter": "",
     "followers": 6,
     "following": 23,
-    "publicRepos": 68,
+    "publicRepos": 69,
     "publicGists": 0,
     "hireable": true,
     "createdAt": "2019-12-09T02:08:04Z",
@@ -19,8 +19,8 @@
   },
   "voice": {
     "tagline": "agent infrastructure · 3D web · windows internals",
-    "headline": "15 个公开仓库，三条产品线，近 12 个月 326 次贡献。",
-    "conclusion": "主攻 agent 基础设施（8 个仓库），兼做 3D Web（3 个）与 Windows 内部工具（1 个）。主力栈 Python 35.8%，近 12 个月 70 个活跃日、峰值单日 35 次提交。",
+    "headline": "15 个公开仓库，三条产品线，近 12 个月 329 次贡献。",
+    "conclusion": "主攻 agent 基础设施（8 个仓库），兼做 3D Web（3 个）与 Windows 内部工具（1 个）。主力栈 Python 35.8%，近 12 个月 71 个活跃日、峰值单日 35 次提交。",
     "now": "当前主线：pi 生态的扩展与 subagent 编排。",
     "quotes": [
       "结论先行，数据说话。",
@@ -31,7 +31,7 @@
     "footer": "数据由 gh CLI 拉取后静态渲染，不接受手工维护。"
   },
   "report": {
-    "summary": "15 个自有仓库　·　52 个 fork　·　6 个 star　·　18 种语言　·　since 2019",
+    "summary": "15 个自有仓库　·　53 个 fork　·　6 个 star　·　18 种语言　·　since 2019",
     "objectives": [
       {
         "id": "O1",
@@ -58,7 +58,7 @@
         "id": "O4",
         "title": "保持稳定交付节奏",
         "kr": "近 12 个月贡献与活跃日维持在可用水平，不靠集中冲刺",
-        "data": "326 贡献 · 70 活跃日",
+        "data": "329 贡献 · 71 活跃日",
         "status": "进行中"
       }
     ],
@@ -73,12 +73,12 @@
     "next": [
       "提升分发：15 个仓库合计 6 个 star，曝光与文档是当前瓶颈。",
       "整理私有仓库后公开，补齐公开面。",
-      "维持节奏：当前 70/370 活跃日，目标是不低于此。"
+      "维持节奏：当前 71/371 活跃日，目标是不低于此。"
     ]
   },
   "stats": {
     "ownRepos": 15,
-    "forks": 52,
+    "forks": 53,
     "totalStars": 6,
     "totalForks": 0,
     "followers": 6,
@@ -526,11 +526,11 @@
     ]
   },
   "contributions": {
-    "total": 326,
+    "total": 329,
     "commits": 160,
-    "pullRequests": 16,
-    "issues": 13,
-    "activeDays": 70,
+    "pullRequests": 17,
+    "issues": 14,
+    "activeDays": 71,
     "peakDay": "2026-11-13",
     "peakCount": 35,
     "calendar": [
@@ -2013,6 +2013,10 @@
       [
         "2026-11-13",
         35
+      ],
+      [
+        "2026-11-14",
+        3
       ]
     ],
     "monthly": {
@@ -2028,7 +2032,7 @@
       "2026-08": 6,
       "2026-09": 9,
       "2026-10": 77,
-      "2026-11": 60
+      "2026-11": 63
     }
   },
   "clusters": [

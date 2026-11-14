@@ -41,9 +41,9 @@
   <text x="360.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">160</text>
   <text x="360.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">COMMITS</text>
   <rect x="492.0" y="30" width="24" height="3" rx="1.5" fill="#BF5AF2"/>
-  <text x="504.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">16</text>
+  <text x="504.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">17</text>
   <text x="504.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">PRS</text>
   <rect x="636.0" y="30" width="24" height="3" rx="1.5" fill="#BF5AF2"/>
-  <text x="648.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">70</text>
+  <text x="648.0" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="40" font-weight="300" fill="#FFFFFF" letter-spacing="-1.5">71</text>
   <text x="648.0" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="10" font-weight="600" fill="#8E8E93" letter-spacing="1.6">ACTIVE DAYS</text>
 </svg>
