@@ -621,7 +621,7 @@ def render_readme(cfg: dict, profile: dict, contribution: dict, lang: str, label
 
 ## 02 · {content['sections']['work']}
 
-{chr(10).join(projects)}
+{(chr(10) * 2).join(projects)}
 
 ## 03 · {content['sections']['now']}
 
