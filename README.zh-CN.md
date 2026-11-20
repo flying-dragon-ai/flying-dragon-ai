@@ -27,7 +27,7 @@ contact:  github.com/flying-dragon-ai
 | **O1** 让 agent 能力可交付 | KR1 · 三个包一条命令安装 | pi-provider-xhx、pi-subagent-factory、knowledge-takeback-skill —— `pi install npm:…` / `npx …` | 接入成本是一条命令，不是读一遍源码 |
 | **O1** 让 agent 能力可交付 | KR2 · 设计稿转代码还原度 ≥ 98% SSIM | figma-mcp-plus：8 阶段流水线，规则引擎优先，VLM 只做兜底 | 设计交接不再等于手工重画一遍 |
 | **O2** 让系统工具可审计 | KR3 · 回收 30.53 GB，零数据丢失 | win-raccoon-lab：152 条实测缓存地图、9 道安全闸门、probe F1 = 1.00 | 清理从「一键优化赌一把」变成先给证据再给选择 |
-| **O3** 保持交付节奏 | KR4 · 380 次贡献 / 73 个活跃日 | 18 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
+| **O3** 保持交付节奏 | KR4 · 381 次贡献 / 73 个活跃日 | 18 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
 
 <div align="center"><img src="assets/signal-zh-CN.svg" width="900" alt="实时档案信号与语言栈"></div>
 

@@ -27,7 +27,7 @@ contact:  github.com/flying-dragon-ai
 | **O1** Make agent capability deliverable | KR1 · three packages installable in one command | pi-provider-xhx, pi-subagent-factory, knowledge-takeback-skill — `pi install npm:…` / `npx …` | Adoption costs one command, not a source read |
 | **O1** Make agent capability deliverable | KR2 · design-to-code fidelity ≥ 98% SSIM | figma-mcp-plus: 8-stage pipeline, rule engine first, VLM only as fallback | Design handoff stops being a manual redraw |
 | **O2** Make system tooling auditable | KR3 · zero data loss across 30.53 GB reclaimed | win-raccoon-lab: 152 measured cache entries, 9 safety gates, probe F1 = 1.00 | Cleanup becomes evidence-first instead of a one-click gamble |
-| **O3** Keep the cadence | KR4 · 380 contributions / 73 active days | 5 languages across 18 own repositories, peak 69 in a single day | Output is a rhythm, not a burst |
+| **O3** Keep the cadence | KR4 · 381 contributions / 73 active days | 5 languages across 18 own repositories, peak 69 in a single day | Output is a rhythm, not a burst |
 
 <div align="center"><img src="assets/signal-en.svg" width="900" alt="live profile signal and language stack"></div>
 
