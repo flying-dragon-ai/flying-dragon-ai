@@ -10,13 +10,13 @@
 
 ---
 
-**돌아가는 것에서 끝내지 않고 배포되는 형태로 만듭니다. pi 확장, MCP 서버, Windows 내부 도구. 최근 12개월 동안 381회 기여·73일 활동, 그중 셋은 명령 한 줄로 설치됩니다.**
+**돌아가는 것에서 끝내지 않고 배포되는 형태로 만듭니다. pi 확장, MCP 서버, Windows 내부 도구. 최근 12개월 동안 382회 기여·73일 활동, 그중 셋은 명령 한 줄로 설치됩니다.**
 
 ```yaml
 role:     엔지니어 · 에이전트 인프라와 Windows 내부 도구
 focus:    pi 확장 · MCP 서버 · 읽기 전용 시스템 도구
 proof:    figma-mcp-plus — 8단계 규칙 엔진, 98%+ SSIM 디자인→코드
-cadence:  381회 기여 / 73일 활동 / 하루 최대 69회
+cadence:  382회 기여 / 73일 활동 / 하루 최대 69회
 contact:  github.com/flying-dragon-ai
 ```
 
@@ -27,7 +27,7 @@ contact:  github.com/flying-dragon-ai
 | **O1** 에이전트 역량을 배포 가능한 형태로 | KR1 · 세 패키지를 명령 한 줄로 설치 | pi-provider-xhx, pi-subagent-factory, knowledge-takeback-skill — `pi install npm:…` / `npx …` | 도입 비용은 명령 한 줄이지, 소스를 읽는 시간이 아니다 |
 | **O1** 에이전트 역량을 배포 가능한 형태로 | KR2 · 디자인→코드 재현도 ≥ 98% SSIM | figma-mcp-plus: 8단계 파이프라인, 규칙 엔진 우선, VLM은 폴백만 | 디자인 인계가 손으로 다시 그리는 일이 아니게 된다 |
 | **O2** 시스템 도구를 검증 가능하게 | KR3 · 30.53 GB 회수, 데이터 손실 0 | win-raccoon-lab: 실측 152개 캐시 맵, 9개 안전 게이트, probe F1 = 1.00 | 정리는 '원클릭 최적화'가 아니라 먼저 증거를 내는 일이 된다 |
-| **O3** 리듬 유지 | KR4 · 381회 기여 / 73일 활동 | 18개 자체 저장소가 5개 언어에 걸쳐 있고, 하루 최대 69회 | 산출은 한 번의 폭발이 아니라 리듬 |
+| **O3** 리듬 유지 | KR4 · 382회 기여 / 73일 활동 | 18개 자체 저장소가 5개 언어에 걸쳐 있고, 하루 최대 69회 | 산출은 한 번의 폭발이 아니라 리듬 |
 
 <div align="center"><img src="assets/signal-ko.svg" width="900" alt="실시간 프로필 신호와 언어 스택"></div>
 
