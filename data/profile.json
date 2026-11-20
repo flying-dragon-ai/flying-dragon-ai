@@ -9,25 +9,25 @@
       "createdAt": "2019-12-09T02:08:04Z"
     },
     "stats": {
-      "ownRepos": 18,
+      "ownRepos": 19,
       "forks": 53,
       "totalStars": 6,
       "languages": [
+        [
+          "Python",
+          6
+        ],
         [
           "TypeScript",
           6
         ],
         [
-          "Python",
-          5
-        ],
-        [
           "JavaScript",
-          4
+          3
         ],
         [
           "HTML",
-          1
+          2
         ],
         [
           "PowerShell",
@@ -37,12 +37,20 @@
     },
     "repos": [
       {
+        "name": "huorengan-2079-play",
+        "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
+        "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
+        "language": "HTML",
+        "stars": 0,
+        "pushedAt": "2026-11-20T08:45:01Z"
+      },
+      {
         "name": "flying-dragon-ai",
         "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
-        "language": "JavaScript",
+        "language": "Python",
         "stars": 0,
-        "pushedAt": "2026-11-20T06:51:17Z"
+        "pushedAt": "2026-11-20T07:32:09Z"
       },
       {
         "name": "pi-provider-xhx",
@@ -245,7 +253,7 @@
     ]
   },
   "contributions": {
-    "total": 394,
+    "total": 401,
     "days": [
       {
         "date": "2025-11-16",
@@ -839,13 +847,13 @@
       },
       {
         "date": "2026-03-14",
-        "count": 0,
-        "level": 0
+        "count": 2,
+        "level": 1
       },
       {
         "date": "2026-03-15",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-03-16",
@@ -2094,14 +2102,14 @@
       },
       {
         "date": "2026-11-20",
-        "count": 17,
-        "level": 1
+        "count": 24,
+        "level": 2
       }
     ],
     "activeDays": 73,
     "peakCount": 69,
     "peakDay": "2026-11-13",
     "windowDays": 370,
-    "last90": 215
+    "last90": 222
   }
 }
