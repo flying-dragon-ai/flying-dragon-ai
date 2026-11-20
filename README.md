@@ -38,16 +38,19 @@ contact:  github.com/flying-dragon-ai
 - **Problem** — Figma-to-code is usually a vision model guessing at pixels: fidelity drifts between runs and every attempt costs tokens.
 - **What I did** — Built a rule-based layout engine — an 8-stage pipeline (DSL → tree → layout → visual → export) with the VLM demoted to fallback, emitting a ZIP of index.html, slices and fonts that any LLM can convert to React, Vue, Swift or Kotlin.
 - **Result** — 98%+ SSIM fidelity, and the same design produces the same code twice.
+
 ### [win-raccoon-lab](https://github.com/flying-dragon-ai/win-raccoon-lab)
 
 - **Problem** — Cleanup tools ask you to trust a one-click optimize button and never tell you what it deleted.
 - **What I did** — Wrote a read-only audit: 152 cache paths measured against the live host, classified into three safety tiers, 9 gates before a single byte moves.
 - **Result** — 30.53 GB reclaimed with zero data loss; probe F1 = 1.00 on the measured set.
+
 ### [pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory)
 
 - **Problem** — Every project needs a hand-written subagent team, and the roster silently drifts away from the real stack.
 - **What I did** — A rules engine that scans up to 6,000 files — languages, frameworks, databases, test runner, build tooling, monorepo, Docker, CI — and deterministically emits 4–10 agents with per-agent tool allowlists and thinking levels.
 - **Result** — Zero model tokens spent on the scan; a React + Prisma + Vitest repo gets 8 agents in under 5 seconds.
+
 ### [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · ★2
 
 - **Problem** — AIGC long-video runs are unreproducible: one dead credential or one dropped poll burns the whole budget.

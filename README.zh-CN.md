@@ -38,16 +38,19 @@ contact:  github.com/flying-dragon-ai
 - **问题** — Figma 转代码通常靠视觉模型猜像素：两次运行还原度不一样，每次尝试都在烧 token。
 - **我做了什么** — 写了规则化布局引擎——8 阶段流水线（DSL → 树 → 布局 → 视觉 → 导出），VLM 降级为兜底；产物是含 index.html、切图与字体的 ZIP，任何 LLM 都能接着转 React、Vue、Swift 或 Kotlin。
 - **结果与影响** — 还原度 98%+ SSIM，同一份设计两次产出同一份代码。
+
 ### [win-raccoon-lab](https://github.com/flying-dragon-ai/win-raccoon-lab)
 
 - **问题** — 清理软件让你点「一键优化」，然后你永远不知道它删了什么。
 - **我做了什么** — 做了只读审计：152 条缓存路径对着本机实测体积，按三级安全等级分类，动一个字节之前先过 9 道闸门。
 - **结果与影响** — 实测回收 30.53 GB，零数据丢失；实测集上 probe F1 = 1.00。
+
 ### [pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory)
 
 - **问题** — 每个项目都要手写一套 subagent 团队，而名单会悄悄和真实技术栈脱节。
 - **我做了什么** — 规则引擎扫描最多 6000 个文件——语言、框架、数据库、测试框架、构建工具、monorepo、Docker、CI——确定性生成 4–10 个 agent，每个带工具白名单与思考等级。
 - **结果与影响** — 扫描零模型 token；React + Prisma + Vitest 项目 5 秒内出 8 个 agent。
+
 ### [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · ★2
 
 - **问题** — AIGC 长视频生成不可复现：一个凭据失效或一次轮询丢失，整条预算就烧掉了。

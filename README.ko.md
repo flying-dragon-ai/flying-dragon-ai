@@ -38,16 +38,19 @@ contact:  github.com/flying-dragon-ai
 - **문제** — Figma에서 코드로 가는 길은 대개 비전 모델이 픽셀을 추측하는 일이다. 실행마다 재현도가 흔들리고, 시도할 때마다 토큰이 나간다.
 - **한 일** — 규칙 기반 레이아웃 엔진을 만들었다. 8단계 파이프라인(DSL → 트리 → 레이아웃 → 시각 처리 → 내보내기)이고 VLM은 폴백으로 내렸다. 산출물은 index.html·슬라이스·폰트를 담은 ZIP이라 어떤 LLM이든 React, Vue, Swift, Kotlin으로 이어서 변환할 수 있다.
 - **결과와 영향** — 재현도 98%+ SSIM. 같은 디자인에서 같은 코드가 두 번 나온다.
+
 ### [win-raccoon-lab](https://github.com/flying-dragon-ai/win-raccoon-lab)
 
 - **문제** — 정리 도구는 '원클릭 최적화'를 누르게 하고, 무엇을 지웠는지는 끝까지 알려주지 않는다.
 - **한 일** — 읽기 전용 감사를 만들었다. 152개 캐시 경로를 실기에서 측정해 세 단계 안전 등급으로 나누고, 한 바이트도 움직이기 전에 9개 게이트를 통과시킨다.
 - **결과와 영향** — 실측 30.53 GB 회수, 데이터 손실 0. 실측 집합에서 probe F1 = 1.00.
+
 ### [pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory)
 
 - **문제** — 프로젝트마다 subagent 팀을 손으로 써야 하고, 그 명단은 실제 스택에서 조용히 어긋난다.
 - **한 일** — 최대 6,000개 파일을 스캔하는 규칙 엔진을 만들었다. 언어, 프레임워크, DB, 테스트 러너, 빌드 도구, monorepo, Docker, CI를 읽고 4~10개 에이전트를 결정적으로 생성한다. 각 에이전트에는 도구 허용 목록과 사고 수준이 붙는다.
 - **결과와 영향** — 스캔에 쓰는 모델 토큰 0. React + Prisma + Vitest 저장소에서 5초 안에 8개 에이전트.
+
 ### [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · ★2
 
 - **문제** — AIGC 장편 영상 생성은 재현이 안 된다. 자격 증명 하나가 죽거나 폴링이 한 번 끊기면 예산이 통째로 탄다.
