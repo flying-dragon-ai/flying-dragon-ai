@@ -10,13 +10,13 @@
 
 ---
 
-**I build agent infrastructure that actually ships — pi extensions, MCP servers and Windows internals tools. 382 contributions across 73 active days in the last 12 months, and three of those projects install with a single command.**
+**I build agent infrastructure that actually ships — pi extensions, MCP servers and Windows internals tools. 384 contributions across 73 active days in the last 12 months, and three of those projects install with a single command.**
 
 ```yaml
 role:     engineer · agent infrastructure & Windows internals
 focus:    pi extensions · MCP servers · read-only system tooling
 proof:    figma-mcp-plus — 8-stage rule engine, 98%+ SSIM design-to-code
-cadence:  382 contributions / 73 active days / peak 69 in one day
+cadence:  384 contributions / 73 active days / peak 69 in one day
 contact:  github.com/flying-dragon-ai
 ```
 
@@ -27,7 +27,7 @@ contact:  github.com/flying-dragon-ai
 | **O1** Make agent capability deliverable | KR1 · three packages installable in one command | pi-provider-xhx, pi-subagent-factory, knowledge-takeback-skill — `pi install npm:…` / `npx …` | Adoption costs one command, not a source read |
 | **O1** Make agent capability deliverable | KR2 · design-to-code fidelity ≥ 98% SSIM | figma-mcp-plus: 8-stage pipeline, rule engine first, VLM only as fallback | Design handoff stops being a manual redraw |
 | **O2** Make system tooling auditable | KR3 · zero data loss across 30.53 GB reclaimed | win-raccoon-lab: 152 measured cache entries, 9 safety gates, probe F1 = 1.00 | Cleanup becomes evidence-first instead of a one-click gamble |
-| **O3** Keep the cadence | KR4 · 382 contributions / 73 active days | 5 languages across 18 own repositories, peak 69 in a single day | Output is a rhythm, not a burst |
+| **O3** Keep the cadence | KR4 · 384 contributions / 73 active days | 5 languages across 18 own repositories, peak 69 in a single day | Output is a rhythm, not a burst |
 
 <div align="center"><img src="assets/signal-en.svg" width="900" alt="live profile signal and language stack"></div>
 
