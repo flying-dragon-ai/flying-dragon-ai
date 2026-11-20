@@ -10,13 +10,13 @@
 
 ---
 
-**我做能落地的 agent 基础设施：pi 扩展、MCP 服务、Windows 内部工具。近 12 个月 379 次贡献、73 个活跃日，其中三个项目一条命令就能装上。**
+**我做能落地的 agent 基础设施：pi 扩展、MCP 服务、Windows 内部工具。近 12 个月 381 次贡献、73 个活跃日，其中三个项目一条命令就能装上。**
 
 ```yaml
 role:     工程师 · agent 基础设施与 Windows 内部工具
 focus:    pi 扩展 · MCP 服务 · 只读系统工具
 proof:    figma-mcp-plus — 8 阶段规则引擎，98%+ SSIM 设计稿转代码
-cadence:  379 次贡献 / 73 个活跃日 / 单日峰值 69
+cadence:  381 次贡献 / 73 个活跃日 / 单日峰值 69
 contact:  github.com/flying-dragon-ai
 ```
 

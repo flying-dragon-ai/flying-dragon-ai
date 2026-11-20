@@ -1,11 +1,11 @@
 {
   "label": "日本語",
-  "conclusion": "「動く」で終わらせず、届く形にします。pi 拡張、MCP サーバー、Windows 内部ツール。直近 12 か月で 379 コミット・73 アクティブ日、そのうち 3 つはコマンド 1 行で導入できます。",
+  "conclusion": "「動く」で終わらせず、届く形にします。pi 拡張、MCP サーバー、Windows 内部ツール。直近 12 か月で {contributions} コミット・{activeDays} アクティブ日、そのうち 3 つはコマンド 1 行で導入できます。",
   "index": {
     "role": "エンジニア · エージェント基盤と Windows 内部ツール",
     "focus": "pi 拡張 · MCP サーバー · 読み取り専用システムツール",
     "proof": "figma-mcp-plus — 8 段階ルールエンジン、98%+ SSIM のデザイン→コード",
-    "cadence": "379 コミット / 73 アクティブ日 / 1 日最大 69",
+    "cadence": "{contributions} コミット / {activeDays} アクティブ日 / 1 日最大 {peak}",
     "contact": "github.com/flying-dragon-ai"
   },
   "sections": {

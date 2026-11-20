@@ -10,13 +10,13 @@
 
 ---
 
-**I build agent infrastructure that actually ships — pi extensions, MCP servers and Windows internals tools. 379 contributions across 73 active days in the last 12 months, and three of those projects install with a single command.**
+**I build agent infrastructure that actually ships — pi extensions, MCP servers and Windows internals tools. 381 contributions across 73 active days in the last 12 months, and three of those projects install with a single command.**
 
 ```yaml
 role:     engineer · agent infrastructure & Windows internals
 focus:    pi extensions · MCP servers · read-only system tooling
 proof:    figma-mcp-plus — 8-stage rule engine, 98%+ SSIM design-to-code
-cadence:  379 contributions / 73 active days / peak 69 in one day
+cadence:  381 contributions / 73 active days / peak 69 in one day
 contact:  github.com/flying-dragon-ai
 ```
 
