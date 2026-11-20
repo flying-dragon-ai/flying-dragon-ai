@@ -310,6 +310,7 @@ def identity_svg(cfg: dict, t: dict, photo: Path | None) -> str:
         shared_style()
         + f".portrait-ascii{{font:700 5.9px {MONO};fill:{MINT}}}"
         + f".ascii{{font:700 11px {MONO};fill:{MINT};letter-spacing:.4px}}"
+        + f".ascii-wide{{font:700 15px {MONO};fill:{MINT};letter-spacing:.4px}}"
         + f".chip{{font:700 8px {FONT};fill:{TEXT}}}"
         + ".phase-a{animation:phaseA 3.4s cubic-bezier(.32,.72,0,1) infinite}"
         + ".phase-b{animation:phaseB 3.4s cubic-bezier(.32,.72,0,1) infinite}"
@@ -326,30 +327,30 @@ def chip_xs(count: int) -> list[int]:
     return [48 + index * 87 for index in range(count)]
 
 
-chip_y = 352
+chip_y = 412
 
 
 def _identity_wordmark_only(cfg: dict, t: dict, word: str, chips: str, css: str) -> str:
-    first = ascii_lines(word, "$s+", scale_x=3, scale_y=2)
-    second = ascii_lines(word, "#*=", scale_x=3, scale_y=2)
+    first = ascii_lines(word, "$s+", scale_x=2, scale_y=2)
+    second = ascii_lines(word, "#*=", scale_x=2, scale_y=2)
     rows = "".join(
-        f'<text x="0" y="{20 + row * 14.5:.1f}" textLength="800" lengthAdjust="spacingAndGlyphs" '
+        f'<text x="0" y="{20 + row * 19.5:.1f}" textLength="800" lengthAdjust="spacingAndGlyphs" '
         f'xml:space="preserve">{escape(line)}</text>'
         for row, line in enumerate(first)
     )
     rows_b = "".join(
-        f'<text x="0" y="{20 + row * 14.5:.1f}" textLength="800" lengthAdjust="spacingAndGlyphs" '
+        f'<text x="0" y="{20 + row * 19.5:.1f}" textLength="800" lengthAdjust="spacingAndGlyphs" '
         f'xml:space="preserve">{escape(line)}</text>'
         for row, line in enumerate(second)
     )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Animated ASCII identity for {escape(cfg['name'])}">
-<defs>{gradient_defs()}<clipPath id="type"><rect x="0" y="0" width="0" height="230"><animate attributeName="width" from="0" to="810" dur="2.5s" calcMode="spline" keySplines=".32 .72 0 1" fill="freeze"/></rect></clipPath><style>{css}</style></defs>
-{shell(900, 420, f'<rect x="18" y="18" width="864" height="384" rx="17" fill="{BG}" stroke="#1a7269"/><circle cx="450" cy="210" r="200" fill="url(#aura)"/>')}
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-label="Animated ASCII identity for {escape(cfg['name'])}">
+<defs>{gradient_defs()}<clipPath id="type"><rect x="0" y="0" width="0" height="280"><animate attributeName="width" from="0" to="810" dur="2.5s" calcMode="spline" keySplines=".32 .72 0 1" fill="freeze"/></rect></clipPath><style>{css}</style></defs>
+{shell(900, 470, f'<rect x="18" y="18" width="864" height="434" rx="17" fill="{BG}" stroke="#1a7269"/><circle cx="450" cy="230" r="210" fill="url(#aura)"/>')}
 <circle cx="38" cy="37" r="5" fill="#ff665d"/><circle cx="56" cy="37" r="5" fill="#f5c451"/><circle cx="74" cy="37" r="5" fill="#46d468"/><text x="450" y="41" text-anchor="middle" class="mono">{escape(t["terminal"].format(user=cfg["username"].lower()))}</text>
-<rect x="32" y="57" width="836" height="332" rx="22" fill="#081d1f" stroke="#176f68"/><text x="48" y="78" class="label">{escape(t["wordmark_label"].format(user=cfg["username"].upper()))}</text>
-<g transform="translate(50 100)" clip-path="url(#type)" class="ascii"><g class="phase-a">{rows}</g><g class="phase-b">{rows_b}</g></g>
-<text x="48" y="340" class="body">{escape(trim(t.get("role") or cfg["role"], 74))} · {escape(t.get("location") or cfg["location"])}</text>{chips}
-<rect x="50" y="98" width="6" height="15" fill="{MINT}" opacity="0"><set attributeName="opacity" to="1" begin="0s"/><animate attributeName="x" from="50" to="860" dur="2.5s" calcMode="spline" keySplines=".32 .72 0 1" fill="freeze"/><set attributeName="opacity" to="0" begin="2.5s"/></rect>
+<rect x="32" y="57" width="836" height="382" rx="22" fill="#081d1f" stroke="#176f68"/><text x="48" y="78" class="label">{escape(t["wordmark_label"].format(user=cfg["username"].upper()))}</text>
+<g transform="translate(50 95)" clip-path="url(#type)" class="ascii-wide"><g class="phase-a">{rows}</g><g class="phase-b">{rows_b}</g></g>
+<text x="48" y="400" class="body">{escape(trim(t.get("role") or cfg["role"], 74))} · {escape(t.get("location") or cfg["location"])}</text>{chips}
+<rect x="50" y="93" width="6" height="18" fill="{MINT}" opacity="0"><set attributeName="opacity" to="1" begin="0s"/><animate attributeName="x" from="50" to="860" dur="2.5s" calcMode="spline" keySplines=".32 .72 0 1" fill="freeze"/><set attributeName="opacity" to="0" begin="2.5s"/></rect>
 </svg>'''
 
 

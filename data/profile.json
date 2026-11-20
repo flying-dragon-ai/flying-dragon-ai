@@ -38,11 +38,11 @@
     "repos": [
       {
         "name": "flying-dragon-ai",
-        "description": "GitHub profile homepage — data fetched with gh, rendered from templates",
+        "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "JavaScript",
         "stars": 0,
-        "pushedAt": "2026-11-19T13:30:07Z"
+        "pushedAt": "2026-11-20T06:45:53Z"
       },
       {
         "name": "pi-provider-xhx",
@@ -183,7 +183,7 @@
     ]
   },
   "contributions": {
-    "total": 379,
+    "total": 380,
     "days": [
       {
         "date": "2025-11-16",
@@ -2032,7 +2032,7 @@
       },
       {
         "date": "2026-11-20",
-        "count": 2,
+        "count": 3,
         "level": 1
       }
     ],
@@ -2040,6 +2040,6 @@
     "peakCount": 69,
     "peakDay": "2026-11-13",
     "windowDays": 370,
-    "last90": 200
+    "last90": 201
   }
 }
