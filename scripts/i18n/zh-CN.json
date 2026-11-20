@@ -1,0 +1,130 @@
+{
+  "label": "简体中文",
+  "conclusion": "我做能落地的 agent 基础设施：pi 扩展、MCP 服务、Windows 内部工具。近 12 个月 379 次贡献、73 个活跃日，其中三个项目一条命令就能装上。",
+  "index": {
+    "role": "工程师 · agent 基础设施与 Windows 内部工具",
+    "focus": "pi 扩展 · MCP 服务 · 只读系统工具",
+    "proof": "figma-mcp-plus — 8 阶段规则引擎，98%+ SSIM 设计稿转代码",
+    "cadence": "379 次贡献 / 73 个活跃日 / 单日峰值 69",
+    "contact": "github.com/flying-dragon-ai"
+  },
+  "sections": {
+    "okr": "目标与关键结果",
+    "work": "精选项目",
+    "now": "当前在解决",
+    "stack": "技术栈",
+    "contact": "联系"
+  },
+  "labels": {
+    "objective": "目标",
+    "kr": "关键结果",
+    "evidence": "进展与证据",
+    "means": "这意味着什么",
+    "problem": "问题",
+    "did": "我做了什么",
+    "result": "结果与影响",
+    "judgment": "我的判断",
+    "next": "下一步验证",
+    "tech": "技术",
+    "scene": "用于什么场景",
+    "signal_alt": "实时档案信号与语言栈",
+    "contrib_alt": "近 12 个月贡献活动"
+  },
+  "okr": [
+    {
+      "id": "O1",
+      "objective": "让 agent 能力可交付",
+      "kr": "KR1 · 三个包一条命令安装",
+      "evidence": "pi-provider-xhx、pi-subagent-factory、knowledge-takeback-skill —— `pi install npm:…` / `npx …`",
+      "means": "接入成本是一条命令，不是读一遍源码"
+    },
+    {
+      "id": "O1",
+      "objective": "让 agent 能力可交付",
+      "kr": "KR2 · 设计稿转代码还原度 ≥ 98% SSIM",
+      "evidence": "figma-mcp-plus：8 阶段流水线，规则引擎优先，VLM 只做兜底",
+      "means": "设计交接不再等于手工重画一遍"
+    },
+    {
+      "id": "O2",
+      "objective": "让系统工具可审计",
+      "kr": "KR3 · 回收 30.53 GB，零数据丢失",
+      "evidence": "win-raccoon-lab：152 条实测缓存地图、9 道安全闸门、probe F1 = 1.00",
+      "means": "清理从「一键优化赌一把」变成先给证据再给选择"
+    },
+    {
+      "id": "O3",
+      "objective": "保持交付节奏",
+      "kr": "KR4 · {contributions} 次贡献 / {activeDays} 个活跃日",
+      "evidence": "{repos} 个自有仓库覆盖 {langCount} 种语言，单日峰值 {peak} 次",
+      "means": "产出是节奏，不是爆发"
+    }
+  ],
+  "projects": [
+    {
+      "repo": "figma-mcp-plus",
+      "problem": "Figma 转代码通常靠视觉模型猜像素：两次运行还原度不一样，每次尝试都在烧 token。",
+      "did": "写了规则化布局引擎——8 阶段流水线（DSL → 树 → 布局 → 视觉 → 导出），VLM 降级为兜底；产物是含 index.html、切图与字体的 ZIP，任何 LLM 都能接着转 React、Vue、Swift 或 Kotlin。",
+      "result": "还原度 98%+ SSIM，同一份设计两次产出同一份代码。"
+    },
+    {
+      "repo": "win-raccoon-lab",
+      "problem": "清理软件让你点「一键优化」，然后你永远不知道它删了什么。",
+      "did": "做了只读审计：152 条缓存路径对着本机实测体积，按三级安全等级分类，动一个字节之前先过 9 道闸门。",
+      "result": "实测回收 30.53 GB，零数据丢失；实测集上 probe F1 = 1.00。"
+    },
+    {
+      "repo": "pi-subagent-factory",
+      "problem": "每个项目都要手写一套 subagent 团队，而名单会悄悄和真实技术栈脱节。",
+      "did": "规则引擎扫描最多 6000 个文件——语言、框架、数据库、测试框架、构建工具、monorepo、Docker、CI——确定性生成 4–10 个 agent，每个带工具白名单与思考等级。",
+      "result": "扫描零模型 token；React + Prisma + Vitest 项目 5 秒内出 8 个 agent。"
+    },
+    {
+      "repo": "seedance-agent",
+      "problem": "AIGC 长视频生成不可复现：一个凭据失效或一次轮询丢失，整条预算就烧掉了。",
+      "did": "分镜预检、凭据有序轮转、异步轮询、断点续跑、ffmpeg 后期，外加一份教会 agent 自己驱动管线的技能文件。",
+      "result": "分镜从最后一个可用片段续跑，而不是从零重来。"
+    }
+  ],
+  "now": {
+    "problem": "figma-mcp-plus 在深度重叠布局上仍要回落到 VLM。",
+    "judgment": "DSL 记录了重叠、溢出与包含关系，但没有记录 z-order 意图，布局阶段无法确定性地解出层叠顺序。",
+    "next": "在树与布局之间插入一层重叠解析，用固定的 20 屏重叠语料做前后 SSIM 对比。"
+  },
+  "stack": [
+    { "tech": "Python", "scene": "MCP 服务、AIGC 管线、FastAPI 后端" },
+    { "tech": "TypeScript", "scene": "pi 扩展、Vue 3 / React 19 前端、小程序" },
+    { "tech": "JavaScript", "scene": "单文件 3D 游戏、npm skill、构建脚本" },
+    { "tech": "PowerShell", "scene": "Windows 只读审计、终端安控工具" },
+    { "tech": "Three.js / R3F", "scene": "3D Web —— 鹈鹕骑车、智能体餐厅前端" },
+    { "tech": "HTML / CSS", "scene": "可离线单文件交付物" }
+  ],
+  "contact": {
+    "line": "GitHub 是唯一入口。在对应仓库开 issue 比发邮件快。",
+    "links": [
+      ["GitHub", "https://github.com/flying-dragon-ai"],
+      ["pi 扩展包", "https://pi.dev/packages"],
+      ["试玩鹈鹕骑车", "https://tihuqiche.com/"]
+    ]
+  },
+  "footer": "README 与上方全部 SVG 均由 `gh` 拉取真实数据后生成 · since {since}",
+  "svg": {
+    "terminal": "{user}@github: ~$ ./wordmark --animate",
+    "role": "agent 基础设施 · MCP 服务 · Windows 内部工具",
+    "location": "中国",
+    "status": "做能落地的 agent 基础设施，不做演示。",
+    "wordmark_label": "字符字标 / @{user}",
+    "portrait_label": "字符肖像 / @{user}",
+    "contrib_title": "贡献活动",
+    "contrib_sub": "近 12 个月 {n} 次贡献",
+    "less": "少",
+    "more": "多",
+    "contrib_foot": "轨道提交扫描 / 实时",
+    "signal_title": "档案信号",
+    "signal_sub": "实时 GitHub 数据 / @{user}",
+    "metrics": ["星标", "贡献", "仓库", "关注者"],
+    "stack_title": "语言栈",
+    "stack_sub": "按仓库加权的技术分布",
+    "stack_scan": "> 栈扫描"
+  }
+}

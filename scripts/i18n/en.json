@@ -1,0 +1,130 @@
+{
+  "label": "English",
+  "conclusion": "I build agent infrastructure that actually ships — pi extensions, MCP servers and Windows internals tools. 379 contributions across 73 active days in the last 12 months, and three of those projects install with a single command.",
+  "index": {
+    "role": "engineer · agent infrastructure & Windows internals",
+    "focus": "pi extensions · MCP servers · read-only system tooling",
+    "proof": "figma-mcp-plus — 8-stage rule engine, 98%+ SSIM design-to-code",
+    "cadence": "379 contributions / 73 active days / peak 69 in one day",
+    "contact": "github.com/flying-dragon-ai"
+  },
+  "sections": {
+    "okr": "Objective & Key Results",
+    "work": "Selected Work",
+    "now": "Now",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
+  "labels": {
+    "objective": "Objective",
+    "kr": "Key Result",
+    "evidence": "Progress / Evidence",
+    "means": "What it means",
+    "problem": "Problem",
+    "did": "What I did",
+    "result": "Result",
+    "judgment": "My judgment",
+    "next": "Next verification",
+    "tech": "Technology",
+    "scene": "Where it is used",
+    "signal_alt": "live profile signal and language stack",
+    "contrib_alt": "contribution activity, last 12 months"
+  },
+  "okr": [
+    {
+      "id": "O1",
+      "objective": "Make agent capability deliverable",
+      "kr": "KR1 · three packages installable in one command",
+      "evidence": "pi-provider-xhx, pi-subagent-factory, knowledge-takeback-skill — `pi install npm:…` / `npx …`",
+      "means": "Adoption costs one command, not a source read"
+    },
+    {
+      "id": "O1",
+      "objective": "Make agent capability deliverable",
+      "kr": "KR2 · design-to-code fidelity ≥ 98% SSIM",
+      "evidence": "figma-mcp-plus: 8-stage pipeline, rule engine first, VLM only as fallback",
+      "means": "Design handoff stops being a manual redraw"
+    },
+    {
+      "id": "O2",
+      "objective": "Make system tooling auditable",
+      "kr": "KR3 · zero data loss across 30.53 GB reclaimed",
+      "evidence": "win-raccoon-lab: 152 measured cache entries, 9 safety gates, probe F1 = 1.00",
+      "means": "Cleanup becomes evidence-first instead of a one-click gamble"
+    },
+    {
+      "id": "O3",
+      "objective": "Keep the cadence",
+      "kr": "KR4 · {contributions} contributions / {activeDays} active days",
+      "evidence": "{langCount} languages across {repos} own repositories, peak {peak} in a single day",
+      "means": "Output is a rhythm, not a burst"
+    }
+  ],
+  "projects": [
+    {
+      "repo": "figma-mcp-plus",
+      "problem": "Figma-to-code is usually a vision model guessing at pixels: fidelity drifts between runs and every attempt costs tokens.",
+      "did": "Built a rule-based layout engine — an 8-stage pipeline (DSL → tree → layout → visual → export) with the VLM demoted to fallback, emitting a ZIP of index.html, slices and fonts that any LLM can convert to React, Vue, Swift or Kotlin.",
+      "result": "98%+ SSIM fidelity, and the same design produces the same code twice."
+    },
+    {
+      "repo": "win-raccoon-lab",
+      "problem": "Cleanup tools ask you to trust a one-click optimize button and never tell you what it deleted.",
+      "did": "Wrote a read-only audit: 152 cache paths measured against the live host, classified into three safety tiers, 9 gates before a single byte moves.",
+      "result": "30.53 GB reclaimed with zero data loss; probe F1 = 1.00 on the measured set."
+    },
+    {
+      "repo": "pi-subagent-factory",
+      "problem": "Every project needs a hand-written subagent team, and the roster silently drifts away from the real stack.",
+      "did": "A rules engine that scans up to 6,000 files — languages, frameworks, databases, test runner, build tooling, monorepo, Docker, CI — and deterministically emits 4–10 agents with per-agent tool allowlists and thinking levels.",
+      "result": "Zero model tokens spent on the scan; a React + Prisma + Vitest repo gets 8 agents in under 5 seconds."
+    },
+    {
+      "repo": "seedance-agent",
+      "problem": "AIGC long-video runs are unreproducible: one dead credential or one dropped poll burns the whole budget.",
+      "did": "Storyboard preflight, ordered credential failover, async polling, resumable downloads, ffmpeg post-production — plus a skill file that teaches the agent to drive the pipeline itself.",
+      "result": "A storyboard resumes from the last good segment instead of restarting from zero."
+    }
+  ],
+  "now": {
+    "problem": "figma-mcp-plus still falls back to the VLM on deeply overlapping layouts.",
+    "judgment": "The DSL records overlap, overflow and containment but not z-order intent, so the layout stage cannot resolve stacking deterministically.",
+    "next": "Insert an overlap-resolution stage between tree and layout, then measure SSIM on a fixed 20-screen overlap corpus before and after."
+  },
+  "stack": [
+    { "tech": "Python", "scene": "MCP servers, AIGC pipelines, FastAPI backends" },
+    { "tech": "TypeScript", "scene": "pi extensions, Vue 3 / React 19 frontends, mini-programs" },
+    { "tech": "JavaScript", "scene": "single-file 3D games, npm skills, build scripts" },
+    { "tech": "PowerShell", "scene": "read-only Windows audits, endpoint tooling" },
+    { "tech": "Three.js / R3F", "scene": "3D web — tihuqiche, the agent cafe frontend" },
+    { "tech": "HTML / CSS", "scene": "offline single-file deliverables" }
+  ],
+  "contact": {
+    "line": "GitHub is the only door. An issue on the relevant repo is faster than email.",
+    "links": [
+      ["GitHub", "https://github.com/flying-dragon-ai"],
+      ["pi packages", "https://pi.dev/packages"],
+      ["Play tihuqiche", "https://tihuqiche.com/"]
+    ]
+  },
+  "footer": "README and every SVG above are generated from live GitHub data via `gh` · since {since}",
+  "svg": {
+    "terminal": "{user}@github: ~$ ./wordmark --animate",
+    "role": "agent infrastructure · MCP servers · Windows internals",
+    "location": "China",
+    "status": "Building agent infrastructure that ships, not demos.",
+    "wordmark_label": "WORDMARK.ASCII / @{user}",
+    "portrait_label": "PORTRAIT.ASCII / @{user}",
+    "contrib_title": "Contribution Activity",
+    "contrib_sub": "{n} CONTRIBUTIONS IN THE LAST YEAR",
+    "less": "LESS",
+    "more": "MORE",
+    "contrib_foot": "ORBITAL COMMIT SCAN / LIVE",
+    "signal_title": "Profile Signal",
+    "signal_sub": "LIVE GITHUB STATS / @{user}",
+    "metrics": ["STARS", "CONTRIBUTIONS", "REPOSITORIES", "FOLLOWERS"],
+    "stack_title": "Language Stack",
+    "stack_sub": "REPOSITORY-WEIGHTED TECHNOLOGIES",
+    "stack_scan": "> STACK.SCAN"
+  }
+}

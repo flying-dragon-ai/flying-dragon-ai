@@ -1,0 +1,10 @@
+{
+  "username": "flying-dragon-ai",
+  "name": "flying~dragon",
+  "wordmark": "DRAGON",
+  "role": "agent infrastructure · MCP servers · Windows internals",
+  "location": "China",
+  "status": "Building agent infrastructure that ships, not demos.",
+  "photo": "assets/profile-source.png",
+  "skills": ["Python", "TypeScript", "PowerShell", "MCP", "pi", "Three.js"]
+}
