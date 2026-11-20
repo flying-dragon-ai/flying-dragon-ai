@@ -181,6 +181,25 @@ def fetch_contributions(username: str) -> dict:
     return summarize_contributions(int(calendar["totalContributions"]), days)
 
 
+def fetch_upstream(username: str, limit: int = 30) -> list[dict]:
+    """Merged pull requests authored by the account — the only third-party signal here."""
+    query = f"author:{username}+type:pr+is:merged"
+    try:
+        result = gh(["api", f"search/issues?q={query}&per_page={limit}"])
+    except RuntimeError:
+        return []
+    items = (result or {}).get("items") or []
+    return [
+        {
+            "repo": item["repository_url"].split("/repos/")[-1],
+            "number": item["number"],
+            "title": item["title"],
+            "url": item["html_url"],
+        }
+        for item in items
+    ]
+
+
 def summarize_contributions(total: int, days: list[dict]) -> dict:
     active = [d for d in days if d["count"] > 0]
     peak = max(days, key=lambda d: d["count"]) if days else {"count": 0, "date": ""}
@@ -565,25 +584,66 @@ def render_readme(cfg: dict, profile: dict, contribution: dict, lang: str, label
     ctx = slots(profile, contribution)
     t = lambda s: fill(s, ctx)  # noqa: E731
     svg = lambda name: f"assets/{name}-{lang}.svg"  # noqa: E731
+    L = content["labels"]
 
-    index = "\n".join(f"{key + ':':<10}{t(value)}" for key, value in content["index"].items())
+    def repo_of(name: str) -> dict | None:
+        return next((r for r in profile["repos"] if r["name"] == name), None)
 
+    # ---- project grid: two columns, image on top, one line, one link
+    cells = []
+    for item in content["projects"]:
+        repo = repo_of(item["repo"])
+        url = repo["url"] if repo else f"https://github.com/{cfg['username']}/{item['repo']}"
+        star = f' · ★{repo["stars"]}' if repo and repo["stars"] else ""
+        head = (
+            f'<a href="{item["link"]}"><img src="{item["image"]}" width="440" alt="{escape(item["name"])}"></a>'
+            if item.get("image")
+            else ""
+        )
+        cells.append(
+            f'<td width="50%" valign="top">{head}'
+            f'<p><strong><a href="{url}">{escape(item["name"])}</a></strong>{star}</p>'
+            f'<p>{t(item["line"])}</p>'
+            f'<p><a href="{item["link"]}">{escape(item["link_label"])} ↗</a></p></td>'
+        )
+    rows = []
+    for i in range(0, len(cells), 2):
+        pair = cells[i : i + 2]
+        if len(pair) == 1:
+            pair.append('<td width="50%"></td>')
+        rows.append("<tr>" + "".join(pair) + "</tr>")
+    grid = "<table>\n" + "\n".join(rows) + "\n</table>"
+
+    # ---- toolchain rows
+    tool_rows = "\n".join(
+        f'| **[{item["repo"]}](https://github.com/{cfg["username"]}/{item["repo"]})** | {t(item["line"])} '
+        f'| {item.get("cmd") or "—"} |'
+        for item in content["toolchain"]
+    )
+
+    # ---- upstream merged PRs
+    upstream = profile.get("upstream") or []
+    if upstream:
+        grouped: dict[str, list[dict]] = {}
+        for pr in upstream:
+            grouped.setdefault(pr["repo"], []).append(pr)
+        pr_rows = "\n".join(
+            f'| [{repo}](https://github.com/{repo}) | '
+            + " · ".join(f'[{pr["number"]}]({pr["url"]})' for pr in prs)
+            + f' | {escape(prs[0]["title"])} |'
+            for repo, prs in grouped.items()
+        )
+        upstream_block = (
+            f'| {L["repo"]} | {L["merged_prs"]} | {L["latest_change"]} |\n| --- | --- | --- |\n{pr_rows}'
+        )
+    else:
+        upstream_block = content["upstream_empty"]
+
+    # ---- objective rows
     okr_rows = "\n".join(
         f"| **{row['id']}** {t(row['objective'])} | {t(row['kr'])} | {t(row['evidence'])} | {t(row['means'])} |"
         for row in content["okr"]
     )
-
-    projects = []
-    for item in content["projects"]:
-        repo = next((r for r in profile["repos"] if r["name"] == item["repo"]), None)
-        url = repo["url"] if repo else f"https://github.com/{cfg['username']}/{item['repo']}"
-        star = f" · ★{repo['stars']}" if repo and repo["stars"] else ""
-        projects.append(
-            f"### [{item['repo']}]({url}){star}\n\n"
-            f"- **{content['labels']['problem']}** — {t(item['problem'])}\n"
-            f"- **{content['labels']['did']}** — {t(item['did'])}\n"
-            f"- **{content['labels']['result']}** — {t(item['result'])}"
-        )
 
     stack_rows = "\n".join(
         f"| {index + 1} | **{row['tech']}** | {t(row['scene'])} |"
@@ -591,59 +651,75 @@ def render_readme(cfg: dict, profile: dict, contribution: dict, lang: str, label
     )
 
     now = content["now"]
-    links = " · ".join(f"[{label}]({url})" for label, url in content["contact"]["links"])
+    contact_links = " · ".join(f"[{label}]({url})" for label, url in content["contact"]["links"])
+    top_links = " · ".join(f'<a href="{url}">{escape(label)}</a>' for label, url in content["links"])
 
     return f'''<div align="center">
 
-<img src="{svg('identity')}" width="900" alt="{escape(cfg['name'])} — animated ASCII identity">
+<a href="{content["hero_link"]}"><img src="assets/hero-game.jpg" width="1200" alt="{escape(content["hero_alt"])}"></a>
 
-<br>
+# {escape(cfg["name"])}
 
-<sub>{switcher(lang, labels)}</sub>
+**{t(content["tagline"])}**
+
+<sub>{t(content["subline"])}</sub>
+
+{top_links} · {switcher(lang, labels)}
 
 </div>
 
 ---
 
-**{t(content['conclusion'])}**
+## 01 · {content['sections']['selected']}
 
-```yaml
-{index}
-```
+{grid}
 
-## 01 · {content['sections']['okr']}
+## 02 · {content['sections']['toolchain']}
 
-| {content['labels']['objective']} | {content['labels']['kr']} | {content['labels']['evidence']} | {content['labels']['means']} |
-| --- | --- | --- | --- |
-{okr_rows}
+| {L['tool']} | {L['what']} | {L['install']} |
+| --- | --- | --- |
+{tool_rows}
 
-<div align="center"><img src="{svg('signal')}" width="900" alt="{escape(content['labels']['signal_alt'])}"></div>
+## 03 · {content['sections']['upstream']}
 
-## 02 · {content['sections']['work']}
+{t(content['upstream_note'])}
 
-{(chr(10) * 2).join(projects)}
+{upstream_block}
 
-## 03 · {content['sections']['now']}
+## 04 · {content['sections']['now']}
 
 | | |
 | --- | --- |
-| **{content['labels']['problem']}** | {t(now['problem'])} |
-| **{content['labels']['judgment']}** | {t(now['judgment'])} |
-| **{content['labels']['next']}** | {t(now['next'])} |
+| **{L['problem']}** | {t(now['problem'])} |
+| **{L['judgment']}** | {t(now['judgment'])} |
+| **{L['next']}** | {t(now['next'])} |
 
-## 04 · {content['sections']['stack']}
+## 05 · {content['sections']['objective']}
 
-| # | {content['labels']['tech']} | {content['labels']['scene']} |
+| {L['objective']} | {L['kr']} | {L['evidence']} | {L['means']} |
+| --- | --- | --- | --- |
+{okr_rows}
+
+<details>
+<summary><strong>{content['sections']['stack']}</strong></summary>
+
+| # | {L['tech']} | {L['scene']} |
 | --- | --- | --- |
 {stack_rows}
 
-## 05 · {content['sections']['contact']}
+<div align="center"><img src="{svg('signal')}" width="900" alt="{escape(L['signal_alt'])}"></div>
+
+</details>
+
+<div align="center"><img src="{svg('identity')}" width="900" alt="{escape(cfg['name'])} — animated ASCII identity"></div>
+
+## 06 · {content['sections']['contact']}
 
 {t(content['contact']['line'])}
 
-{links}
+{contact_links}
 
-<div align="center"><img src="{svg('contributions')}" width="900" alt="{escape(content['labels']['contrib_alt'])}"></div>
+<div align="center"><img src="{svg('contributions')}" width="900" alt="{escape(L['contrib_alt'])}"></div>
 
 <sub>{t(content['footer'])}</sub>
 '''
@@ -694,6 +770,7 @@ def main() -> int:
     else:
         profile = fetch_profile(username)
         contribution = fetch_contributions(username)
+        profile["upstream"] = fetch_upstream(username)
         DATA.mkdir(exist_ok=True)
         cache.write_text(
             json.dumps({"profile": profile, "contributions": contribution}, ensure_ascii=False, indent=2),

@@ -1,96 +1,129 @@
 {
   "label": "简体中文",
-  "conclusion": "我做能落地的 agent 基础设施：pi 扩展、MCP 服务、Windows 内部工具。近 12 个月 {contributions} 次贡献、{activeDays} 个活跃日，其中三个项目一条命令就能装上。",
-  "index": {
-    "role": "工程师 · agent 基础设施与 Windows 内部工具",
-    "focus": "pi 扩展 · MCP 服务 · 只读系统工具",
-    "proof": "figma-mcp-plus — 8 阶段规则引擎，98%+ SSIM 设计稿转代码",
-    "cadence": "{contributions} 次贡献 / {activeDays} 个活跃日 / 单日峰值 {peak}",
-    "contact": "github.com/flying-dragon-ai"
-  },
+  "hero_alt": "鹈鹕骑车 —— 在浏览器里跑的 3D 骑车游戏，tihuqiche.com",
+  "hero_link": "https://tihuqiche.com/",
+  "tagline": "我做能装、能玩、能验的东西：pi 扩展、MCP 服务、Windows 内部工具，以及真的能打开来玩的 3D 产品。",
+  "subline": "两个 npm 包、一个跑在自有域名上的 3D 游戏，和一个回收了 30.53 GB 却一个字节都没丢的只读 Windows 审计工具。",
+  "links": [
+    ["GitHub", "https://github.com/flying-dragon-ai"],
+    ["pi 扩展包", "https://pi.dev/packages"],
+    ["试玩鹈鹕骑车", "https://tihuqiche.com/"]
+  ],
   "sections": {
-    "okr": "目标与关键结果",
-    "work": "精选项目",
+    "selected": "精选",
+    "toolchain": "工具链",
+    "upstream": "上游贡献",
     "now": "当前在解决",
-    "stack": "技术栈",
+    "objective": "目标与证据",
+    "stack": "技术栈与实时信号",
     "contact": "联系"
   },
   "labels": {
-    "objective": "目标",
-    "kr": "关键结果",
-    "evidence": "进展与证据",
-    "means": "这意味着什么",
+    "tool": "工具",
+    "what": "做什么",
+    "install": "安装",
+    "repo": "仓库",
+    "change": "改动",
+    "merged_prs": "已合并 PR",
+    "latest_change": "最近改动",
     "problem": "问题",
-    "did": "我做了什么",
-    "result": "结果与影响",
     "judgment": "我的判断",
     "next": "下一步验证",
+    "objective": "目标",
+    "kr": "关键结果",
+    "evidence": "证据",
+    "means": "这意味着什么",
     "tech": "技术",
     "scene": "用于什么场景",
     "signal_alt": "实时档案信号与语言栈",
     "contrib_alt": "近 12 个月贡献活动"
   },
-  "okr": [
-    {
-      "id": "O1",
-      "objective": "让 agent 能力可交付",
-      "kr": "KR1 · 三个包一条命令安装",
-      "evidence": "pi-provider-xhx、pi-subagent-factory、knowledge-takeback-skill —— `pi install npm:…` / `npx …`",
-      "means": "接入成本是一条命令，不是读一遍源码"
-    },
-    {
-      "id": "O1",
-      "objective": "让 agent 能力可交付",
-      "kr": "KR2 · 设计稿转代码还原度 ≥ 98% SSIM",
-      "evidence": "figma-mcp-plus：8 阶段流水线，规则引擎优先，VLM 只做兜底",
-      "means": "设计交接不再等于手工重画一遍"
-    },
-    {
-      "id": "O2",
-      "objective": "让系统工具可审计",
-      "kr": "KR3 · 回收 30.53 GB，零数据丢失",
-      "evidence": "win-raccoon-lab：152 条实测缓存地图、9 道安全闸门、probe F1 = 1.00",
-      "means": "清理从「一键优化赌一把」变成先给证据再给选择"
-    },
-    {
-      "id": "O3",
-      "objective": "保持交付节奏",
-      "kr": "KR4 · {contributions} 次贡献 / {activeDays} 个活跃日",
-      "evidence": "{repos} 个自有仓库覆盖 {langCount} 种语言，单日峰值 {peak} 次",
-      "means": "产出是节奏，不是爆发"
-    }
-  ],
   "projects": [
     {
-      "repo": "figma-mcp-plus",
-      "problem": "Figma 转代码通常靠视觉模型猜像素：两次运行还原度不一样，每次尝试都在烧 token。",
-      "did": "写了规则化布局引擎——8 阶段流水线（DSL → 树 → 布局 → 视觉 → 导出），VLM 降级为兜底；产物是含 index.html、切图与字体的 ZIP，任何 LLM 都能接着转 React、Vue、Swift 或 Kotlin。",
-      "result": "还原度 98%+ SSIM，同一份设计两次产出同一份代码。"
+      "repo": "tihuqiche",
+      "name": "鹈鹕骑车",
+      "image": "assets/card-tihuqiche.jpg",
+      "line": "12 关跨海岛与城市，4 种模式，单文件离线包。Vue 3 + Three.js，现在就能在浏览器里玩。",
+      "link": "https://tihuqiche.com/",
+      "link_label": "在线游玩"
+    },
+    {
+      "repo": "pet-world",
+      "name": "宠物数字管家",
+      "image": "assets/card-petworld.jpg",
+      "line": "移动端宠物管理应用：AI 问答、健康陪伴、直播。已部署可点开，不是 PPT 里的截图。",
+      "link": "https://flying-dragon-ai.github.io/pet-world/",
+      "link_label": "打开"
     },
     {
       "repo": "win-raccoon-lab",
-      "problem": "清理软件让你点「一键优化」，然后你永远不知道它删了什么。",
-      "did": "做了只读审计：152 条缓存路径对着本机实测体积，按三级安全等级分类，动一个字节之前先过 9 道闸门。",
-      "result": "实测回收 30.53 GB，零数据丢失；实测集上 probe F1 = 1.00。"
+      "name": "win-raccoon",
+      "image": "assets/card-raccoon.jpg",
+      "line": "只读 Windows 缓存审计：152 条实测缓存地图、9 道安全闸门、回收 30.53 GB 零数据丢失。引擎里没有任何破坏性 cmdlet，第 7 道闸门会 grep 自己的源码来证明这一点。",
+      "link": "https://github.com/flying-dragon-ai/win-raccoon-lab",
+      "link_label": "源码"
     },
     {
+      "repo": "figma-mcp-plus",
+      "name": "figma-mcp-plus",
+      "image": null,
+      "line": "Figma 转代码走 8 阶段规则引擎——DSL、树、布局、视觉、导出——还原度 98%+ SSIM。VLM 是兜底，不是方法。",
+      "link": "https://github.com/flying-dragon-ai/figma-mcp-plus",
+      "link_label": "源码"
+    }
+  ],
+  "toolchain": [
+    {
       "repo": "pi-subagent-factory",
-      "problem": "每个项目都要手写一套 subagent 团队，而名单会悄悄和真实技术栈脱节。",
-      "did": "规则引擎扫描最多 6000 个文件——语言、框架、数据库、测试框架、构建工具、monorepo、Docker、CI——确定性生成 4–10 个 agent，每个带工具白名单与思考等级。",
-      "result": "扫描零模型 token；React + Prisma + Vitest 项目 5 秒内出 8 个 agent。"
+      "line": "扫描最多 6000 个文件，生成 4–10 个 subagent，每个带工具白名单。扫描零模型 token。",
+      "cmd": "`pi install npm:pi-subagent-factory`"
+    },
+    {
+      "repo": "pi-provider-xhx",
+      "line": "把「小浣熊」接成 pi 的一等 provider：OAuth 回环登录、实时模型目录、走 pi 自己的流式客户端。",
+      "cmd": "`pi install npm:pi-provider-xhx`"
     },
     {
       "repo": "seedance-agent",
-      "problem": "AIGC 长视频生成不可复现：一个凭据失效或一次轮询丢失，整条预算就烧掉了。",
-      "did": "分镜预检、凭据有序轮转、异步轮询、断点续跑、ffmpeg 后期，外加一份教会 agent 自己驱动管线的技能文件。",
-      "result": "分镜从最后一个可用片段续跑，而不是从零重来。"
+      "line": "分镜预检、凭据有序轮转、断点续跑、ffmpeg 后期。AIGC 视频可以重跑，而不是重买。",
+      "cmd": null
+    },
+    {
+      "repo": "msep-blind",
+      "line": "让盈高 MSEP 终端安控在这台机器上停止工作，扛过重启，随时可完整恢复。PowerShell，零依赖。",
+      "cmd": null
     }
   ],
+  "upstream_note": "只列已合并的 PR。其中两个是我自己的仓库，其余是我给上游项目提交并被合入的补丁。",
+  "upstream_empty": "_暂无已合并的上游 PR。_",
   "now": {
     "problem": "figma-mcp-plus 在深度重叠布局上仍要回落到 VLM。",
     "judgment": "DSL 记录了重叠、溢出与包含关系，但没有记录 z-order 意图，布局阶段无法确定性地解出层叠顺序。",
     "next": "在树与布局之间插入一层重叠解析，用固定的 20 屏重叠语料做前后 SSIM 对比。"
   },
+  "okr": [
+    {
+      "id": "O1",
+      "objective": "交付别人装得上的 agent 工具",
+      "kr": "KR1 · 两个 npm 包已发布",
+      "evidence": "pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 —— 都是 `pi install npm:…`",
+      "means": "接入成本是一条命令，不是读一遍源码"
+    },
+    {
+      "id": "O2",
+      "objective": "让系统工具可审计",
+      "kr": "KR2 · 回收 30.53 GB，零数据丢失",
+      "evidence": "win-raccoon-lab：152 条实测缓存、9 道安全闸门、probe F1 = 1.00",
+      "means": "清理从「一键优化赌一把」变成先给证据再给选择"
+    },
+    {
+      "id": "O3",
+      "objective": "保持交付节奏",
+      "kr": "KR3 · {contributions} 次贡献 / {activeDays} 个活跃日",
+      "evidence": "{repos} 个自有仓库覆盖 {langCount} 种语言，单日峰值 {peak} 次",
+      "means": "产出是节奏，不是爆发"
+    }
+  ],
   "stack": [
     { "tech": "Python", "scene": "MCP 服务、AIGC 管线、FastAPI 后端" },
     { "tech": "TypeScript", "scene": "pi 扩展、Vue 3 / React 19 前端、小程序" },

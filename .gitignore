@@ -5,3 +5,5 @@ out/
 .DS_Store
 preview.html
 preview.png
+tmp/
+shot-*.png

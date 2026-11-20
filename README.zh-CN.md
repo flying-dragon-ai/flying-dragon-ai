@@ -1,63 +1,48 @@
 <div align="center">
 
-<img src="assets/identity-zh-CN.svg" width="900" alt="flying~dragon — animated ASCII identity">
+<a href="https://tihuqiche.com/"><img src="assets/hero-game.jpg" width="1200" alt="鹈鹕骑车 —— 在浏览器里跑的 3D 骑车游戏，tihuqiche.com"></a>
 
-<br>
+# flying~dragon
 
-<sub>[English](README.md) · **[简体中文](README.zh-CN.md)** · [日本語](README.ja.md) · [한국어](README.ko.md) · [Русский](README.ru.md)</sub>
+**我做能装、能玩、能验的东西：pi 扩展、MCP 服务、Windows 内部工具，以及真的能打开来玩的 3D 产品。**
+
+<sub>两个 npm 包、一个跑在自有域名上的 3D 游戏，和一个回收了 30.53 GB 却一个字节都没丢的只读 Windows 审计工具。</sub>
+
+<a href="https://github.com/flying-dragon-ai">GitHub</a> · <a href="https://pi.dev/packages">pi 扩展包</a> · <a href="https://tihuqiche.com/">试玩鹈鹕骑车</a> · [English](README.md) · **[简体中文](README.zh-CN.md)** · [日本語](README.ja.md) · [한국어](README.ko.md) · [Русский](README.ru.md)
 
 </div>
 
 ---
 
-**我做能落地的 agent 基础设施：pi 扩展、MCP 服务、Windows 内部工具。近 12 个月 384 次贡献、73 个活跃日，其中三个项目一条命令就能装上。**
+## 01 · 精选
 
-```yaml
-role:     工程师 · agent 基础设施与 Windows 内部工具
-focus:    pi 扩展 · MCP 服务 · 只读系统工具
-proof:    figma-mcp-plus — 8 阶段规则引擎，98%+ SSIM 设计稿转代码
-cadence:  384 次贡献 / 73 个活跃日 / 单日峰值 69
-contact:  github.com/flying-dragon-ai
-```
+<table>
+<tr><td width="50%" valign="top"><a href="https://tihuqiche.com/"><img src="assets/card-tihuqiche.jpg" width="440" alt="鹈鹕骑车"></a><p><strong><a href="https://github.com/flying-dragon-ai/tihuqiche">鹈鹕骑车</a></strong></p><p>12 关跨海岛与城市，4 种模式，单文件离线包。Vue 3 + Three.js，现在就能在浏览器里玩。</p><p><a href="https://tihuqiche.com/">在线游玩 ↗</a></p></td><td width="50%" valign="top"><a href="https://flying-dragon-ai.github.io/pet-world/"><img src="assets/card-petworld.jpg" width="440" alt="宠物数字管家"></a><p><strong><a href="https://github.com/flying-dragon-ai/pet-world">宠物数字管家</a></strong></p><p>移动端宠物管理应用：AI 问答、健康陪伴、直播。已部署可点开，不是 PPT 里的截图。</p><p><a href="https://flying-dragon-ai.github.io/pet-world/">打开 ↗</a></p></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/flying-dragon-ai/win-raccoon-lab"><img src="assets/card-raccoon.jpg" width="440" alt="win-raccoon"></a><p><strong><a href="https://github.com/flying-dragon-ai/win-raccoon-lab">win-raccoon</a></strong></p><p>只读 Windows 缓存审计：152 条实测缓存地图、9 道安全闸门、回收 30.53 GB 零数据丢失。引擎里没有任何破坏性 cmdlet，第 7 道闸门会 grep 自己的源码来证明这一点。</p><p><a href="https://github.com/flying-dragon-ai/win-raccoon-lab">源码 ↗</a></p></td><td width="50%" valign="top"><p><strong><a href="https://github.com/flying-dragon-ai/figma-mcp-plus">figma-mcp-plus</a></strong></p><p>Figma 转代码走 8 阶段规则引擎——DSL、树、布局、视觉、导出——还原度 98%+ SSIM。VLM 是兜底，不是方法。</p><p><a href="https://github.com/flying-dragon-ai/figma-mcp-plus">源码 ↗</a></p></td></tr>
+</table>
 
-## 01 · 目标与关键结果
+## 02 · 工具链
 
-| 目标 | 关键结果 | 进展与证据 | 这意味着什么 |
-| --- | --- | --- | --- |
-| **O1** 让 agent 能力可交付 | KR1 · 三个包一条命令安装 | pi-provider-xhx、pi-subagent-factory、knowledge-takeback-skill —— `pi install npm:…` / `npx …` | 接入成本是一条命令，不是读一遍源码 |
-| **O1** 让 agent 能力可交付 | KR2 · 设计稿转代码还原度 ≥ 98% SSIM | figma-mcp-plus：8 阶段流水线，规则引擎优先，VLM 只做兜底 | 设计交接不再等于手工重画一遍 |
-| **O2** 让系统工具可审计 | KR3 · 回收 30.53 GB，零数据丢失 | win-raccoon-lab：152 条实测缓存地图、9 道安全闸门、probe F1 = 1.00 | 清理从「一键优化赌一把」变成先给证据再给选择 |
-| **O3** 保持交付节奏 | KR4 · 384 次贡献 / 73 个活跃日 | 18 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
+| 工具 | 做什么 | 安装 |
+| --- | --- | --- |
+| **[pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory)** | 扫描最多 6000 个文件，生成 4–10 个 subagent，每个带工具白名单。扫描零模型 token。 | `pi install npm:pi-subagent-factory` |
+| **[pi-provider-xhx](https://github.com/flying-dragon-ai/pi-provider-xhx)** | 把「小浣熊」接成 pi 的一等 provider：OAuth 回环登录、实时模型目录、走 pi 自己的流式客户端。 | `pi install npm:pi-provider-xhx` |
+| **[seedance-agent](https://github.com/flying-dragon-ai/seedance-agent)** | 分镜预检、凭据有序轮转、断点续跑、ffmpeg 后期。AIGC 视频可以重跑，而不是重买。 | — |
+| **[msep-blind](https://github.com/flying-dragon-ai/msep-blind)** | 让盈高 MSEP 终端安控在这台机器上停止工作，扛过重启，随时可完整恢复。PowerShell，零依赖。 | — |
 
-<div align="center"><img src="assets/signal-zh-CN.svg" width="900" alt="实时档案信号与语言栈"></div>
+## 03 · 上游贡献
 
-## 02 · 精选项目
+只列已合并的 PR。其中两个是我自己的仓库，其余是我给上游项目提交并被合入的补丁。
 
-### [figma-mcp-plus](https://github.com/flying-dragon-ai/figma-mcp-plus)
+| 仓库 | 已合并 PR | 最近改动 |
+| --- | --- | --- |
+| [llingqi77-tech/interview-new](https://github.com/llingqi77-tech/interview-new) | [9](https://github.com/llingqi77-tech/interview-new/pull/9) · [4](https://github.com/llingqi77-tech/interview-new/pull/4) · [3](https://github.com/llingqi77-tech/interview-new/pull/3) · [2](https://github.com/llingqi77-tech/interview-new/pull/2) · [1](https://github.com/llingqi77-tech/interview-new/pull/1) | refactor: 拆开会话引擎、LLM 路由和报告打分 |
+| [flying-dragon-ai/interview-new](https://github.com/flying-dragon-ai/interview-new) | [2](https://github.com/flying-dragon-ai/interview-new/pull/2) · [1](https://github.com/flying-dragon-ai/interview-new/pull/1) | 多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面） |
+| [Frankieli123/grok-skill](https://github.com/Frankieli123/grok-skill) | [2](https://github.com/Frankieli123/grok-skill/pull/2) | feat(api): 优化 JSON 解析与支持 SSE 流解析 |
+| [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | [2028](https://github.com/TEN-framework/ten-framework/pull/2028) | #2014 docs(voice-assistant): 重构README，详细说明PowerMem记忆功能 |
+| [labring/FastGPT](https://github.com/labring/FastGPT) | [6338](https://github.com/labring/FastGPT/pull/6338) | #6193 feat(SeekDB): 集成支持 SeekDB 向量数据库 |
 
-- **问题** — Figma 转代码通常靠视觉模型猜像素：两次运行还原度不一样，每次尝试都在烧 token。
-- **我做了什么** — 写了规则化布局引擎——8 阶段流水线（DSL → 树 → 布局 → 视觉 → 导出），VLM 降级为兜底；产物是含 index.html、切图与字体的 ZIP，任何 LLM 都能接着转 React、Vue、Swift 或 Kotlin。
-- **结果与影响** — 还原度 98%+ SSIM，同一份设计两次产出同一份代码。
-
-### [win-raccoon-lab](https://github.com/flying-dragon-ai/win-raccoon-lab)
-
-- **问题** — 清理软件让你点「一键优化」，然后你永远不知道它删了什么。
-- **我做了什么** — 做了只读审计：152 条缓存路径对着本机实测体积，按三级安全等级分类，动一个字节之前先过 9 道闸门。
-- **结果与影响** — 实测回收 30.53 GB，零数据丢失；实测集上 probe F1 = 1.00。
-
-### [pi-subagent-factory](https://github.com/flying-dragon-ai/pi-subagent-factory)
-
-- **问题** — 每个项目都要手写一套 subagent 团队，而名单会悄悄和真实技术栈脱节。
-- **我做了什么** — 规则引擎扫描最多 6000 个文件——语言、框架、数据库、测试框架、构建工具、monorepo、Docker、CI——确定性生成 4–10 个 agent，每个带工具白名单与思考等级。
-- **结果与影响** — 扫描零模型 token；React + Prisma + Vitest 项目 5 秒内出 8 个 agent。
-
-### [seedance-agent](https://github.com/flying-dragon-ai/seedance-agent) · ★2
-
-- **问题** — AIGC 长视频生成不可复现：一个凭据失效或一次轮询丢失，整条预算就烧掉了。
-- **我做了什么** — 分镜预检、凭据有序轮转、异步轮询、断点续跑、ffmpeg 后期，外加一份教会 agent 自己驱动管线的技能文件。
-- **结果与影响** — 分镜从最后一个可用片段续跑，而不是从零重来。
-
-## 03 · 当前在解决
+## 04 · 当前在解决
 
 | | |
 | --- | --- |
@@ -65,7 +50,16 @@ contact:  github.com/flying-dragon-ai
 | **我的判断** | DSL 记录了重叠、溢出与包含关系，但没有记录 z-order 意图，布局阶段无法确定性地解出层叠顺序。 |
 | **下一步验证** | 在树与布局之间插入一层重叠解析，用固定的 20 屏重叠语料做前后 SSIM 对比。 |
 
-## 04 · 技术栈
+## 05 · 目标与证据
+
+| 目标 | 关键结果 | 证据 | 这意味着什么 |
+| --- | --- | --- | --- |
+| **O1** 交付别人装得上的 agent 工具 | KR1 · 两个 npm 包已发布 | pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 —— 都是 `pi install npm:…` | 接入成本是一条命令，不是读一遍源码 |
+| **O2** 让系统工具可审计 | KR2 · 回收 30.53 GB，零数据丢失 | win-raccoon-lab：152 条实测缓存、9 道安全闸门、probe F1 = 1.00 | 清理从「一键优化赌一把」变成先给证据再给选择 |
+| **O3** 保持交付节奏 | KR3 · 394 次贡献 / 73 个活跃日 | 18 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
+
+<details>
+<summary><strong>技术栈与实时信号</strong></summary>
 
 | # | 技术 | 用于什么场景 |
 | --- | --- | --- |
@@ -76,7 +70,13 @@ contact:  github.com/flying-dragon-ai
 | 5 | **Three.js / R3F** | 3D Web —— 鹈鹕骑车、智能体餐厅前端 |
 | 6 | **HTML / CSS** | 可离线单文件交付物 |
 
-## 05 · 联系
+<div align="center"><img src="assets/signal-zh-CN.svg" width="900" alt="实时档案信号与语言栈"></div>
+
+</details>
+
+<div align="center"><img src="assets/identity-zh-CN.svg" width="900" alt="flying~dragon — animated ASCII identity"></div>
+
+## 06 · 联系
 
 GitHub 是唯一入口。在对应仓库开 issue 比发邮件快。
 

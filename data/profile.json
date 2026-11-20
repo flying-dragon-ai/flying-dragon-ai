@@ -42,7 +42,7 @@
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "JavaScript",
         "stars": 0,
-        "pushedAt": "2026-11-20T06:51:06Z"
+        "pushedAt": "2026-11-20T06:51:17Z"
       },
       {
         "name": "pi-provider-xhx",
@@ -180,10 +180,72 @@
         "stars": 0,
         "pushedAt": "2026-02-11T02:06:53Z"
       }
+    ],
+    "upstream": [
+      {
+        "repo": "llingqi77-tech/interview-new",
+        "number": 9,
+        "title": "refactor: 拆开会话引擎、LLM 路由和报告打分",
+        "url": "https://github.com/llingqi77-tech/interview-new/pull/9"
+      },
+      {
+        "repo": "llingqi77-tech/interview-new",
+        "number": 4,
+        "title": "feature/code 合入 main（Realtime / VoiceLanePool / 液态玻璃）",
+        "url": "https://github.com/llingqi77-tech/interview-new/pull/4"
+      },
+      {
+        "repo": "llingqi77-tech/interview-new",
+        "number": 3,
+        "title": "Cursor/realtime duplex voices 0778",
+        "url": "https://github.com/llingqi77-tech/interview-new/pull/3"
+      },
+      {
+        "repo": "llingqi77-tech/interview-new",
+        "number": 2,
+        "title": "feat: 增加 Apple 液态玻璃单页",
+        "url": "https://github.com/llingqi77-tech/interview-new/pull/2"
+      },
+      {
+        "repo": "llingqi77-tech/interview-new",
+        "number": 1,
+        "title": "feat(realtime): 按音色分路的 VoiceLanePool，主持改用 linjiajiejie",
+        "url": "https://github.com/llingqi77-tech/interview-new/pull/1"
+      },
+      {
+        "repo": "flying-dragon-ai/interview-new",
+        "number": 2,
+        "title": "多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面）",
+        "url": "https://github.com/flying-dragon-ai/interview-new/pull/2"
+      },
+      {
+        "repo": "flying-dragon-ai/interview-new",
+        "number": 1,
+        "title": "液态玻璃展示页：群面模拟器单文件重绘",
+        "url": "https://github.com/flying-dragon-ai/interview-new/pull/1"
+      },
+      {
+        "repo": "Frankieli123/grok-skill",
+        "number": 2,
+        "title": "feat(api): 优化 JSON 解析与支持 SSE 流解析",
+        "url": "https://github.com/Frankieli123/grok-skill/pull/2"
+      },
+      {
+        "repo": "TEN-framework/ten-framework",
+        "number": 2028,
+        "title": "#2014 docs(voice-assistant): 重构README，详细说明PowerMem记忆功能",
+        "url": "https://github.com/TEN-framework/ten-framework/pull/2028"
+      },
+      {
+        "repo": "labring/FastGPT",
+        "number": 6338,
+        "title": "#6193 feat(SeekDB): 集成支持 SeekDB 向量数据库",
+        "url": "https://github.com/labring/FastGPT/pull/6338"
+      }
     ]
   },
   "contributions": {
-    "total": 384,
+    "total": 394,
     "days": [
       {
         "date": "2025-11-16",
@@ -777,13 +839,13 @@
       },
       {
         "date": "2026-03-14",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-03-15",
-        "count": 0,
-        "level": 0
+        "count": 2,
+        "level": 1
       },
       {
         "date": "2026-03-16",
@@ -2032,7 +2094,7 @@
       },
       {
         "date": "2026-11-20",
-        "count": 7,
+        "count": 17,
         "level": 1
       }
     ],
@@ -2040,6 +2102,6 @@
     "peakCount": 69,
     "peakDay": "2026-11-13",
     "windowDays": 370,
-    "last90": 205
+    "last90": 215
   }
 }

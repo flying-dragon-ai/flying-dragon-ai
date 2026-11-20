@@ -1,96 +1,129 @@
 {
   "label": "日本語",
-  "conclusion": "「動く」で終わらせず、届く形にします。pi 拡張、MCP サーバー、Windows 内部ツール。直近 12 か月で {contributions} コミット・{activeDays} アクティブ日、そのうち 3 つはコマンド 1 行で導入できます。",
-  "index": {
-    "role": "エンジニア · エージェント基盤と Windows 内部ツール",
-    "focus": "pi 拡張 · MCP サーバー · 読み取り専用システムツール",
-    "proof": "figma-mcp-plus — 8 段階ルールエンジン、98%+ SSIM のデザイン→コード",
-    "cadence": "{contributions} コミット / {activeDays} アクティブ日 / 1 日最大 {peak}",
-    "contact": "github.com/flying-dragon-ai"
-  },
+  "hero_alt": "Pelican Pedal Run — tihuqiche.com でブラウザ上で動く 3D 自転車ゲーム",
+  "hero_link": "https://tihuqiche.com/",
+  "tagline": "入れて使えるもの、開いて遊べるものを作ります。pi 拡張、MCP サーバー、Windows 内部ツール、そして実際に動く 3D プロダクト。",
+  "subline": "公開済みの npm パッケージ 2 つ、独自ドメインで動く 3D ゲーム 1 本、そして 30.53 GB を回収しながら 1 バイトも失わなかった読み取り専用の Windows 監査ツール。",
+  "links": [
+    ["GitHub", "https://github.com/flying-dragon-ai"],
+    ["pi パッケージ", "https://pi.dev/packages"],
+    ["tihuqiche を遊ぶ", "https://tihuqiche.com/"]
+  ],
   "sections": {
-    "okr": "目標と主要結果",
-    "work": "主なプロジェクト",
+    "selected": "主なプロジェクト",
+    "toolchain": "ツールチェーン",
+    "upstream": "上流への貢献",
     "now": "現在取り組んでいること",
-    "stack": "技術スタック",
+    "objective": "目標と根拠",
+    "stack": "技術スタックとライブ信号",
     "contact": "連絡先"
   },
   "labels": {
-    "objective": "目標",
-    "kr": "主要結果",
-    "evidence": "進捗と根拠",
-    "means": "それが意味すること",
+    "tool": "ツール",
+    "what": "できること",
+    "install": "インストール",
+    "repo": "リポジトリ",
+    "change": "変更",
+    "merged_prs": "マージ済み PR",
+    "latest_change": "最新の変更",
     "problem": "課題",
-    "did": "やったこと",
-    "result": "結果と影響",
     "judgment": "判断",
     "next": "次の検証",
+    "objective": "目標",
+    "kr": "主要結果",
+    "evidence": "根拠",
+    "means": "それが意味すること",
     "tech": "技術",
     "scene": "使用場面",
     "signal_alt": "リアルタイムのプロフィール信号と言語スタック",
     "contrib_alt": "直近 12 か月のコントリビューション"
   },
-  "okr": [
-    {
-      "id": "O1",
-      "objective": "エージェント能力を届く形にする",
-      "kr": "KR1 · 3 つのパッケージをコマンド 1 行で導入",
-      "evidence": "pi-provider-xhx、pi-subagent-factory、knowledge-takeback-skill —— `pi install npm:…` / `npx …`",
-      "means": "導入コストはコマンド 1 行で、ソースを読む時間ではない"
-    },
-    {
-      "id": "O1",
-      "objective": "エージェント能力を届く形にする",
-      "kr": "KR2 · デザイン→コードの再現度 ≥ 98% SSIM",
-      "evidence": "figma-mcp-plus：8 段階パイプライン、ルールエンジン優先、VLM はフォールバックのみ",
-      "means": "デザイン受け渡しが手作業の再描画でなくなる"
-    },
-    {
-      "id": "O2",
-      "objective": "システムツールを検証可能にする",
-      "kr": "KR3 · 30.53 GB を回収し、データ損失ゼロ",
-      "evidence": "win-raccoon-lab：実測 152 件のキャッシュマップ、9 つの安全ゲート、probe F1 = 1.00",
-      "means": "掃除は「ワンクリック最適化」ではなく、まず証拠を出す作業になる"
-    },
-    {
-      "id": "O3",
-      "objective": "リズムを保つ",
-      "kr": "KR4 · {contributions} コミット / {activeDays} アクティブ日",
-      "evidence": "{repos} 個の自前リポジトリが {langCount} 言語にわたり、1 日最大 {peak} コミット",
-      "means": "成果は一発の爆発ではなくリズム"
-    }
-  ],
   "projects": [
     {
-      "repo": "figma-mcp-plus",
-      "problem": "Figma からコードへの変換は、たいてい視覚モデルがピクセルを推測する作業です。実行ごとに再現度がぶれ、試すたびにトークンを消費します。",
-      "did": "ルールベースのレイアウトエンジンを書きました。8 段階パイプライン（DSL → ツリー → レイアウト → 視覚処理 → エクスポート）で、VLM はフォールバックに降格。出力は index.html・スライス画像・フォントを含む ZIP で、そのまま React / Vue / Swift / Kotlin に変換できます。",
-      "result": "再現度 98%+ SSIM。同じデザインからは同じコードが二度出てきます。"
+      "repo": "tihuqiche",
+      "name": "Pelican Pedal Run",
+      "image": "assets/card-tihuqiche.jpg",
+      "line": "島と都市をめぐる 12 ステージ、4 モード、オフライン単一ファイル版。Vue 3 + Three.js、いまブラウザで遊べます。",
+      "link": "https://tihuqiche.com/",
+      "link_label": "遊ぶ"
+    },
+    {
+      "repo": "pet-world",
+      "name": "ペット・デジタルキーパー",
+      "image": "assets/card-petworld.jpg",
+      "line": "モバイル向けペット管理アプリ：AI 問答、健康記録、ライブ配信。デプロイ済みで実際に開けます。スライドの中のスクリーンショットではありません。",
+      "link": "https://flying-dragon-ai.github.io/pet-world/",
+      "link_label": "開く"
     },
     {
       "repo": "win-raccoon-lab",
-      "problem": "掃除ツールは「ワンクリック最適化」を押させて、何を消したのかを教えてくれません。",
-      "did": "読み取り専用の監査ツールを作りました。152 件のキャッシュパスを実機で計測し、3 段階の安全レベルに分類。1 バイト動かす前に 9 つのゲートを通します。",
-      "result": "実測 30.53 GB を回収し、データ損失ゼロ。実測セットで probe F1 = 1.00。"
+      "name": "win-raccoon",
+      "image": "assets/card-raccoon.jpg",
+      "line": "読み取り専用の Windows キャッシュ監査：実測 152 件、9 つの安全ゲート、30.53 GB を回収してデータ損失ゼロ。エンジンに破壊的なコマンドレットはなく、ゲート 7 が自分のソースを grep してそれを証明します。",
+      "link": "https://github.com/flying-dragon-ai/win-raccoon-lab",
+      "link_label": "ソース"
     },
     {
+      "repo": "figma-mcp-plus",
+      "name": "figma-mcp-plus",
+      "image": null,
+      "line": "Figma からコードへ、8 段階のルールエンジン——DSL、ツリー、レイアウト、視覚処理、エクスポート——で 98%+ SSIM。VLM はフォールバックであって手法ではありません。",
+      "link": "https://github.com/flying-dragon-ai/figma-mcp-plus",
+      "link_label": "ソース"
+    }
+  ],
+  "toolchain": [
+    {
       "repo": "pi-subagent-factory",
-      "problem": "プロジェクトごとに subagent チームを手書きする必要があり、その名簿は実際のスタックから静かにずれていきます。",
-      "did": "最大 6,000 ファイルを走査するルールエンジン——言語、フレームワーク、DB、テストランナー、ビルド、monorepo、Docker、CI——を書き、4〜10 個のエージェントを決定論的に生成します。各エージェントにはツール許可リストと思考レベルが付きます。",
-      "result": "走査のモデルトークン消費はゼロ。React + Prisma + Vitest のリポジトリで 5 秒以内に 8 エージェント。"
+      "line": "最大 6,000 ファイルを走査し、ツール許可リスト付きの subagent を 4〜10 個生成。走査のモデルトークンはゼロ。",
+      "cmd": "`pi install npm:pi-subagent-factory`"
+    },
+    {
+      "repo": "pi-provider-xhx",
+      "line": "小浣熊を pi の一級プロバイダに：OAuth ループバック、ライブのモデルカタログ、pi 自身のクライアントでストリーミング。",
+      "cmd": "`pi install npm:pi-provider-xhx`"
     },
     {
       "repo": "seedance-agent",
-      "problem": "AIGC 長尺動画の生成は再現できません。認証情報が 1 つ死ぬか、ポーリングが 1 回落ちるだけで予算が丸ごと消えます。",
-      "did": "絵コンテのプリフライト、認証情報の順序付きローテーション、非同期ポーリング、レジューム可能なダウンロード、ffmpeg によるポストプロダクション。さらにエージェント自身にパイプラインを操作させるスキルファイルを用意しました。",
-      "result": "絵コンテはゼロからではなく、最後に成功したセグメントから再開します。"
+      "line": "絵コンテのプリフライト、認証情報の順序付きローテーション、レジューム可能なダウンロード、ffmpeg ポスト。買い直すのではなく再実行できる AIGC 動画。",
+      "cmd": null
+    },
+    {
+      "repo": "msep-blind",
+      "line": "Infogo MSEP のエンドポイントエージェントを停止させ、再起動をまたぎ、必要なら完全に戻す。PowerShell、依存なし。",
+      "cmd": null
     }
   ],
+  "upstream_note": "マージ済みのプルリクエストのみ。うち 2 件は自分のリポジトリ、残りは上流プロジェクトに送って取り込まれたパッチです。",
+  "upstream_empty": "_マージ済みの上流 PR はまだありません。_",
   "now": {
     "problem": "figma-mcp-plus は深い重なりを持つレイアウトで、まだ VLM にフォールバックします。",
     "judgment": "DSL は重なり・はみ出し・包含関係を記録していますが、z-order の意図を記録していないため、レイアウト段階で重なり順を決定論的に解けません。",
     "next": "ツリーとレイアウトの間に重なり解決ステージを挿入し、固定の 20 画面の重なりコーパスで前後の SSIM を測ります。"
   },
+  "okr": [
+    {
+      "id": "O1",
+      "objective": "導入できるエージェントツールを届ける",
+      "kr": "KR1 · npm パッケージ 2 つを公開",
+      "evidence": "pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 —— どちらも `pi install npm:…`",
+      "means": "導入コストはコマンド 1 行で、ソースを読む時間ではない"
+    },
+    {
+      "id": "O2",
+      "objective": "システムツールを検証可能にする",
+      "kr": "KR2 · 30.53 GB を回収し、データ損失ゼロ",
+      "evidence": "win-raccoon-lab：実測 152 件のキャッシュ、9 つの安全ゲート、probe F1 = 1.00",
+      "means": "掃除は「ワンクリック最適化」ではなく、まず証拠を出す作業になる"
+    },
+    {
+      "id": "O3",
+      "objective": "リズムを保つ",
+      "kr": "KR3 · {contributions} コミット / {activeDays} アクティブ日",
+      "evidence": "{repos} 個の自前リポジトリが {langCount} 言語にわたり、1 日最大 {peak} コミット",
+      "means": "成果は一発の爆発ではなくリズム"
+    }
+  ],
   "stack": [
     { "tech": "Python", "scene": "MCP サーバー、AIGC パイプライン、FastAPI バックエンド" },
     { "tech": "TypeScript", "scene": "pi 拡張、Vue 3 / React 19 フロントエンド、ミニプログラム" },
