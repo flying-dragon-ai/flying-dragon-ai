@@ -9,16 +9,16 @@
       "createdAt": "2019-12-09T02:08:04Z"
     },
     "stats": {
-      "ownRepos": 19,
+      "ownRepos": 20,
       "forks": 53,
-      "totalStars": 6,
+      "totalStars": 7,
       "languages": [
         [
-          "Python",
-          6
+          "TypeScript",
+          7
         ],
         [
-          "TypeScript",
+          "Python",
           6
         ],
         [
@@ -37,12 +37,12 @@
     },
     "repos": [
       {
-        "name": "huorengan-2079-play",
-        "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
-        "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
-        "language": "HTML",
-        "stars": 0,
-        "pushedAt": "2026-11-20T08:45:01Z"
+        "name": "super-agent",
+        "description": "super-agent",
+        "url": "https://github.com/flying-dragon-ai/super-agent",
+        "language": "TypeScript",
+        "stars": 1,
+        "pushedAt": "2026-11-21T06:10:50Z"
       },
       {
         "name": "flying-dragon-ai",
@@ -50,7 +50,15 @@
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "Python",
         "stars": 0,
-        "pushedAt": "2026-11-20T07:32:09Z"
+        "pushedAt": "2026-11-20T11:31:53Z"
+      },
+      {
+        "name": "huorengan-2079-play",
+        "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
+        "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
+        "language": "HTML",
+        "stars": 0,
+        "pushedAt": "2026-11-20T08:45:01Z"
       },
       {
         "name": "pi-provider-xhx",
@@ -253,7 +261,7 @@
     ]
   },
   "contributions": {
-    "total": 401,
+    "total": 409,
     "days": [
       {
         "date": "2025-11-16",
@@ -907,8 +915,8 @@
       },
       {
         "date": "2026-03-26",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-03-27",
@@ -2102,14 +2110,19 @@
       },
       {
         "date": "2026-11-20",
-        "count": 24,
+        "count": 25,
         "level": 2
+      },
+      {
+        "date": "2026-11-21",
+        "count": 8,
+        "level": 1
       }
     ],
     "activeDays": 73,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 370,
-    "last90": 222
+    "windowDays": 371,
+    "last90": 231
   }
 }
