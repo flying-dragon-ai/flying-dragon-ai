@@ -37,20 +37,20 @@
     },
     "repos": [
       {
+        "name": "flying-dragon-ai",
+        "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
+        "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
+        "language": "Python",
+        "stars": 0,
+        "pushedAt": "2026-11-21T10:57:07Z"
+      },
+      {
         "name": "super-agent",
         "description": "super-agent",
         "url": "https://github.com/flying-dragon-ai/super-agent",
         "language": "TypeScript",
         "stars": 1,
         "pushedAt": "2026-11-21T06:10:50Z"
-      },
-      {
-        "name": "flying-dragon-ai",
-        "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
-        "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
-        "language": "Python",
-        "stars": 0,
-        "pushedAt": "2026-11-20T11:31:53Z"
       },
       {
         "name": "huorengan-2079-play",
@@ -263,41 +263,6 @@
   "contributions": {
     "total": 409,
     "days": [
-      {
-        "date": "2025-11-16",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-17",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-18",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-19",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-20",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-21",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-22",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-11-23",
         "count": 0,
@@ -2117,12 +2082,17 @@
         "date": "2026-11-21",
         "count": 8,
         "level": 1
+      },
+      {
+        "date": "2026-11-22",
+        "count": 0,
+        "level": 0
       }
     ],
     "activeDays": 73,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 371,
+    "windowDays": 365,
     "last90": 231
   }
 }
