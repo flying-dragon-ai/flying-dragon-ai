@@ -36,7 +36,6 @@ Merged pull requests only. Two of these are my own repositories; the rest are up
 
 | Repository | Merged PRs | Latest change |
 | --- | --- | --- |
-| [llingqi77-tech/interview-new](https://github.com/llingqi77-tech/interview-new) | [9](https://github.com/llingqi77-tech/interview-new/pull/9) · [4](https://github.com/llingqi77-tech/interview-new/pull/4) · [3](https://github.com/llingqi77-tech/interview-new/pull/3) · [2](https://github.com/llingqi77-tech/interview-new/pull/2) · [1](https://github.com/llingqi77-tech/interview-new/pull/1) | refactor: 拆开会话引擎、LLM 路由和报告打分 |
 | [flying-dragon-ai/interview-new](https://github.com/flying-dragon-ai/interview-new) | [2](https://github.com/flying-dragon-ai/interview-new/pull/2) · [1](https://github.com/flying-dragon-ai/interview-new/pull/1) | 多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面） |
 | [Frankieli123/grok-skill](https://github.com/Frankieli123/grok-skill) | [2](https://github.com/Frankieli123/grok-skill/pull/2) | feat(api): 优化 JSON 解析与支持 SSE 流解析 |
 | [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | [2028](https://github.com/TEN-framework/ten-framework/pull/2028) | #2014 docs(voice-assistant): 重构README，详细说明PowerMem记忆功能 |
@@ -56,7 +55,7 @@ Merged pull requests only. Two of these are my own repositories; the rest are up
 | --- | --- | --- | --- |
 | **O1** Ship agent tooling people can install | KR1 · two npm packages published | pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 — both `pi install npm:…` | Adoption costs one command, not a source read |
 | **O2** Make system tooling auditable | KR2 · zero data loss across 30.53 GB reclaimed | win-raccoon-lab: 152 measured cache entries, 9 safety gates, probe F1 = 1.00 | Cleanup becomes evidence-first instead of a one-click gamble |
-| **O3** Keep the cadence | KR3 · 409 contributions / 73 active days | 20 own repositories across 5 languages, peak 69 in a single day | Output is a rhythm, not a burst |
+| **O3** Keep the cadence | KR3 · 427 contributions / 75 active days | 21 own repositories across 5 languages, peak 69 in a single day | Output is a rhythm, not a burst |
 
 <details>
 <summary><strong>Stack and live signal</strong></summary>

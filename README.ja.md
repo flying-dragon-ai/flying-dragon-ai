@@ -36,7 +36,6 @@
 
 | リポジトリ | マージ済み PR | 最新の変更 |
 | --- | --- | --- |
-| [llingqi77-tech/interview-new](https://github.com/llingqi77-tech/interview-new) | [9](https://github.com/llingqi77-tech/interview-new/pull/9) · [4](https://github.com/llingqi77-tech/interview-new/pull/4) · [3](https://github.com/llingqi77-tech/interview-new/pull/3) · [2](https://github.com/llingqi77-tech/interview-new/pull/2) · [1](https://github.com/llingqi77-tech/interview-new/pull/1) | refactor: 拆开会话引擎、LLM 路由和报告打分 |
 | [flying-dragon-ai/interview-new](https://github.com/flying-dragon-ai/interview-new) | [2](https://github.com/flying-dragon-ai/interview-new/pull/2) · [1](https://github.com/flying-dragon-ai/interview-new/pull/1) | 多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面） |
 | [Frankieli123/grok-skill](https://github.com/Frankieli123/grok-skill) | [2](https://github.com/Frankieli123/grok-skill/pull/2) | feat(api): 优化 JSON 解析与支持 SSE 流解析 |
 | [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | [2028](https://github.com/TEN-framework/ten-framework/pull/2028) | #2014 docs(voice-assistant): 重构README，详细说明PowerMem记忆功能 |
@@ -56,7 +55,7 @@
 | --- | --- | --- | --- |
 | **O1** 導入できるエージェントツールを届ける | KR1 · npm パッケージ 2 つを公開 | pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 —— どちらも `pi install npm:…` | 導入コストはコマンド 1 行で、ソースを読む時間ではない |
 | **O2** システムツールを検証可能にする | KR2 · 30.53 GB を回収し、データ損失ゼロ | win-raccoon-lab：実測 152 件のキャッシュ、9 つの安全ゲート、probe F1 = 1.00 | 掃除は「ワンクリック最適化」ではなく、まず証拠を出す作業になる |
-| **O3** リズムを保つ | KR3 · 409 コミット / 73 アクティブ日 | 20 個の自前リポジトリが 5 言語にわたり、1 日最大 69 コミット | 成果は一発の爆発ではなくリズム |
+| **O3** リズムを保つ | KR3 · 427 コミット / 75 アクティブ日 | 21 個の自前リポジトリが 5 言語にわたり、1 日最大 69 コミット | 成果は一発の爆発ではなくリズム |
 
 <details>
 <summary><strong>技術スタックとライブ信号</strong></summary>

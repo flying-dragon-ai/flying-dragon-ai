@@ -9,7 +9,7 @@
       "createdAt": "2019-12-09T02:08:04Z"
     },
     "stats": {
-      "ownRepos": 20,
+      "ownRepos": 21,
       "forks": 53,
       "totalStars": 7,
       "languages": [
@@ -23,7 +23,7 @@
         ],
         [
           "JavaScript",
-          3
+          4
         ],
         [
           "HTML",
@@ -37,12 +37,20 @@
     },
     "repos": [
       {
+        "name": "pi-provider-xhx",
+        "description": "Pi extension for 小浣熊 (SenseTime Raccoon) — OAuth login, live model catalog, OpenAI-compatible streaming",
+        "url": "https://github.com/flying-dragon-ai/pi-provider-xhx",
+        "language": "TypeScript",
+        "stars": 0,
+        "pushedAt": "2026-11-23T08:49:25Z"
+      },
+      {
         "name": "flying-dragon-ai",
         "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "Python",
         "stars": 0,
-        "pushedAt": "2026-11-21T10:57:07Z"
+        "pushedAt": "2026-11-22T11:16:37Z"
       },
       {
         "name": "super-agent",
@@ -53,20 +61,20 @@
         "pushedAt": "2026-11-21T06:10:50Z"
       },
       {
+        "name": "interview-new",
+        "description": "",
+        "url": "https://github.com/flying-dragon-ai/interview-new",
+        "language": "JavaScript",
+        "stars": 0,
+        "pushedAt": "2026-11-20T09:31:15Z"
+      },
+      {
         "name": "huorengan-2079-play",
         "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
         "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
         "language": "HTML",
         "stars": 0,
         "pushedAt": "2026-11-20T08:45:01Z"
-      },
-      {
-        "name": "pi-provider-xhx",
-        "description": "Pi extension for 小浣熊 (SenseTime Raccoon) — OAuth login, live model catalog, OpenAI-compatible streaming",
-        "url": "https://github.com/flying-dragon-ai/pi-provider-xhx",
-        "language": "TypeScript",
-        "stars": 0,
-        "pushedAt": "2026-11-19T12:01:28Z"
       },
       {
         "name": "figma-mcp-plus",
@@ -199,36 +207,6 @@
     ],
     "upstream": [
       {
-        "repo": "llingqi77-tech/interview-new",
-        "number": 9,
-        "title": "refactor: 拆开会话引擎、LLM 路由和报告打分",
-        "url": "https://github.com/llingqi77-tech/interview-new/pull/9"
-      },
-      {
-        "repo": "llingqi77-tech/interview-new",
-        "number": 4,
-        "title": "feature/code 合入 main（Realtime / VoiceLanePool / 液态玻璃）",
-        "url": "https://github.com/llingqi77-tech/interview-new/pull/4"
-      },
-      {
-        "repo": "llingqi77-tech/interview-new",
-        "number": 3,
-        "title": "Cursor/realtime duplex voices 0778",
-        "url": "https://github.com/llingqi77-tech/interview-new/pull/3"
-      },
-      {
-        "repo": "llingqi77-tech/interview-new",
-        "number": 2,
-        "title": "feat: 增加 Apple 液态玻璃单页",
-        "url": "https://github.com/llingqi77-tech/interview-new/pull/2"
-      },
-      {
-        "repo": "llingqi77-tech/interview-new",
-        "number": 1,
-        "title": "feat(realtime): 按音色分路的 VoiceLanePool，主持改用 linjiajiejie",
-        "url": "https://github.com/llingqi77-tech/interview-new/pull/1"
-      },
-      {
         "repo": "flying-dragon-ai/interview-new",
         "number": 2,
         "title": "多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面）",
@@ -261,7 +239,7 @@
     ]
   },
   "contributions": {
-    "total": 409,
+    "total": 427,
     "days": [
       {
         "date": "2025-11-23",
@@ -1925,13 +1903,13 @@
       },
       {
         "date": "2026-10-21",
-        "count": 9,
+        "count": 11,
         "level": 1
       },
       {
         "date": "2026-10-22",
-        "count": 11,
-        "level": 1
+        "count": 18,
+        "level": 2
       },
       {
         "date": "2026-10-23",
@@ -1965,7 +1943,7 @@
       },
       {
         "date": "2026-10-29",
-        "count": 5,
+        "count": 6,
         "level": 1
       },
       {
@@ -2085,14 +2063,19 @@
       },
       {
         "date": "2026-11-22",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-11-23",
+        "count": 7,
+        "level": 1
       }
     ],
-    "activeDays": 73,
+    "activeDays": 75,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 365,
-    "last90": 231
+    "windowDays": 366,
+    "last90": 248
   }
 }

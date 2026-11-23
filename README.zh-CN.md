@@ -36,7 +36,6 @@
 
 | 仓库 | 已合并 PR | 最近改动 |
 | --- | --- | --- |
-| [llingqi77-tech/interview-new](https://github.com/llingqi77-tech/interview-new) | [9](https://github.com/llingqi77-tech/interview-new/pull/9) · [4](https://github.com/llingqi77-tech/interview-new/pull/4) · [3](https://github.com/llingqi77-tech/interview-new/pull/3) · [2](https://github.com/llingqi77-tech/interview-new/pull/2) · [1](https://github.com/llingqi77-tech/interview-new/pull/1) | refactor: 拆开会话引擎、LLM 路由和报告打分 |
 | [flying-dragon-ai/interview-new](https://github.com/flying-dragon-ai/interview-new) | [2](https://github.com/flying-dragon-ai/interview-new/pull/2) · [1](https://github.com/flying-dragon-ai/interview-new/pull/1) | 多角色 StepFun Realtime 全双工（无领导讨论 + 可配置单面） |
 | [Frankieli123/grok-skill](https://github.com/Frankieli123/grok-skill) | [2](https://github.com/Frankieli123/grok-skill/pull/2) | feat(api): 优化 JSON 解析与支持 SSE 流解析 |
 | [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | [2028](https://github.com/TEN-framework/ten-framework/pull/2028) | #2014 docs(voice-assistant): 重构README，详细说明PowerMem记忆功能 |
@@ -56,7 +55,7 @@
 | --- | --- | --- | --- |
 | **O1** 交付别人装得上的 agent 工具 | KR1 · 两个 npm 包已发布 | pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 —— 都是 `pi install npm:…` | 接入成本是一条命令，不是读一遍源码 |
 | **O2** 让系统工具可审计 | KR2 · 回收 30.53 GB，零数据丢失 | win-raccoon-lab：152 条实测缓存、9 道安全闸门、probe F1 = 1.00 | 清理从「一键优化赌一把」变成先给证据再给选择 |
-| **O3** 保持交付节奏 | KR3 · 409 次贡献 / 73 个活跃日 | 20 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
+| **O3** 保持交付节奏 | KR3 · 427 次贡献 / 75 个活跃日 | 21 个自有仓库覆盖 5 种语言，单日峰值 69 次 | 产出是节奏，不是爆发 |
 
 <details>
 <summary><strong>技术栈与实时信号</strong></summary>
