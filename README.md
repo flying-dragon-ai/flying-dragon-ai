@@ -55,7 +55,7 @@ Merged pull requests only. Two of these are my own repositories; the rest are up
 | --- | --- | --- | --- |
 | **O1** Ship agent tooling people can install | KR1 · two npm packages published | pi-subagent-factory 0.1.0 · pi-provider-xhx 0.3.0 — both `pi install npm:…` | Adoption costs one command, not a source read |
 | **O2** Make system tooling auditable | KR2 · zero data loss across 30.53 GB reclaimed | win-raccoon-lab: 152 measured cache entries, 9 safety gates, probe F1 = 1.00 | Cleanup becomes evidence-first instead of a one-click gamble |
-| **O3** Keep the cadence | KR3 · 427 contributions / 75 active days | 21 own repositories across 5 languages, peak 69 in a single day | Output is a rhythm, not a burst |
+| **O3** Keep the cadence | KR3 · 437 contributions / 76 active days | 21 own repositories across 5 languages, peak 69 in a single day | Output is a rhythm, not a burst |
 
 <details>
 <summary><strong>Stack and live signal</strong></summary>

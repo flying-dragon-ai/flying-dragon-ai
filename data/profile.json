@@ -42,7 +42,15 @@
         "url": "https://github.com/flying-dragon-ai/pi-provider-xhx",
         "language": "TypeScript",
         "stars": 0,
-        "pushedAt": "2026-11-23T08:49:25Z"
+        "pushedAt": "2026-11-24T06:54:40Z"
+      },
+      {
+        "name": "interview-new",
+        "description": "",
+        "url": "https://github.com/flying-dragon-ai/interview-new",
+        "language": "JavaScript",
+        "stars": 0,
+        "pushedAt": "2026-11-23T13:06:50Z"
       },
       {
         "name": "flying-dragon-ai",
@@ -50,7 +58,7 @@
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "Python",
         "stars": 0,
-        "pushedAt": "2026-11-22T11:16:37Z"
+        "pushedAt": "2026-11-23T12:29:32Z"
       },
       {
         "name": "super-agent",
@@ -59,14 +67,6 @@
         "language": "TypeScript",
         "stars": 1,
         "pushedAt": "2026-11-21T06:10:50Z"
-      },
-      {
-        "name": "interview-new",
-        "description": "",
-        "url": "https://github.com/flying-dragon-ai/interview-new",
-        "language": "JavaScript",
-        "stars": 0,
-        "pushedAt": "2026-11-20T09:31:15Z"
       },
       {
         "name": "huorengan-2079-play",
@@ -239,7 +239,7 @@
     ]
   },
   "contributions": {
-    "total": 427,
+    "total": 437,
     "days": [
       {
         "date": "2025-11-23",
@@ -2068,14 +2068,19 @@
       },
       {
         "date": "2026-11-23",
-        "count": 7,
+        "count": 12,
+        "level": 1
+      },
+      {
+        "date": "2026-11-24",
+        "count": 5,
         "level": 1
       }
     ],
-    "activeDays": 75,
+    "activeDays": 76,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 366,
-    "last90": 248
+    "windowDays": 367,
+    "last90": 258
   }
 }
