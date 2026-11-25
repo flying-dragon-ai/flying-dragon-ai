@@ -10,7 +10,7 @@
     },
     "stats": {
       "ownRepos": 21,
-      "forks": 53,
+      "forks": 55,
       "totalStars": 7,
       "languages": [
         [
@@ -37,6 +37,14 @@
     },
     "repos": [
       {
+        "name": "flying-dragon-ai",
+        "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
+        "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
+        "language": "Python",
+        "stars": 0,
+        "pushedAt": "2026-11-24T13:38:57Z"
+      },
+      {
         "name": "pi-provider-xhx",
         "description": "Pi extension for 小浣熊 (SenseTime Raccoon) — OAuth login, live model catalog, OpenAI-compatible streaming",
         "url": "https://github.com/flying-dragon-ai/pi-provider-xhx",
@@ -51,14 +59,6 @@
         "language": "JavaScript",
         "stars": 0,
         "pushedAt": "2026-11-23T13:06:50Z"
-      },
-      {
-        "name": "flying-dragon-ai",
-        "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
-        "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
-        "language": "Python",
-        "stars": 0,
-        "pushedAt": "2026-11-23T12:29:32Z"
       },
       {
         "name": "super-agent",
@@ -239,7 +239,7 @@
     ]
   },
   "contributions": {
-    "total": 437,
+    "total": 442,
     "days": [
       {
         "date": "2025-11-23",
@@ -2075,12 +2075,17 @@
         "date": "2026-11-24",
         "count": 5,
         "level": 1
+      },
+      {
+        "date": "2026-11-25",
+        "count": 5,
+        "level": 1
       }
     ],
-    "activeDays": 76,
+    "activeDays": 77,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 367,
-    "last90": 258
+    "windowDays": 368,
+    "last90": 263
   }
 }
