@@ -5,7 +5,7 @@
       "name": "flying~dragon",
       "avatarUrl": "https://avatars.githubusercontent.com/u/58673960?v=4",
       "htmlUrl": "https://github.com/flying-dragon-ai",
-      "followers": 6,
+      "followers": 7,
       "createdAt": "2019-12-09T02:08:04Z"
     },
     "stats": {
@@ -37,12 +37,20 @@
     },
     "repos": [
       {
+        "name": "huorengan-2079-play",
+        "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
+        "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
+        "language": "HTML",
+        "stars": 0,
+        "pushedAt": "2026-11-28T07:45:53Z"
+      },
+      {
         "name": "flying-dragon-ai",
         "description": "GitHub profile — 5 languages, animated ASCII identity, every number fetched with gh",
         "url": "https://github.com/flying-dragon-ai/flying-dragon-ai",
         "language": "Python",
         "stars": 0,
-        "pushedAt": "2026-11-26T12:25:34Z"
+        "pushedAt": "2026-11-27T12:11:31Z"
       },
       {
         "name": "pi-provider-xhx",
@@ -67,14 +75,6 @@
         "language": "TypeScript",
         "stars": 1,
         "pushedAt": "2026-11-21T06:10:50Z"
-      },
-      {
-        "name": "huorengan-2079-play",
-        "description": "《活人感 2079 重制版》试玩版 —— 单文件版 + 观景版",
-        "url": "https://github.com/flying-dragon-ai/huorengan-2079-play",
-        "language": "HTML",
-        "stars": 0,
-        "pushedAt": "2026-11-20T08:45:01Z"
       },
       {
         "name": "figma-mcp-plus",
@@ -239,7 +239,7 @@
     ]
   },
   "contributions": {
-    "total": 462,
+    "total": 476,
     "days": [
       {
         "date": "2025-11-23",
@@ -1009,7 +1009,7 @@
       {
         "date": "2026-04-25",
         "count": 7,
-        "level": 2
+        "level": 1
       },
       {
         "date": "2026-04-26",
@@ -1284,12 +1284,12 @@
       {
         "date": "2026-06-19",
         "count": 19,
-        "level": 4
+        "level": 3
       },
       {
         "date": "2026-06-20",
         "count": 20,
-        "level": 4
+        "level": 3
       },
       {
         "date": "2026-06-21",
@@ -1739,7 +1739,7 @@
       {
         "date": "2026-09-18",
         "count": 7,
-        "level": 2
+        "level": 1
       },
       {
         "date": "2026-09-19",
@@ -1954,7 +1954,7 @@
       {
         "date": "2026-10-31",
         "count": 19,
-        "level": 4
+        "level": 3
       },
       {
         "date": "2026-11-01",
@@ -1969,7 +1969,7 @@
       {
         "date": "2026-11-03",
         "count": 15,
-        "level": 3
+        "level": 2
       },
       {
         "date": "2026-11-04",
@@ -2049,11 +2049,11 @@
       {
         "date": "2026-11-19",
         "count": 14,
-        "level": 3
+        "level": 2
       },
       {
         "date": "2026-11-20",
-        "count": 25,
+        "count": 30,
         "level": 4
       },
       {
@@ -2079,23 +2079,28 @@
       {
         "date": "2026-11-25",
         "count": 7,
-        "level": 2
+        "level": 1
       },
       {
         "date": "2026-11-26",
-        "count": 7,
+        "count": 10,
         "level": 2
       },
       {
         "date": "2026-11-27",
         "count": 0,
         "level": 0
+      },
+      {
+        "date": "2026-11-28",
+        "count": 6,
+        "level": 1
       }
     ],
-    "activeDays": 78,
+    "activeDays": 79,
     "peakCount": 69,
     "peakDay": "2026-11-13",
-    "windowDays": 370,
-    "last90": 283
+    "windowDays": 371,
+    "last90": 297
   }
 }
